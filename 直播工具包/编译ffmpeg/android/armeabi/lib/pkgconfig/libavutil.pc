@@ -1,0 +1,14 @@
+prefix=/home/kelinlang/Workspace/ffmpeg-3.4.5/android/armeabi/
+exec_prefix=${prefix}
+libdir=/home/kelinlang/Workspace/ffmpeg-3.4.5/android/armeabi//lib
+includedir=/home/kelinlang/Workspace/ffmpeg-3.4.5/android/armeabi//include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}

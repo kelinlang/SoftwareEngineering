@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="zh_cn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+          
+<title>NDK 下载 &nbsp;|&nbsp; Android NDK &nbsp;|&nbsp; Android Developers</title>
+
+<meta property="og:title" content="NDK 下载 &nbsp;|&nbsp; Android NDK &nbsp;|&nbsp; Android Developers">
+
+  <meta property="og:url" content="https://developer.android.google.cn/ndk/downloads">
+
+  <meta property="og:locale" content="zh_cn">
+
+
+    
+    
+    
+    
+    <style>
+      th, td {
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+    </style>
+
+        <meta property="og:site_name" content="Android Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#78c257">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="https://developer.android.google.cn/_pwa/android/manifest.json">
+    <link rel="preconnect" href="https://www.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+    <link rel="stylesheet" href="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/css.css">
+    <link rel="stylesheet" href="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/ve249b9e9a6e2ccdbff66d2f657d9660fbe9b7669fa5a5656065b0195431343e0/android/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/ve249b9e9a6e2ccdbff66d2f657d9660fbe9b7669fa5a5656065b0195431343e0/android/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/ve249b9e9a6e2ccdbff66d2f657d9660fbe9b7669fa5a5656065b0195431343e0/android/images/touchicon-180.png"><link rel="canonical" href="https://developer.android.google.cn/ndk/downloads"><script type="text/javascript" async="" src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/linkid.js"></script><script async="" src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/gtm.js"></script><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/custom-elements-es5-adapter.js"></script><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/webcomponents-lite.js"></script><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_app__zh_cn.js"></script><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/analytics.js"></script><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_dialog_module__zh_cn.js"></script><link rel="stylesheet" type="text/css" href="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_dialog.css"><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_heading_module__zh_cn.js"></script><link rel="stylesheet" type="text/css" href="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_heading.css"><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_page_rating_module__zh_cn.js"></script><link rel="stylesheet" type="text/css" href="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_page_rating.css"><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_snackbar_module__zh_cn.js"></script><link rel="stylesheet" type="text/css" href="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_snackbar.css"><script src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_tooltip_module__zh_cn.js"></script><link rel="stylesheet" type="text/css" href="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_tooltip.css"><link rel="stylesheet" type="text/css" href="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/devsite_content_footer.css"></head>
+  <body type="article" theme="android-theme" class="" layout="docs" ready="">
+    <devsite-progress id="app-progress" ds-is="progress"></devsite-progress>
+    <div class="devsite-wrapper"><devsite-header ds-is="header" top-row--height="48" bottom-row--height="48" bottom-tabs--height="48" fixed="">
+      
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Navigation menu button" aria-label="Close menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+  <a href="https://developer.android.google.cn/" class="devsite-site-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Site logo">
+  <img src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/lockup.svg" class="devsite-site-logo" alt="Android Developers">
+</a>
+            <span class="devsite-product-name">
+            <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item">
+                              </li>
+    <li class="devsite-breadcrumb-item">
+                <div class="devsite-breadcrumb-guillemet material-icons"></div>
+                    <a href="https://developer.android.google.cn/ndk" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="2">
+            NDK
+      
+  </a>
+        </li>
+  </ul>
+          </span>
+        
+</div>        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search ds-is="search" enable-suggestions="" project-path="">
+  <form class="devsite-search-form" action="https://developer.android.google.cn/s/results/" method="GET">
+    <div class="devsite-search-container">
+      <div id="searchbox" class="devsite-searchbox">
+                <input placeholder="搜索" type="text" class="devsite-search-field devsite-search-query" name="q" autocomplete="off" aria-label="搜索框">
+        <div class="devsite-search-image material-icons"></div>
+      </div>
+      <button type="button" search-open="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Open search box"></button>
+    </div>
+  <div class="devsite-popout"><div class="devsite-popout-result devsite-suggest-results-container" devsite-hide="" role="menu" aria-haspopup="true"></div><div class="devsite-popout-result devsite-history-container" devsite-hide="" role="menu" aria-haspopup="true"></div></div></form>
+  <button type="button" search-close="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Close search box"></button>
+</devsite-search>
+
+        <devsite-search-background style="opacity: 1;"></devsite-search-background></div>
+
+                      </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    " style="transform: translate3d(0px, 0px, 0px);">
+    <div class="devsite-header-background">
+                                  <div class="devsite-doc-set-nav-row">
+                              <devsite-tabs ds-is="tabs" class="lower-tabs" connected="">
+  
+<div class="devsite-tabs-wrapper">
+                  <tab>
+          <a href="https://developer.android.google.cn/ndk" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: 首页">
+  首页
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.google.cn/ndk/guides" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: 指南">
+  指南
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.google.cn/ndk/reference" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: 参考">
+  参考
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.google.cn/ndk/samples" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: 示例">
+  示例
+</a>
+
+        </tab>
+                        <tab active="">
+          <a href="https://developer.android.google.cn/ndk/downloads" class="gc-analytics-event" aria-label="下载, selected" data-category="Site-Wide Custom Events" data-label="Tab: 下载">
+  下载
+</a>
+
+        </tab>
+            <tab overflow-tab="" hidden=""><a href="https://developer.android.google.cn/ndk/downloads/index.html#" class="devsite-icon devsite-icon-arrow-drop-down">更多</a><div class="devsite-tabs-overflow-menu" scrollbars="" hidden=""></div></tab></div></devsite-tabs>
+
+        </div>
+          </div>  </div></div>
+
+  </devsite-header>      <div class="devsite-book-nav-bg" fixed=""></div><devsite-book-nav ds-is="book-nav" scrollbars="" animatable="" fixed="" style="top: 96px; max-height: 691px;">
+                  
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button" id="devsite-close-nav" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Close navigation" aria-label="Close navigation">
+    </button>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                                  <li class="devsite-nav-item">
+    <a href="https://developer.android.google.cn/ndk" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: 首页">
+      <span class="devsite-nav-text">首页</span>
+        </a>
+  </li>
+
+                                  <li class="devsite-nav-item">
+    <a href="https://developer.android.google.cn/ndk/guides" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: 指南">
+      <span class="devsite-nav-text">指南</span>
+        </a>
+  </li>
+
+                                  <li class="devsite-nav-item">
+    <a href="https://developer.android.google.cn/ndk/reference" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: 参考">
+      <span class="devsite-nav-text">参考</span>
+        </a>
+  </li>
+
+                                  <li class="devsite-nav-item">
+    <a href="https://developer.android.google.cn/ndk/samples" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: 示例">
+      <span class="devsite-nav-text">示例</span>
+        </a>
+  </li>
+
+                                  <li class="devsite-nav-item">
+    <a href="https://developer.android.google.cn/ndk/downloads" id="devsite-nav-forward" class="devsite-nav-title gc-analytics-event devsite-nav-active" data-category="Site-Wide Custom Events" data-label="Responsive Tab: 下载">
+      <span class="devsite-nav-text">下载</span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward">
+    </span>
+        </a>
+  </li>
+
+                            </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                                      <ul class="devsite-nav-list" menu="_book">
+                                    <li class="devsite-nav-item"><a href="https://developer.android.google.cn/ndk/downloads" class="devsite-nav-title devsite-nav-active"><span class="devsite-nav-text">下载</span></a></li>
+                          <li class="devsite-nav-item"><a href="https://developer.android.google.cn/ndk/downloads/revision_history" class="devsite-nav-title"><span class="devsite-nav-text">修订历史记录</span></a></li>
+                      </ul>
+                      </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <div id="gc-wrapper" style="margin-top: 96px;">
+        <div class="devsite-main-content" has-book-nav="" has-toc="">
+          <devsite-toc ds-is="toc" class="devsite-nav devsite-toc" fixed="" max-height="643" visible=""><ul class="devsite-nav-list" scrollbars="" style="transform: translate3d(0px, 0px, 0px); max-width: 277px;"><li class="devsite-nav-item devsite-nav-heading devsite-toc-toggle"><a href="#top_of_page" class="devsite-nav-title"><span class="devsite-nav-text">目录</span></a></li><li class="devsite-nav-item"><a href="#stable-downloads" class="devsite-nav-title"><span class="devsite-nav-text">最新稳定版本 (r18b)</span></a></li><li class="devsite-nav-item"><a href="#beta-downloads" class="devsite-nav-title"><span class="devsite-nav-text">最新测试版 (r19 Beta 2)</span></a></li><li class="devsite-nav-item"><a href="#older-downloads" class="devsite-nav-title"><span class="devsite-nav-text">旧版本</span></a></li></ul></devsite-toc>
+          <devsite-content ds-is="content">
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner"><style type="text/css">/* Required for en/dynamic_shared/___download_terms_dialog.html */
+
+.button-regular {
+  font-size: inherit;
+  margin: 0 -8px;
+  text-transform: none;
+}
+
+.download-bundle-button .small {
+  font-size: 12px;
+  opacity: .7;
+}
+
+.devsite-dialog-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dialog-content-stretch {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.devsite-dialog-contents p:last-child {
+  margin-bottom: 0;
+}
+
+.dac-download-dialog {
+  height: 100%;
+  width: 80%;
+}
+
+.devsite-dialog.dac-download-dialog {
+  left: 50%;
+  margin-left: -40%;
+  top: 0;
+}
+
+@media screen and (max-width: 720px) {
+  devsite-dialog,
+  div.devsite-dialog {
+    height: 85%;
+    width: 100%;
+  }
+}
+
+* > devsite-dialog.dac-download-dialog h2,
+* > devsite-dialog.dac-download-dialog h3,
+* > .dac-download-dialog.devsite-dialog h2,
+* > .dac-download-dialog.devsite-dialog h3 {
+  border: 0;
+  font: 400 20px/32px Roboto,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sdk-terms {
+  border: 1px solid #b9b9b9;
+  color: #757575;
+  font: 14px/20px Roboto,sans-serif;
+  height: calc(100% - 150px);
+  margin-bottom: 16px;
+  min-height: 130px;
+  overflow: scroll;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.agreed,
+.not-agreed {
+  color: #fff;
+  margin: 16px 0 0;
+}
+
+.agreebox:not(:checked) ~ .agreed,
+.agreebox:checked ~ .not-agreed {
+  display: none;
+}
+
+.agreebox:not(:checked) ~ .not-agreed,
+.agreebox:checked ~ .agreed {
+  display: block !important;
+}
+</style>    
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item">
+                    <a href="https://developer.android.google.cn/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1">
+            Android Developers
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item">
+                <div class="devsite-breadcrumb-guillemet material-icons"></div>
+                    <a href="https://developer.android.google.cn/ndk" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2">
+            NDK
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item">
+                <div class="devsite-breadcrumb-guillemet material-icons"></div>
+                    <a href="https://developer.android.google.cn/ndk/downloads" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="3">
+            下载
+      
+  </a>
+        </li>
+  </ul>
+               <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+         <div><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" role="button" data-title="文档根本没法用" aria-label="Site content star ratings, rating 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" role="button" data-title="文档水平很差" aria-label="Site content star ratings, rating 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" role="button" data-title="文档水平一般" aria-label="Site content star ratings, rating 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" role="button" data-title="文档不错" aria-label="Site content star ratings, rating 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" role="button" data-title="文档写得很好" aria-label="Site content star ratings, rating 5 out of 5"></div></div><div class="devsite-rating-internal"><span class="devsite-rating-stats"></span></div></div></devsite-page-rating>
+          </div>
+
+              <devsite-heading ds-is="heading" text="NDK 下载" id="ndk-下载" level="h1" class="devsite-page-title"><h1 class="" is-upgraded="">NDK 下载</h1></devsite-heading>
+    
+    <devsite-toc ds-is="toc" class="devsite-nav devsite-toc-embedded" devsite-toc-embedded="" visible=""><ul class="devsite-nav-list" scrollbars="" style="transform: translate3d(0px, 0px, 0px);"><li class="devsite-nav-item devsite-nav-heading devsite-toc-toggle"><a href="#top_of_page" class="devsite-nav-title"><span class="devsite-nav-text">目录</span></a><button type="button" class="devsite-nav-show-all button-transparent material-icons" data-title="展开/收起内容"></button></li><li class="devsite-nav-item"><a href="#stable-downloads" class="devsite-nav-title"><span class="devsite-nav-text">最新稳定版本 (r18b)</span></a></li><li class="devsite-nav-item"><a href="#beta-downloads" class="devsite-nav-title"><span class="devsite-nav-text">最新测试版 (r19 Beta 2)</span></a></li><li class="devsite-nav-item"><a href="#older-downloads" class="devsite-nav-title"><span class="devsite-nav-text">旧版本</span></a></li><li class="devsite-toc-toggle"><button type="button" class="button-flat devsite-nav-more-items material-icons" aria-hidden="true" data-title="展开/收起内容"></button></li></ul></devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+                                                                        
+                                                                        
+         
+
+<p>请选择适用于您开发平台的 NDK 软件包。如需了解最新版 NDK 及早期版本中所作更改的信息，请参阅 <a href="https://developer.android.google.cn/ndk/downloads/revision_history.html">NDK 修订历史记录</a>。</p>
+
+<devsite-heading ds-is="heading" text="最新稳定版本 (r18b)" id="stable-downloads" level="h2" link="" toc="" class="" back-to-top=""><h2 is-upgraded="">最新稳定版本 (r18b)<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+
+<div class="devsite-table-wrapper"><table>
+  <tbody><tr>
+    <th>平台</th>
+    <th>软件包</th>
+    <th>大小（字节）</th>
+    <th>SHA1 校验和</th>
+  </tr>
+  <tr>
+    <td>Windows 32 位</td>
+    <td>
+      <button class="devsite-dialog-button button-white button-regular" data-modal-dialog-id="ndk_win32_download">android-ndk-r18b-windows-x86.zip</button>
+    </td>
+    <td>504605336</td>
+    <td>4b8b6a4edc0fa967b429c1d6d25adf69acc28803</td>
+  </tr>
+  <tr>
+    <td>Windows 64 位</td>
+    <td>
+      <button class="devsite-dialog-button button-white button-regular" data-modal-dialog-id="ndk_win64_download">android-ndk-r18b-windows-x86_64.zip</button>
+    </td>
+    <td>522489470</td>
+    <td>6b6d4138aaaad7166679fdfa4780e177f95cee6f</td>
+  </tr>
+  <tr>
+    <td>Mac</td>
+    <td>
+      <button class="devsite-dialog-button button-white button-regular" data-modal-dialog-id="ndk_mac64_download">android-ndk-r18b-darwin-x86_64.zip</button>
+    </td>
+    <td>542911996</td>
+    <td>98cb9909aa8c2dab32db188bbdc3ac6207e09440</td>
+  </tr>
+  <tr>
+    <td>Linux 64 位 (x86)</td>
+    <td>
+      <button class="devsite-dialog-button button-white button-regular" data-modal-dialog-id="ndk_linux64_download">android-ndk-r18b-linux-x86_64.zip</button>
+    </td>
+    <td>557038702</td>
+    <td>500679655da3a86aecf67007e8ab230ea9b4dd7b</td>
+  </tr>
+</tbody></table></div>
+
+<p>
+  如需了解此版本中的其他新增及更改信息，请参阅<a href="https://github.com/android-ndk/ndk/wiki/Changelog-r18">变更日志</a>。
+</p>
+
+<!-- COPY THIS RENDERED HTML AND PASTE IT INTO THE ARCHIVE PAGE
+
+<h3 id="TODO">Android NDK, Revision TODO</h3>
+
+<table>
+  <tr>
+    <th>Platform</th>
+    <th>Package</th>
+    <th>Size (Bytes)</th>
+    <th>SHA1 Checksum</th>
+  </tr>
+  <tr>
+    <td>Windows 32-bit</td>
+    <td>
+  <a href="https://dl.google.com/android/repository/android-ndk-r18b-windows-x86.zip">android-ndk-r18b-windows-x86.zip</a>
+    </td>
+    <td>504605336</td>
+    <td>4b8b6a4edc0fa967b429c1d6d25adf69acc28803</td>
+  </tr>
+  <tr>
+    <td>Windows 64-bit</td>
+    <td>
+  <a href="https://dl.google.com/android/repository/android-ndk-r18b-windows-x86_64.zip">android-ndk-r18b-windows-x86_64.zip</a>
+    </td>
+    <td>522489470</td>
+    <td>6b6d4138aaaad7166679fdfa4780e177f95cee6f</td>
+  </tr>
+  <tr>
+    <td>Mac</td>
+    <td>
+  <a href="https://dl.google.com/android/repository/android-ndk-r18b-darwin-x86_64.zip">android-ndk-r18b-darwin-x86_64.zip</a>
+    </td>
+    <td>542911996</td>
+    <td>98cb9909aa8c2dab32db188bbdc3ac6207e09440</td>
+  </tr>
+  <tr>
+    <td>Linux 64-bit (x86)</td>
+    <td>
+  <a href="https://dl.google.com/android/repository/android-ndk-r18b-linux-x86_64.zip">android-ndk-r18b-linux-x86_64.zip</a>
+    </td>
+    <td>557038702</td>
+    <td>500679655da3a86aecf67007e8ab230ea9b4dd7b</td>
+  </tr>
+</table>
+
+
+END OF COPY/PASTE SECTION -->
+
+<devsite-heading ds-is="heading" text="最新测试版 (r19 Beta 2)" id="beta-downloads" level="h2" link="" toc="" class="" back-to-top=""><h2 is-upgraded="">最新测试版 (r19 Beta 2)<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+
+<div class="devsite-table-wrapper"><table>
+  <tbody><tr>
+    <th>平台</th>
+    <th>软件包</th>
+    <th>大小（字节）</th>
+    <th>SHA1 校验和</th>
+  </tr>
+  <tr>
+    <td>Windows 32 位</td>
+    <td>
+      <button class="devsite-dialog-button button-white button-regular" data-modal-dialog-id="ndk_beta_win32_download">android-ndk-r19-beta2-windows-x86.zip</button>
+    </td>
+    <td>778322307</td>
+    <td>56246ecc34dee98a8afb44a74b631b81e931d476</td>
+  </tr>
+  <tr>
+    <td>Windows 64 位</td>
+    <td>
+      <button class="devsite-dialog-button button-white button-regular" data-modal-dialog-id="ndk_beta_win64_download">android-ndk-r19-beta2-windows-x86_64.zip</button>
+    </td>
+    <td>795761090</td>
+    <td>bac146e86f1c49b39c3774b7eb3f7a027e45b140</td>
+  </tr>
+  <tr>
+    <td>Mac</td>
+    <td>
+      <button class="devsite-dialog-button button-white button-regular" data-modal-dialog-id="ndk_beta_mac64_download">android-ndk-r19-beta2-darwin-x86_64.zip</button>
+    </td>
+    <td>807739879</td>
+    <td>eee9064b39551d13bbd5a8d7975f9112f1bf7ae0</td>
+  </tr>
+  <tr>
+    <td>Linux 64 位 (x86)</td>
+    <td>
+      <button class="devsite-dialog-button button-white button-regular" data-modal-dialog-id="ndk_beta_linux64_download">android-ndk-r19-beta2-linux-x86_64.zip</button>
+    </td>
+    <td>823418867</td>
+    <td>1a5dcf4e78956656de205172a49ae88d52d273ee</td>
+  </tr>
+</tbody></table></div>
+
+<p>
+  如需了解此版本中的其他新增及更改信息，请参阅<a href="https://github.com/android-ndk/ndk/wiki/Changelog-r19-beta2">变更日志</a>。
+</p>
+
+<devsite-heading ds-is="heading" text="旧版本" id="older-downloads" level="h2" link="" toc="" class="" back-to-top=""><h2 is-upgraded="">旧版本<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+
+<p>您可以从 <a href="https://developer.android.google.cn/ndk/downloads/older_releases.html">NDK 归档</a>下载旧版 NDK。</p>
+
+
+       
+
+<devsite-dialog ds-is="dialog" id="ndk_win32_download" class="dac-download-dialog" aria-label="Android NDK">
+  <div class="devsite-dialog-contents">
+    <h3>Android NDK</h3>
+    <p>在下载之前，您必须同意下列条款和条件。</p>
+    <div class="dialog-content-stretch sdk-terms"><devsite-heading ds-is="heading" text="条款及条件" id="条款及条件" level="h2" link="" class="" back-to-top=""><h2 class="hide-from-toc" is-upgraded="">条款及条件<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+以下是 Android 软件开发套件许可协议
+
+<devsite-heading ds-is="heading" text="1. 简介" id="1.-简介" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">1. 简介<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+1.1 Google 会按照本许可协议的条款向您授予使用 Android 软件开发套件（在本许可协议中称为“SDK”，具体包括 Android 系统文件、打包的 API 和 Google API 插件）的许可。本许可协议是您和 Google 之间就您使用 SDK 而达成的具有法律约束力的合约。
+
+1.2 “Android”是指通过 Android 开放源代码项目（项目网址为：http://source.android.com/）提供的用于设备的 Android 软件堆栈（会不时更新）。
+
+1.3 “兼容实现”设备是指满足以下条件的任何 Android 设备：(i) 符合 Android 兼容性定义文档（位于 Android 兼容性网站 http://source.android.com/compatibility 上，会不时更新）的要求；(ii) 成功通过 Android 兼容性测试套件 (CTS) 测试。
+
+1.4 “Google”是指 Google LLC（一家注册于美国特拉华州的公司），其主要营业地点为 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States。
+
+
+<devsite-heading ds-is="heading" text="2. 接受本许可协议" id="2.-接受本许可协议" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">2. 接受本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+2.1 要使用 SDK，您必须先同意本许可协议。如果您不接受本许可协议，则无法使用 SDK。
+
+2.2 点击接受，即表示您同意本许可协议的条款。
+
+2.3 如果美国或其他国家/地区（包括您所居住的或您使用 SDK 时所在的国家/地区）的法律禁止您作为自然人获取 SDK，则您无法使用 SDK，也无法接受本许可协议。
+
+2.4 如果您代表您的雇主或其他实体同意接受本许可协议的约束，则表示您声明并担保，您拥有完整的法定权力，可使您的雇主或此类实体受本许可协议的约束。如果您未获得必要的授权，则不得代表雇主或其他实体接受本许可协议或使用 SDK。
+
+
+<devsite-heading ds-is="heading" text="3. Google 授予的 SDK 许可" id="3.-google-授予的-sdk-许可" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">3. Google 授予的 SDK 许可<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+3.1 根据本许可协议的条款，Google 会向您授予在全球范围内适用的、免版税、不可转让、非独家、不可分许可的有限许可，仅限您出于 Android 兼容实现的目的将 SDK 用于开发应用。
+
+3.2 您不能使用此 SDK 开发用于其他平台（包括 Android 的非兼容实现）的应用或开发其他 SDK。只要此 SDK 没有用于此目的，您可以随意开发用于其他平台（包括 Android 的非兼容实现）的应用。
+
+3.3 您同意 Google 或第三方拥有该 SDK 的所有法定权利、所有权和利益，包括该 SDK 中存在的所有知识产权。“知识产权”是指专利法、版权法、商业秘密法、商标法以及任何和所有其他所有权法案中现行规定的任何及所有权利。Google 保留未明确授予您的所有权利。
+
+3.4 您不得将 SDK 用于本许可协议未明确许可的任何目的。除非适用的第三方许可提出要求，否则您不得对 SDK 或其任何部分进行复制（备份目的除外）、修改、改编、分发、反编译、反向工程、反汇编或创建其衍生作品。
+
+3.5 使用、复制及分发已获开放源代码软件许可的 SDK 组件的行为仅受该开放源代码软件许可相关条款（而非本许可协议）的制约。
+
+3.6 您同意 Google 可在不事先通知您的情况下，变更所提供的 SDK 的形式和性质，且 SDK 的后续版本可能会与基于旧版 SDK 开发的应用不兼容。您同意，一般情况下，Google 可在不事先通知您的情况下自行决定（永久性或暂时）停止为您或用户提供 SDK（或 SDK 中的任何功能）。
+
+3.7 本许可协议中的任何内容均未授权您使用 Google 的任何商品名、商标、服务商标、徽标、域名或其他显著品牌特征。
+
+3.8 对于 SDK 中可能附带或包含的任何所有权声明（包括版权和商标通告），您同意不会移除、模糊处理或更改这些声明。
+
+<devsite-heading ds-is="heading" text="4. 您对 SDK 的使用" id="4.-您对-sdk-的使用" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">4. 您对 SDK 的使用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+4.1 Google 同意，本许可协议并不会让 Google 从您（或您的许可人）那里获得您使用 SDK 开发的任何软件应用中包含的或相关的任何权利、所有权或权益（包括这些应用中存在的所有知识产权）。
+
+4.2 您同意，只在 (a) 本许可协议和 (b) 相关司法辖区内的任何适用法律法规或公认的惯例或准则（包括任何与从美国或其他相关国家/地区进口或向其出口数据或软件相关的法律）允许的情况下使用 SDK 以及编写应用。
+
+4.3 您同意，如果您使用 SDK 针对一般公众用户开发应用，将会保护这些用户的隐私权和合法权利。如果用户向您提供用户名、密码或其他登录信息或个人信息，那么您不仅必须让用户知道此类信息将仅供您的应用使用，还必须向这些用户提供从法律意义上来说足够充分的隐私权声明和保护。如果您的应用存储了用户提供的个人信息或敏感信息，则必须对这类信息进行安全存储。如果用户为您的应用提供了 Google 帐号信息，那么您的应用只能在用户许可的情况下使用该信息访问用户的 Google 帐号，并且只能将其用于用户许可的限定用途。
+
+4.4 您同意不会在使用 SDK 时从事或参与任何干扰、中断、破坏或未经授权即访问任何第三方（包括但不限于 Google 或任何移动通信运营商）的服务器、网络或其他财产/服务的活动；这一规定亦适用于应用的开发或发布活动。
+
+4.5 您同意，对于您通过 Android 和/或 Android 版应用创建、传输或显示的任何数据、内容或资源，以及由此造成的任何后果（包括 Google 可能会蒙受的任何损失或损害），您要承担全部责任，且 Google 对您或任何第三方不承担任何责任。
+
+4.6 您同意，对于未按本许可协议、任何适用的第三方合同或服务条款或任何适用法律法规的规定履行义务的任何行为以及由此造成的后果（包括 Google 或任何第三方可能会蒙受的损失或损害），您承担全部责任，且 Google 对您或任何第三方均不承担任何责任。
+
+
+<devsite-heading ds-is="heading" text="5. 您的开发者凭据" id="5.-您的开发者凭据" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">5. 您的开发者凭据<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+5.1 您同意负责维护 Google 向您发放或您自行选择的任何开发者凭据的机密性，并且对使用您的开发者凭据开发的所有应用承担全部责任。
+
+
+<devsite-heading ds-is="heading" text="6. 隐私权和信息" id="6.-隐私权和信息" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">6. 隐私权和信息<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+6.1 为了不断地对 SDK 进行创新和改进，Google 可能会通过软件收集某些使用情况统计信息，包括但不限于唯一标识符、关联 IP 地址、软件版本号，以及关于 SDK 中正在使用的工具和/服务以及使用方式的信息。在收集任何此类信息之前，SDK 都会通知您并征求您的同意。未经您同意，Google 不会擅自收集此类信息。
+
+6.2 Google 会对收集的数据进行汇总分析，从而改进 SDK，并会依照 Google 隐私权政策保留这些数据。
+
+
+<devsite-heading ds-is="heading" text="7. 第三方应用" id="7.-第三方应用" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">7. 第三方应用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+7.1 如果您要使用 SDK 运行由第三方开发的应用，或者运行会访问由第三方提供的数据、内容或资源的应用，则您须同意 Google 对于此类应用、数据、内容或资源概不负责。您了解，对于您可通过此类第三方应用访问的所有数据、内容或资源，均由最初提供这些内容的人员承担全部责任；对于您因使用或访问任何此类第三方应用、数据、内容或资源而可能蒙受的任何损失或损坏，Google 概不负责。
+
+7.2 您应了解，通过此类第三方应用向您提供的数据、内容和资源可能会受到提供者（或代表他们的其他个人或公司）所拥有的知识产权的保护。除非相关所有者明确授予您相应权限，否则您不得修改、出租、租赁、借贷、出售、分发此类数据、内容或资源（无论是全部还是部分），或在其基础上创建衍生作品。
+
+7.3 您同意，您对此类第三方应用、数据、内容或资源的使用行为可能会受到您与相关第三方之间达成的独立条款的制约。在这种情况下，本许可协议不会影响您与此类第三方之间的法律关系。
+
+
+<devsite-heading ds-is="heading" text="8. 使用 Android API" id="8.-使用-android-api" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">8. 使用 Android API<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+8.1 Google 数据 API
+
+8.1.1 如果您使用任何 API 从 Google 检索数据，则您同意此类数据可能受到 Google 或数据提供方（或代表他们的其他个人或公司）所拥有的知识产权的保护。使用任何此类 API 时，您可能会受到附加服务条款的制约。除非相关服务条款明确允许，否则您不得修改、出租、租赁、借贷、出售、分发此类数据（无论是全部还是部分），或在其基础上创建衍生作品。
+
+8.1.2 如果您使用任何 API 从 Google 检索用户数据，则您同意仅在用户明确同意的情况下检索数据，且仅会将其用于用户许可的限定用途。
+
+
+<devsite-heading ds-is="heading" text="9. 终止本许可协议" id="9.-终止本许可协议" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">9. 终止本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+9.1 除非您或 Google 根据下述条款终止本许可协议，否则本协议将持续有效。
+
+9.2 如果您希望终止本许可协议，只需停止使用 SDK 和任何相关开发者凭据即可。
+
+9.3 如果出现以下任意情况，Google 可随时终止本许可协议：
+(A) 您违反了本许可协议的规定；或
+(B) 根据法律 Goolge 必须终止本协议；或
+(C) 与 Google 合作向您提供 SDK 的特定部分（例如 API）的合作伙伴终止了与 Google 的合作关系，或者不再向您提供 SDK 的特定部分；或
+(D) Google 决定不再向您所居住的国家/地区，或您使用相关服务时所在的国家/地区提供 SDK 或 SDK 的特定部分，或者 Google 单方面判定向您提供 SDK 或特定的 SDK 服务不再具有商业可行性。
+
+9.4 本许可协议终止时，您和 Google 曾共同从中受益、曾须遵守的所有法定权利、义务和责任（或在本许可协议有效期间产生的或明确规定将无限期延续的权利、义务和责任）将不会受到影响，并且第 14.7 节中的规定将继续无限期地适用于此类权利、义务和责任。
+
+
+<devsite-heading ds-is="heading" text="10. 免责声明" id="10.-免责声明" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">10. 免责声明<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+10.1 您明确了解并同意自行承担使用 SDK 的风险，并且 SDK 是在“现状”和“可提供”的基础上提供的，Google 不提供任何形式的担保。
+
+10.2 对于 SDK 以及通过 SDK 下载或获取的任何内容的使用，您必须自行承担全部责任和风险；对于因这种使用行为而导致的对您的计算机系统或其他设备的损害或数据丢失，您必须承担全部责任。
+
+10.3 Google 进一步明确声明，Google 不提供任何形式的明示或隐含的担保和条件，包括但不限于对适销性、特定用途的适用性以及不侵犯他人权利的隐含担保和条件。
+
+
+<devsite-heading ds-is="heading" text="11. 责任限制" id="11.-责任限制" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">11. 责任限制<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+11.1 您明确了解并同意，Google 及其子公司和关联公司，以及其许可人，对于由您的上述使用行为而造成的任何直接的、间接的、偶发的、特殊的、衍生的或惩罚性的损失（包括任何数据的丢失），均不承担任何责任，无论是基于任何相关责任理论的论述，也无论 Google 或其代表是否已被告知或应该知道存在这种损失的可能性。
+
+
+<devsite-heading ds-is="heading" text="12. 赔偿" id="12.-赔偿" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">12. 赔偿<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+12.1 在法律允许的最大限度内，您同意对于因：(a) 您使用 SDK；(b) 您基于 SDK 开发的任何应用侵犯了他人的任何版权、商标、商业秘密、商业外观、专利或其他知识产权，或者诽谤他人、侵犯他人的公开权或隐私权；以及 (c) 您不遵守本许可协议的任何条款而导致的任何索赔、法律行动、法律诉讼或诉讼过程，以及所有损失、索赔要求、损害、费用和支出（包括合理的律师费用），向 Google、其关联公司，以及其各自的董事、主管人员、员工和代理人作出辩护和赔偿，使其免受损害。
+
+
+<devsite-heading ds-is="heading" text="13. 许可协议的变更" id="13.-许可协议的变更" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">13. 许可协议的变更<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+13.1 Google 在发布新版 SDK 时可能会对本许可协议进行一些变更。进行这类变更后，Google 将在发布 SDK 的网站上提供新版许可协议。
+
+
+<devsite-heading ds-is="heading" text="14. 一般法律条款" id="14.-一般法律条款" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">14. 一般法律条款<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+14.1 本许可协议构成您和 Google 之间的完整法律协议，且您对 SDK 的使用（不包括 Google 根据单独书面协议为您提供的任何服务）将受本协议的约束。同时，本协议将完全取代您和 Google 之前就 SDK 达成的任何协议。
+
+14.2 您同意，即使 Google 未行使或强制执行本许可协议中所述的（或 Google 根据任何适用法律所享有的）任何法定权利或补救措施，也不应视为 Google 正式自动放弃这些权利，Google 仍然可以行使这些权利或采取相应补救措施。
+
+14.3 如果对此类事项有司法决定权的任何法院判定本许可协议的任何规定无效，则我们会在不影响本许可协议其余部分的情况下，将该规定从本许可协议中移除。本许可协议的其余规定仍然具有效力和作用。
+
+14.4 您了解并同意，Google 的每一个子公司都应为本许可协议的第三方受益人，此类其他公司应有权直接执行本许可协议，并根据本许可协议的规定主张相关权益（或有利于他们的权利）。除此之外，其他个人或公司不应成为本许可协议的第三方受益人。
+
+14.5 出口限制。SDK 会受到美国出口法律和法规的限制。您必须遵守所有适用于 SDK 的国内以及国际出口法律和法规。这些法律包括对目的地、最终用户和最终用途的限制。
+
+14.6 未经另一方的事先书面许可，您或 Google 不得转让或转移本许可协议中授予的权利。未经另一方的事先书面许可，您或 Google 不得将本许可协议中规定的责任或义务委派给他人。
+
+14.7 本许可协议以及由本许可协议而产生的您与 Google 之间的关系应受到美国加利福尼亚州法律的约束，但不考虑该州的法律冲突条款。您和 Google 同意服从加利福尼亚州圣克拉拉县法院的专有司法辖权，以此来解决由本许可协议产生的任何法律事务。尽管如此，您同意 Google 仍然可以向任何司法辖区内的法院请求禁令救济（或同等类型的紧急法律救济）。
+
+
+<em>2016 年 12 月 9 日</em>
+    </div>
+    <div>
+      <input id="agree_ndk_win32_download" class="agreebox" type="checkbox" name="agree" value="1">
+      <label id="agreeLabel" for="agree_ndk_win32_download">我已阅读并同意上述条款及条件</label>
+      <p class="not-agreed">
+        <a class="button button-disabled"><span class="lang-float">下载 Android NDK
+                for Windows（32 位）           </span></a></p>
+      <p class="agreed">
+        <a class="button button-blue
+             devsite-dialog-close gc-analytics-event" href="https://dl.google.com/android/repository/android-ndk-r18b-windows-x86.zip">下载 Android NDK
+           for
+            Windows（32 位）
+                  </a></p>
+      <p><em>android-ndk-r18b-windows-x86.zip</em></p>
+
+    </div>
+  </div>
+</devsite-dialog>
+     
+
+<devsite-dialog ds-is="dialog" id="ndk_win64_download" class="dac-download-dialog" aria-label="Android NDK">
+  <div class="devsite-dialog-contents">
+    <h3>Android NDK</h3>
+    <p>在下载之前，您必须同意下列条款和条件。</p>
+    <div class="dialog-content-stretch sdk-terms"><devsite-heading ds-is="heading" text="条款及条件" id="条款及条件_1" level="h2" link="" class="" back-to-top=""><h2 class="hide-from-toc" is-upgraded="">条款及条件<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+以下是 Android 软件开发套件许可协议
+
+<devsite-heading ds-is="heading" text="1. 简介" id="1.-简介_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">1. 简介<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+1.1 Google 会按照本许可协议的条款向您授予使用 Android 软件开发套件（在本许可协议中称为“SDK”，具体包括 Android 系统文件、打包的 API 和 Google API 插件）的许可。本许可协议是您和 Google 之间就您使用 SDK 而达成的具有法律约束力的合约。
+
+1.2 “Android”是指通过 Android 开放源代码项目（项目网址为：http://source.android.com/）提供的用于设备的 Android 软件堆栈（会不时更新）。
+
+1.3 “兼容实现”设备是指满足以下条件的任何 Android 设备：(i) 符合 Android 兼容性定义文档（位于 Android 兼容性网站 http://source.android.com/compatibility 上，会不时更新）的要求；(ii) 成功通过 Android 兼容性测试套件 (CTS) 测试。
+
+1.4 “Google”是指 Google LLC（一家注册于美国特拉华州的公司），其主要营业地点为 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States。
+
+
+<devsite-heading ds-is="heading" text="2. 接受本许可协议" id="2.-接受本许可协议_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">2. 接受本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+2.1 要使用 SDK，您必须先同意本许可协议。如果您不接受本许可协议，则无法使用 SDK。
+
+2.2 点击接受，即表示您同意本许可协议的条款。
+
+2.3 如果美国或其他国家/地区（包括您所居住的或您使用 SDK 时所在的国家/地区）的法律禁止您作为自然人获取 SDK，则您无法使用 SDK，也无法接受本许可协议。
+
+2.4 如果您代表您的雇主或其他实体同意接受本许可协议的约束，则表示您声明并担保，您拥有完整的法定权力，可使您的雇主或此类实体受本许可协议的约束。如果您未获得必要的授权，则不得代表雇主或其他实体接受本许可协议或使用 SDK。
+
+
+<devsite-heading ds-is="heading" text="3. Google 授予的 SDK 许可" id="3.-google-授予的-sdk-许可_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">3. Google 授予的 SDK 许可<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+3.1 根据本许可协议的条款，Google 会向您授予在全球范围内适用的、免版税、不可转让、非独家、不可分许可的有限许可，仅限您出于 Android 兼容实现的目的将 SDK 用于开发应用。
+
+3.2 您不能使用此 SDK 开发用于其他平台（包括 Android 的非兼容实现）的应用或开发其他 SDK。只要此 SDK 没有用于此目的，您可以随意开发用于其他平台（包括 Android 的非兼容实现）的应用。
+
+3.3 您同意 Google 或第三方拥有该 SDK 的所有法定权利、所有权和利益，包括该 SDK 中存在的所有知识产权。“知识产权”是指专利法、版权法、商业秘密法、商标法以及任何和所有其他所有权法案中现行规定的任何及所有权利。Google 保留未明确授予您的所有权利。
+
+3.4 您不得将 SDK 用于本许可协议未明确许可的任何目的。除非适用的第三方许可提出要求，否则您不得对 SDK 或其任何部分进行复制（备份目的除外）、修改、改编、分发、反编译、反向工程、反汇编或创建其衍生作品。
+
+3.5 使用、复制及分发已获开放源代码软件许可的 SDK 组件的行为仅受该开放源代码软件许可相关条款（而非本许可协议）的制约。
+
+3.6 您同意 Google 可在不事先通知您的情况下，变更所提供的 SDK 的形式和性质，且 SDK 的后续版本可能会与基于旧版 SDK 开发的应用不兼容。您同意，一般情况下，Google 可在不事先通知您的情况下自行决定（永久性或暂时）停止为您或用户提供 SDK（或 SDK 中的任何功能）。
+
+3.7 本许可协议中的任何内容均未授权您使用 Google 的任何商品名、商标、服务商标、徽标、域名或其他显著品牌特征。
+
+3.8 对于 SDK 中可能附带或包含的任何所有权声明（包括版权和商标通告），您同意不会移除、模糊处理或更改这些声明。
+
+<devsite-heading ds-is="heading" text="4. 您对 SDK 的使用" id="4.-您对-sdk-的使用_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">4. 您对 SDK 的使用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+4.1 Google 同意，本许可协议并不会让 Google 从您（或您的许可人）那里获得您使用 SDK 开发的任何软件应用中包含的或相关的任何权利、所有权或权益（包括这些应用中存在的所有知识产权）。
+
+4.2 您同意，只在 (a) 本许可协议和 (b) 相关司法辖区内的任何适用法律法规或公认的惯例或准则（包括任何与从美国或其他相关国家/地区进口或向其出口数据或软件相关的法律）允许的情况下使用 SDK 以及编写应用。
+
+4.3 您同意，如果您使用 SDK 针对一般公众用户开发应用，将会保护这些用户的隐私权和合法权利。如果用户向您提供用户名、密码或其他登录信息或个人信息，那么您不仅必须让用户知道此类信息将仅供您的应用使用，还必须向这些用户提供从法律意义上来说足够充分的隐私权声明和保护。如果您的应用存储了用户提供的个人信息或敏感信息，则必须对这类信息进行安全存储。如果用户为您的应用提供了 Google 帐号信息，那么您的应用只能在用户许可的情况下使用该信息访问用户的 Google 帐号，并且只能将其用于用户许可的限定用途。
+
+4.4 您同意不会在使用 SDK 时从事或参与任何干扰、中断、破坏或未经授权即访问任何第三方（包括但不限于 Google 或任何移动通信运营商）的服务器、网络或其他财产/服务的活动；这一规定亦适用于应用的开发或发布活动。
+
+4.5 您同意，对于您通过 Android 和/或 Android 版应用创建、传输或显示的任何数据、内容或资源，以及由此造成的任何后果（包括 Google 可能会蒙受的任何损失或损害），您要承担全部责任，且 Google 对您或任何第三方不承担任何责任。
+
+4.6 您同意，对于未按本许可协议、任何适用的第三方合同或服务条款或任何适用法律法规的规定履行义务的任何行为以及由此造成的后果（包括 Google 或任何第三方可能会蒙受的损失或损害），您承担全部责任，且 Google 对您或任何第三方均不承担任何责任。
+
+
+<devsite-heading ds-is="heading" text="5. 您的开发者凭据" id="5.-您的开发者凭据_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">5. 您的开发者凭据<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+5.1 您同意负责维护 Google 向您发放或您自行选择的任何开发者凭据的机密性，并且对使用您的开发者凭据开发的所有应用承担全部责任。
+
+
+<devsite-heading ds-is="heading" text="6. 隐私权和信息" id="6.-隐私权和信息_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">6. 隐私权和信息<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+6.1 为了不断地对 SDK 进行创新和改进，Google 可能会通过软件收集某些使用情况统计信息，包括但不限于唯一标识符、关联 IP 地址、软件版本号，以及关于 SDK 中正在使用的工具和/服务以及使用方式的信息。在收集任何此类信息之前，SDK 都会通知您并征求您的同意。未经您同意，Google 不会擅自收集此类信息。
+
+6.2 Google 会对收集的数据进行汇总分析，从而改进 SDK，并会依照 Google 隐私权政策保留这些数据。
+
+
+<devsite-heading ds-is="heading" text="7. 第三方应用" id="7.-第三方应用_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">7. 第三方应用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+7.1 如果您要使用 SDK 运行由第三方开发的应用，或者运行会访问由第三方提供的数据、内容或资源的应用，则您须同意 Google 对于此类应用、数据、内容或资源概不负责。您了解，对于您可通过此类第三方应用访问的所有数据、内容或资源，均由最初提供这些内容的人员承担全部责任；对于您因使用或访问任何此类第三方应用、数据、内容或资源而可能蒙受的任何损失或损坏，Google 概不负责。
+
+7.2 您应了解，通过此类第三方应用向您提供的数据、内容和资源可能会受到提供者（或代表他们的其他个人或公司）所拥有的知识产权的保护。除非相关所有者明确授予您相应权限，否则您不得修改、出租、租赁、借贷、出售、分发此类数据、内容或资源（无论是全部还是部分），或在其基础上创建衍生作品。
+
+7.3 您同意，您对此类第三方应用、数据、内容或资源的使用行为可能会受到您与相关第三方之间达成的独立条款的制约。在这种情况下，本许可协议不会影响您与此类第三方之间的法律关系。
+
+
+<devsite-heading ds-is="heading" text="8. 使用 Android API" id="8.-使用-android-api_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">8. 使用 Android API<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+8.1 Google 数据 API
+
+8.1.1 如果您使用任何 API 从 Google 检索数据，则您同意此类数据可能受到 Google 或数据提供方（或代表他们的其他个人或公司）所拥有的知识产权的保护。使用任何此类 API 时，您可能会受到附加服务条款的制约。除非相关服务条款明确允许，否则您不得修改、出租、租赁、借贷、出售、分发此类数据（无论是全部还是部分），或在其基础上创建衍生作品。
+
+8.1.2 如果您使用任何 API 从 Google 检索用户数据，则您同意仅在用户明确同意的情况下检索数据，且仅会将其用于用户许可的限定用途。
+
+
+<devsite-heading ds-is="heading" text="9. 终止本许可协议" id="9.-终止本许可协议_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">9. 终止本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+9.1 除非您或 Google 根据下述条款终止本许可协议，否则本协议将持续有效。
+
+9.2 如果您希望终止本许可协议，只需停止使用 SDK 和任何相关开发者凭据即可。
+
+9.3 如果出现以下任意情况，Google 可随时终止本许可协议：
+(A) 您违反了本许可协议的规定；或
+(B) 根据法律 Goolge 必须终止本协议；或
+(C) 与 Google 合作向您提供 SDK 的特定部分（例如 API）的合作伙伴终止了与 Google 的合作关系，或者不再向您提供 SDK 的特定部分；或
+(D) Google 决定不再向您所居住的国家/地区，或您使用相关服务时所在的国家/地区提供 SDK 或 SDK 的特定部分，或者 Google 单方面判定向您提供 SDK 或特定的 SDK 服务不再具有商业可行性。
+
+9.4 本许可协议终止时，您和 Google 曾共同从中受益、曾须遵守的所有法定权利、义务和责任（或在本许可协议有效期间产生的或明确规定将无限期延续的权利、义务和责任）将不会受到影响，并且第 14.7 节中的规定将继续无限期地适用于此类权利、义务和责任。
+
+
+<devsite-heading ds-is="heading" text="10. 免责声明" id="10.-免责声明_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">10. 免责声明<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+10.1 您明确了解并同意自行承担使用 SDK 的风险，并且 SDK 是在“现状”和“可提供”的基础上提供的，Google 不提供任何形式的担保。
+
+10.2 对于 SDK 以及通过 SDK 下载或获取的任何内容的使用，您必须自行承担全部责任和风险；对于因这种使用行为而导致的对您的计算机系统或其他设备的损害或数据丢失，您必须承担全部责任。
+
+10.3 Google 进一步明确声明，Google 不提供任何形式的明示或隐含的担保和条件，包括但不限于对适销性、特定用途的适用性以及不侵犯他人权利的隐含担保和条件。
+
+
+<devsite-heading ds-is="heading" text="11. 责任限制" id="11.-责任限制_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">11. 责任限制<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+11.1 您明确了解并同意，Google 及其子公司和关联公司，以及其许可人，对于由您的上述使用行为而造成的任何直接的、间接的、偶发的、特殊的、衍生的或惩罚性的损失（包括任何数据的丢失），均不承担任何责任，无论是基于任何相关责任理论的论述，也无论 Google 或其代表是否已被告知或应该知道存在这种损失的可能性。
+
+
+<devsite-heading ds-is="heading" text="12. 赔偿" id="12.-赔偿_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">12. 赔偿<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+12.1 在法律允许的最大限度内，您同意对于因：(a) 您使用 SDK；(b) 您基于 SDK 开发的任何应用侵犯了他人的任何版权、商标、商业秘密、商业外观、专利或其他知识产权，或者诽谤他人、侵犯他人的公开权或隐私权；以及 (c) 您不遵守本许可协议的任何条款而导致的任何索赔、法律行动、法律诉讼或诉讼过程，以及所有损失、索赔要求、损害、费用和支出（包括合理的律师费用），向 Google、其关联公司，以及其各自的董事、主管人员、员工和代理人作出辩护和赔偿，使其免受损害。
+
+
+<devsite-heading ds-is="heading" text="13. 许可协议的变更" id="13.-许可协议的变更_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">13. 许可协议的变更<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+13.1 Google 在发布新版 SDK 时可能会对本许可协议进行一些变更。进行这类变更后，Google 将在发布 SDK 的网站上提供新版许可协议。
+
+
+<devsite-heading ds-is="heading" text="14. 一般法律条款" id="14.-一般法律条款_1" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">14. 一般法律条款<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+14.1 本许可协议构成您和 Google 之间的完整法律协议，且您对 SDK 的使用（不包括 Google 根据单独书面协议为您提供的任何服务）将受本协议的约束。同时，本协议将完全取代您和 Google 之前就 SDK 达成的任何协议。
+
+14.2 您同意，即使 Google 未行使或强制执行本许可协议中所述的（或 Google 根据任何适用法律所享有的）任何法定权利或补救措施，也不应视为 Google 正式自动放弃这些权利，Google 仍然可以行使这些权利或采取相应补救措施。
+
+14.3 如果对此类事项有司法决定权的任何法院判定本许可协议的任何规定无效，则我们会在不影响本许可协议其余部分的情况下，将该规定从本许可协议中移除。本许可协议的其余规定仍然具有效力和作用。
+
+14.4 您了解并同意，Google 的每一个子公司都应为本许可协议的第三方受益人，此类其他公司应有权直接执行本许可协议，并根据本许可协议的规定主张相关权益（或有利于他们的权利）。除此之外，其他个人或公司不应成为本许可协议的第三方受益人。
+
+14.5 出口限制。SDK 会受到美国出口法律和法规的限制。您必须遵守所有适用于 SDK 的国内以及国际出口法律和法规。这些法律包括对目的地、最终用户和最终用途的限制。
+
+14.6 未经另一方的事先书面许可，您或 Google 不得转让或转移本许可协议中授予的权利。未经另一方的事先书面许可，您或 Google 不得将本许可协议中规定的责任或义务委派给他人。
+
+14.7 本许可协议以及由本许可协议而产生的您与 Google 之间的关系应受到美国加利福尼亚州法律的约束，但不考虑该州的法律冲突条款。您和 Google 同意服从加利福尼亚州圣克拉拉县法院的专有司法辖权，以此来解决由本许可协议产生的任何法律事务。尽管如此，您同意 Google 仍然可以向任何司法辖区内的法院请求禁令救济（或同等类型的紧急法律救济）。
+
+
+<em>2016 年 12 月 9 日</em>
+    </div>
+    <div>
+      <input id="agree_ndk_win64_download" class="agreebox" type="checkbox" name="agree" value="1">
+      <label id="agreeLabel" for="agree_ndk_win64_download">我已阅读并同意上述条款及条件</label>
+      <p class="not-agreed">
+        <a class="button button-disabled"><span class="lang-float">下载 Android NDK
+                for Windows（64 位）           </span></a></p>
+      <p class="agreed">
+        <a class="button button-blue
+             devsite-dialog-close gc-analytics-event" href="https://dl.google.com/android/repository/android-ndk-r18b-windows-x86_64.zip">下载 Android NDK
+           for
+            Windows（64 位）
+                  </a></p>
+      <p><em>android-ndk-r18b-windows-x86_64.zip</em></p>
+
+    </div>
+  </div>
+</devsite-dialog>
+     
+
+<devsite-dialog ds-is="dialog" id="ndk_mac64_download" class="dac-download-dialog" aria-label="Android NDK">
+  <div class="devsite-dialog-contents">
+    <h3>Android NDK</h3>
+    <p>在下载之前，您必须同意下列条款和条件。</p>
+    <div class="dialog-content-stretch sdk-terms"><devsite-heading ds-is="heading" text="条款及条件" id="条款及条件_2" level="h2" link="" class="" back-to-top=""><h2 class="hide-from-toc" is-upgraded="">条款及条件<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+以下是 Android 软件开发套件许可协议
+
+<devsite-heading ds-is="heading" text="1. 简介" id="1.-简介_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">1. 简介<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+1.1 Google 会按照本许可协议的条款向您授予使用 Android 软件开发套件（在本许可协议中称为“SDK”，具体包括 Android 系统文件、打包的 API 和 Google API 插件）的许可。本许可协议是您和 Google 之间就您使用 SDK 而达成的具有法律约束力的合约。
+
+1.2 “Android”是指通过 Android 开放源代码项目（项目网址为：http://source.android.com/）提供的用于设备的 Android 软件堆栈（会不时更新）。
+
+1.3 “兼容实现”设备是指满足以下条件的任何 Android 设备：(i) 符合 Android 兼容性定义文档（位于 Android 兼容性网站 http://source.android.com/compatibility 上，会不时更新）的要求；(ii) 成功通过 Android 兼容性测试套件 (CTS) 测试。
+
+1.4 “Google”是指 Google LLC（一家注册于美国特拉华州的公司），其主要营业地点为 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States。
+
+
+<devsite-heading ds-is="heading" text="2. 接受本许可协议" id="2.-接受本许可协议_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">2. 接受本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+2.1 要使用 SDK，您必须先同意本许可协议。如果您不接受本许可协议，则无法使用 SDK。
+
+2.2 点击接受，即表示您同意本许可协议的条款。
+
+2.3 如果美国或其他国家/地区（包括您所居住的或您使用 SDK 时所在的国家/地区）的法律禁止您作为自然人获取 SDK，则您无法使用 SDK，也无法接受本许可协议。
+
+2.4 如果您代表您的雇主或其他实体同意接受本许可协议的约束，则表示您声明并担保，您拥有完整的法定权力，可使您的雇主或此类实体受本许可协议的约束。如果您未获得必要的授权，则不得代表雇主或其他实体接受本许可协议或使用 SDK。
+
+
+<devsite-heading ds-is="heading" text="3. Google 授予的 SDK 许可" id="3.-google-授予的-sdk-许可_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">3. Google 授予的 SDK 许可<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+3.1 根据本许可协议的条款，Google 会向您授予在全球范围内适用的、免版税、不可转让、非独家、不可分许可的有限许可，仅限您出于 Android 兼容实现的目的将 SDK 用于开发应用。
+
+3.2 您不能使用此 SDK 开发用于其他平台（包括 Android 的非兼容实现）的应用或开发其他 SDK。只要此 SDK 没有用于此目的，您可以随意开发用于其他平台（包括 Android 的非兼容实现）的应用。
+
+3.3 您同意 Google 或第三方拥有该 SDK 的所有法定权利、所有权和利益，包括该 SDK 中存在的所有知识产权。“知识产权”是指专利法、版权法、商业秘密法、商标法以及任何和所有其他所有权法案中现行规定的任何及所有权利。Google 保留未明确授予您的所有权利。
+
+3.4 您不得将 SDK 用于本许可协议未明确许可的任何目的。除非适用的第三方许可提出要求，否则您不得对 SDK 或其任何部分进行复制（备份目的除外）、修改、改编、分发、反编译、反向工程、反汇编或创建其衍生作品。
+
+3.5 使用、复制及分发已获开放源代码软件许可的 SDK 组件的行为仅受该开放源代码软件许可相关条款（而非本许可协议）的制约。
+
+3.6 您同意 Google 可在不事先通知您的情况下，变更所提供的 SDK 的形式和性质，且 SDK 的后续版本可能会与基于旧版 SDK 开发的应用不兼容。您同意，一般情况下，Google 可在不事先通知您的情况下自行决定（永久性或暂时）停止为您或用户提供 SDK（或 SDK 中的任何功能）。
+
+3.7 本许可协议中的任何内容均未授权您使用 Google 的任何商品名、商标、服务商标、徽标、域名或其他显著品牌特征。
+
+3.8 对于 SDK 中可能附带或包含的任何所有权声明（包括版权和商标通告），您同意不会移除、模糊处理或更改这些声明。
+
+<devsite-heading ds-is="heading" text="4. 您对 SDK 的使用" id="4.-您对-sdk-的使用_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">4. 您对 SDK 的使用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+4.1 Google 同意，本许可协议并不会让 Google 从您（或您的许可人）那里获得您使用 SDK 开发的任何软件应用中包含的或相关的任何权利、所有权或权益（包括这些应用中存在的所有知识产权）。
+
+4.2 您同意，只在 (a) 本许可协议和 (b) 相关司法辖区内的任何适用法律法规或公认的惯例或准则（包括任何与从美国或其他相关国家/地区进口或向其出口数据或软件相关的法律）允许的情况下使用 SDK 以及编写应用。
+
+4.3 您同意，如果您使用 SDK 针对一般公众用户开发应用，将会保护这些用户的隐私权和合法权利。如果用户向您提供用户名、密码或其他登录信息或个人信息，那么您不仅必须让用户知道此类信息将仅供您的应用使用，还必须向这些用户提供从法律意义上来说足够充分的隐私权声明和保护。如果您的应用存储了用户提供的个人信息或敏感信息，则必须对这类信息进行安全存储。如果用户为您的应用提供了 Google 帐号信息，那么您的应用只能在用户许可的情况下使用该信息访问用户的 Google 帐号，并且只能将其用于用户许可的限定用途。
+
+4.4 您同意不会在使用 SDK 时从事或参与任何干扰、中断、破坏或未经授权即访问任何第三方（包括但不限于 Google 或任何移动通信运营商）的服务器、网络或其他财产/服务的活动；这一规定亦适用于应用的开发或发布活动。
+
+4.5 您同意，对于您通过 Android 和/或 Android 版应用创建、传输或显示的任何数据、内容或资源，以及由此造成的任何后果（包括 Google 可能会蒙受的任何损失或损害），您要承担全部责任，且 Google 对您或任何第三方不承担任何责任。
+
+4.6 您同意，对于未按本许可协议、任何适用的第三方合同或服务条款或任何适用法律法规的规定履行义务的任何行为以及由此造成的后果（包括 Google 或任何第三方可能会蒙受的损失或损害），您承担全部责任，且 Google 对您或任何第三方均不承担任何责任。
+
+
+<devsite-heading ds-is="heading" text="5. 您的开发者凭据" id="5.-您的开发者凭据_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">5. 您的开发者凭据<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+5.1 您同意负责维护 Google 向您发放或您自行选择的任何开发者凭据的机密性，并且对使用您的开发者凭据开发的所有应用承担全部责任。
+
+
+<devsite-heading ds-is="heading" text="6. 隐私权和信息" id="6.-隐私权和信息_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">6. 隐私权和信息<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+6.1 为了不断地对 SDK 进行创新和改进，Google 可能会通过软件收集某些使用情况统计信息，包括但不限于唯一标识符、关联 IP 地址、软件版本号，以及关于 SDK 中正在使用的工具和/服务以及使用方式的信息。在收集任何此类信息之前，SDK 都会通知您并征求您的同意。未经您同意，Google 不会擅自收集此类信息。
+
+6.2 Google 会对收集的数据进行汇总分析，从而改进 SDK，并会依照 Google 隐私权政策保留这些数据。
+
+
+<devsite-heading ds-is="heading" text="7. 第三方应用" id="7.-第三方应用_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">7. 第三方应用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+7.1 如果您要使用 SDK 运行由第三方开发的应用，或者运行会访问由第三方提供的数据、内容或资源的应用，则您须同意 Google 对于此类应用、数据、内容或资源概不负责。您了解，对于您可通过此类第三方应用访问的所有数据、内容或资源，均由最初提供这些内容的人员承担全部责任；对于您因使用或访问任何此类第三方应用、数据、内容或资源而可能蒙受的任何损失或损坏，Google 概不负责。
+
+7.2 您应了解，通过此类第三方应用向您提供的数据、内容和资源可能会受到提供者（或代表他们的其他个人或公司）所拥有的知识产权的保护。除非相关所有者明确授予您相应权限，否则您不得修改、出租、租赁、借贷、出售、分发此类数据、内容或资源（无论是全部还是部分），或在其基础上创建衍生作品。
+
+7.3 您同意，您对此类第三方应用、数据、内容或资源的使用行为可能会受到您与相关第三方之间达成的独立条款的制约。在这种情况下，本许可协议不会影响您与此类第三方之间的法律关系。
+
+
+<devsite-heading ds-is="heading" text="8. 使用 Android API" id="8.-使用-android-api_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">8. 使用 Android API<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+8.1 Google 数据 API
+
+8.1.1 如果您使用任何 API 从 Google 检索数据，则您同意此类数据可能受到 Google 或数据提供方（或代表他们的其他个人或公司）所拥有的知识产权的保护。使用任何此类 API 时，您可能会受到附加服务条款的制约。除非相关服务条款明确允许，否则您不得修改、出租、租赁、借贷、出售、分发此类数据（无论是全部还是部分），或在其基础上创建衍生作品。
+
+8.1.2 如果您使用任何 API 从 Google 检索用户数据，则您同意仅在用户明确同意的情况下检索数据，且仅会将其用于用户许可的限定用途。
+
+
+<devsite-heading ds-is="heading" text="9. 终止本许可协议" id="9.-终止本许可协议_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">9. 终止本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+9.1 除非您或 Google 根据下述条款终止本许可协议，否则本协议将持续有效。
+
+9.2 如果您希望终止本许可协议，只需停止使用 SDK 和任何相关开发者凭据即可。
+
+9.3 如果出现以下任意情况，Google 可随时终止本许可协议：
+(A) 您违反了本许可协议的规定；或
+(B) 根据法律 Goolge 必须终止本协议；或
+(C) 与 Google 合作向您提供 SDK 的特定部分（例如 API）的合作伙伴终止了与 Google 的合作关系，或者不再向您提供 SDK 的特定部分；或
+(D) Google 决定不再向您所居住的国家/地区，或您使用相关服务时所在的国家/地区提供 SDK 或 SDK 的特定部分，或者 Google 单方面判定向您提供 SDK 或特定的 SDK 服务不再具有商业可行性。
+
+9.4 本许可协议终止时，您和 Google 曾共同从中受益、曾须遵守的所有法定权利、义务和责任（或在本许可协议有效期间产生的或明确规定将无限期延续的权利、义务和责任）将不会受到影响，并且第 14.7 节中的规定将继续无限期地适用于此类权利、义务和责任。
+
+
+<devsite-heading ds-is="heading" text="10. 免责声明" id="10.-免责声明_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">10. 免责声明<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+10.1 您明确了解并同意自行承担使用 SDK 的风险，并且 SDK 是在“现状”和“可提供”的基础上提供的，Google 不提供任何形式的担保。
+
+10.2 对于 SDK 以及通过 SDK 下载或获取的任何内容的使用，您必须自行承担全部责任和风险；对于因这种使用行为而导致的对您的计算机系统或其他设备的损害或数据丢失，您必须承担全部责任。
+
+10.3 Google 进一步明确声明，Google 不提供任何形式的明示或隐含的担保和条件，包括但不限于对适销性、特定用途的适用性以及不侵犯他人权利的隐含担保和条件。
+
+
+<devsite-heading ds-is="heading" text="11. 责任限制" id="11.-责任限制_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">11. 责任限制<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+11.1 您明确了解并同意，Google 及其子公司和关联公司，以及其许可人，对于由您的上述使用行为而造成的任何直接的、间接的、偶发的、特殊的、衍生的或惩罚性的损失（包括任何数据的丢失），均不承担任何责任，无论是基于任何相关责任理论的论述，也无论 Google 或其代表是否已被告知或应该知道存在这种损失的可能性。
+
+
+<devsite-heading ds-is="heading" text="12. 赔偿" id="12.-赔偿_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">12. 赔偿<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+12.1 在法律允许的最大限度内，您同意对于因：(a) 您使用 SDK；(b) 您基于 SDK 开发的任何应用侵犯了他人的任何版权、商标、商业秘密、商业外观、专利或其他知识产权，或者诽谤他人、侵犯他人的公开权或隐私权；以及 (c) 您不遵守本许可协议的任何条款而导致的任何索赔、法律行动、法律诉讼或诉讼过程，以及所有损失、索赔要求、损害、费用和支出（包括合理的律师费用），向 Google、其关联公司，以及其各自的董事、主管人员、员工和代理人作出辩护和赔偿，使其免受损害。
+
+
+<devsite-heading ds-is="heading" text="13. 许可协议的变更" id="13.-许可协议的变更_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">13. 许可协议的变更<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+13.1 Google 在发布新版 SDK 时可能会对本许可协议进行一些变更。进行这类变更后，Google 将在发布 SDK 的网站上提供新版许可协议。
+
+
+<devsite-heading ds-is="heading" text="14. 一般法律条款" id="14.-一般法律条款_2" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">14. 一般法律条款<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+14.1 本许可协议构成您和 Google 之间的完整法律协议，且您对 SDK 的使用（不包括 Google 根据单独书面协议为您提供的任何服务）将受本协议的约束。同时，本协议将完全取代您和 Google 之前就 SDK 达成的任何协议。
+
+14.2 您同意，即使 Google 未行使或强制执行本许可协议中所述的（或 Google 根据任何适用法律所享有的）任何法定权利或补救措施，也不应视为 Google 正式自动放弃这些权利，Google 仍然可以行使这些权利或采取相应补救措施。
+
+14.3 如果对此类事项有司法决定权的任何法院判定本许可协议的任何规定无效，则我们会在不影响本许可协议其余部分的情况下，将该规定从本许可协议中移除。本许可协议的其余规定仍然具有效力和作用。
+
+14.4 您了解并同意，Google 的每一个子公司都应为本许可协议的第三方受益人，此类其他公司应有权直接执行本许可协议，并根据本许可协议的规定主张相关权益（或有利于他们的权利）。除此之外，其他个人或公司不应成为本许可协议的第三方受益人。
+
+14.5 出口限制。SDK 会受到美国出口法律和法规的限制。您必须遵守所有适用于 SDK 的国内以及国际出口法律和法规。这些法律包括对目的地、最终用户和最终用途的限制。
+
+14.6 未经另一方的事先书面许可，您或 Google 不得转让或转移本许可协议中授予的权利。未经另一方的事先书面许可，您或 Google 不得将本许可协议中规定的责任或义务委派给他人。
+
+14.7 本许可协议以及由本许可协议而产生的您与 Google 之间的关系应受到美国加利福尼亚州法律的约束，但不考虑该州的法律冲突条款。您和 Google 同意服从加利福尼亚州圣克拉拉县法院的专有司法辖权，以此来解决由本许可协议产生的任何法律事务。尽管如此，您同意 Google 仍然可以向任何司法辖区内的法院请求禁令救济（或同等类型的紧急法律救济）。
+
+
+<em>2016 年 12 月 9 日</em>
+    </div>
+    <div>
+      <input id="agree_ndk_mac64_download" class="agreebox" type="checkbox" name="agree" value="1">
+      <label id="agreeLabel" for="agree_ndk_mac64_download">我已阅读并同意上述条款及条件</label>
+      <p class="not-agreed">
+        <a class="button button-disabled"><span class="lang-float">下载 Android NDK
+                for Mac           </span></a></p>
+      <p class="agreed">
+        <a class="button button-blue
+             devsite-dialog-close gc-analytics-event" href="https://dl.google.com/android/repository/android-ndk-r18b-darwin-x86_64.zip">下载 Android NDK
+           for
+            Mac
+                  </a></p>
+      <p><em>android-ndk-r18b-darwin-x86_64.zip</em></p>
+
+    </div>
+  </div>
+</devsite-dialog>
+     
+
+<devsite-dialog ds-is="dialog" id="ndk_linux64_download" class="dac-download-dialog" aria-label="Android NDK">
+  <div class="devsite-dialog-contents">
+    <h3>Android NDK</h3>
+    <p>在下载之前，您必须同意下列条款和条件。</p>
+    <div class="dialog-content-stretch sdk-terms"><devsite-heading ds-is="heading" text="条款及条件" id="条款及条件_3" level="h2" link="" class="" back-to-top=""><h2 class="hide-from-toc" is-upgraded="">条款及条件<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+以下是 Android 软件开发套件许可协议
+
+<devsite-heading ds-is="heading" text="1. 简介" id="1.-简介_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">1. 简介<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+1.1 Google 会按照本许可协议的条款向您授予使用 Android 软件开发套件（在本许可协议中称为“SDK”，具体包括 Android 系统文件、打包的 API 和 Google API 插件）的许可。本许可协议是您和 Google 之间就您使用 SDK 而达成的具有法律约束力的合约。
+
+1.2 “Android”是指通过 Android 开放源代码项目（项目网址为：http://source.android.com/）提供的用于设备的 Android 软件堆栈（会不时更新）。
+
+1.3 “兼容实现”设备是指满足以下条件的任何 Android 设备：(i) 符合 Android 兼容性定义文档（位于 Android 兼容性网站 http://source.android.com/compatibility 上，会不时更新）的要求；(ii) 成功通过 Android 兼容性测试套件 (CTS) 测试。
+
+1.4 “Google”是指 Google LLC（一家注册于美国特拉华州的公司），其主要营业地点为 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States。
+
+
+<devsite-heading ds-is="heading" text="2. 接受本许可协议" id="2.-接受本许可协议_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">2. 接受本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+2.1 要使用 SDK，您必须先同意本许可协议。如果您不接受本许可协议，则无法使用 SDK。
+
+2.2 点击接受，即表示您同意本许可协议的条款。
+
+2.3 如果美国或其他国家/地区（包括您所居住的或您使用 SDK 时所在的国家/地区）的法律禁止您作为自然人获取 SDK，则您无法使用 SDK，也无法接受本许可协议。
+
+2.4 如果您代表您的雇主或其他实体同意接受本许可协议的约束，则表示您声明并担保，您拥有完整的法定权力，可使您的雇主或此类实体受本许可协议的约束。如果您未获得必要的授权，则不得代表雇主或其他实体接受本许可协议或使用 SDK。
+
+
+<devsite-heading ds-is="heading" text="3. Google 授予的 SDK 许可" id="3.-google-授予的-sdk-许可_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">3. Google 授予的 SDK 许可<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+3.1 根据本许可协议的条款，Google 会向您授予在全球范围内适用的、免版税、不可转让、非独家、不可分许可的有限许可，仅限您出于 Android 兼容实现的目的将 SDK 用于开发应用。
+
+3.2 您不能使用此 SDK 开发用于其他平台（包括 Android 的非兼容实现）的应用或开发其他 SDK。只要此 SDK 没有用于此目的，您可以随意开发用于其他平台（包括 Android 的非兼容实现）的应用。
+
+3.3 您同意 Google 或第三方拥有该 SDK 的所有法定权利、所有权和利益，包括该 SDK 中存在的所有知识产权。“知识产权”是指专利法、版权法、商业秘密法、商标法以及任何和所有其他所有权法案中现行规定的任何及所有权利。Google 保留未明确授予您的所有权利。
+
+3.4 您不得将 SDK 用于本许可协议未明确许可的任何目的。除非适用的第三方许可提出要求，否则您不得对 SDK 或其任何部分进行复制（备份目的除外）、修改、改编、分发、反编译、反向工程、反汇编或创建其衍生作品。
+
+3.5 使用、复制及分发已获开放源代码软件许可的 SDK 组件的行为仅受该开放源代码软件许可相关条款（而非本许可协议）的制约。
+
+3.6 您同意 Google 可在不事先通知您的情况下，变更所提供的 SDK 的形式和性质，且 SDK 的后续版本可能会与基于旧版 SDK 开发的应用不兼容。您同意，一般情况下，Google 可在不事先通知您的情况下自行决定（永久性或暂时）停止为您或用户提供 SDK（或 SDK 中的任何功能）。
+
+3.7 本许可协议中的任何内容均未授权您使用 Google 的任何商品名、商标、服务商标、徽标、域名或其他显著品牌特征。
+
+3.8 对于 SDK 中可能附带或包含的任何所有权声明（包括版权和商标通告），您同意不会移除、模糊处理或更改这些声明。
+
+<devsite-heading ds-is="heading" text="4. 您对 SDK 的使用" id="4.-您对-sdk-的使用_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">4. 您对 SDK 的使用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+4.1 Google 同意，本许可协议并不会让 Google 从您（或您的许可人）那里获得您使用 SDK 开发的任何软件应用中包含的或相关的任何权利、所有权或权益（包括这些应用中存在的所有知识产权）。
+
+4.2 您同意，只在 (a) 本许可协议和 (b) 相关司法辖区内的任何适用法律法规或公认的惯例或准则（包括任何与从美国或其他相关国家/地区进口或向其出口数据或软件相关的法律）允许的情况下使用 SDK 以及编写应用。
+
+4.3 您同意，如果您使用 SDK 针对一般公众用户开发应用，将会保护这些用户的隐私权和合法权利。如果用户向您提供用户名、密码或其他登录信息或个人信息，那么您不仅必须让用户知道此类信息将仅供您的应用使用，还必须向这些用户提供从法律意义上来说足够充分的隐私权声明和保护。如果您的应用存储了用户提供的个人信息或敏感信息，则必须对这类信息进行安全存储。如果用户为您的应用提供了 Google 帐号信息，那么您的应用只能在用户许可的情况下使用该信息访问用户的 Google 帐号，并且只能将其用于用户许可的限定用途。
+
+4.4 您同意不会在使用 SDK 时从事或参与任何干扰、中断、破坏或未经授权即访问任何第三方（包括但不限于 Google 或任何移动通信运营商）的服务器、网络或其他财产/服务的活动；这一规定亦适用于应用的开发或发布活动。
+
+4.5 您同意，对于您通过 Android 和/或 Android 版应用创建、传输或显示的任何数据、内容或资源，以及由此造成的任何后果（包括 Google 可能会蒙受的任何损失或损害），您要承担全部责任，且 Google 对您或任何第三方不承担任何责任。
+
+4.6 您同意，对于未按本许可协议、任何适用的第三方合同或服务条款或任何适用法律法规的规定履行义务的任何行为以及由此造成的后果（包括 Google 或任何第三方可能会蒙受的损失或损害），您承担全部责任，且 Google 对您或任何第三方均不承担任何责任。
+
+
+<devsite-heading ds-is="heading" text="5. 您的开发者凭据" id="5.-您的开发者凭据_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">5. 您的开发者凭据<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+5.1 您同意负责维护 Google 向您发放或您自行选择的任何开发者凭据的机密性，并且对使用您的开发者凭据开发的所有应用承担全部责任。
+
+
+<devsite-heading ds-is="heading" text="6. 隐私权和信息" id="6.-隐私权和信息_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">6. 隐私权和信息<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+6.1 为了不断地对 SDK 进行创新和改进，Google 可能会通过软件收集某些使用情况统计信息，包括但不限于唯一标识符、关联 IP 地址、软件版本号，以及关于 SDK 中正在使用的工具和/服务以及使用方式的信息。在收集任何此类信息之前，SDK 都会通知您并征求您的同意。未经您同意，Google 不会擅自收集此类信息。
+
+6.2 Google 会对收集的数据进行汇总分析，从而改进 SDK，并会依照 Google 隐私权政策保留这些数据。
+
+
+<devsite-heading ds-is="heading" text="7. 第三方应用" id="7.-第三方应用_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">7. 第三方应用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+7.1 如果您要使用 SDK 运行由第三方开发的应用，或者运行会访问由第三方提供的数据、内容或资源的应用，则您须同意 Google 对于此类应用、数据、内容或资源概不负责。您了解，对于您可通过此类第三方应用访问的所有数据、内容或资源，均由最初提供这些内容的人员承担全部责任；对于您因使用或访问任何此类第三方应用、数据、内容或资源而可能蒙受的任何损失或损坏，Google 概不负责。
+
+7.2 您应了解，通过此类第三方应用向您提供的数据、内容和资源可能会受到提供者（或代表他们的其他个人或公司）所拥有的知识产权的保护。除非相关所有者明确授予您相应权限，否则您不得修改、出租、租赁、借贷、出售、分发此类数据、内容或资源（无论是全部还是部分），或在其基础上创建衍生作品。
+
+7.3 您同意，您对此类第三方应用、数据、内容或资源的使用行为可能会受到您与相关第三方之间达成的独立条款的制约。在这种情况下，本许可协议不会影响您与此类第三方之间的法律关系。
+
+
+<devsite-heading ds-is="heading" text="8. 使用 Android API" id="8.-使用-android-api_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">8. 使用 Android API<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+8.1 Google 数据 API
+
+8.1.1 如果您使用任何 API 从 Google 检索数据，则您同意此类数据可能受到 Google 或数据提供方（或代表他们的其他个人或公司）所拥有的知识产权的保护。使用任何此类 API 时，您可能会受到附加服务条款的制约。除非相关服务条款明确允许，否则您不得修改、出租、租赁、借贷、出售、分发此类数据（无论是全部还是部分），或在其基础上创建衍生作品。
+
+8.1.2 如果您使用任何 API 从 Google 检索用户数据，则您同意仅在用户明确同意的情况下检索数据，且仅会将其用于用户许可的限定用途。
+
+
+<devsite-heading ds-is="heading" text="9. 终止本许可协议" id="9.-终止本许可协议_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">9. 终止本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+9.1 除非您或 Google 根据下述条款终止本许可协议，否则本协议将持续有效。
+
+9.2 如果您希望终止本许可协议，只需停止使用 SDK 和任何相关开发者凭据即可。
+
+9.3 如果出现以下任意情况，Google 可随时终止本许可协议：
+(A) 您违反了本许可协议的规定；或
+(B) 根据法律 Goolge 必须终止本协议；或
+(C) 与 Google 合作向您提供 SDK 的特定部分（例如 API）的合作伙伴终止了与 Google 的合作关系，或者不再向您提供 SDK 的特定部分；或
+(D) Google 决定不再向您所居住的国家/地区，或您使用相关服务时所在的国家/地区提供 SDK 或 SDK 的特定部分，或者 Google 单方面判定向您提供 SDK 或特定的 SDK 服务不再具有商业可行性。
+
+9.4 本许可协议终止时，您和 Google 曾共同从中受益、曾须遵守的所有法定权利、义务和责任（或在本许可协议有效期间产生的或明确规定将无限期延续的权利、义务和责任）将不会受到影响，并且第 14.7 节中的规定将继续无限期地适用于此类权利、义务和责任。
+
+
+<devsite-heading ds-is="heading" text="10. 免责声明" id="10.-免责声明_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">10. 免责声明<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+10.1 您明确了解并同意自行承担使用 SDK 的风险，并且 SDK 是在“现状”和“可提供”的基础上提供的，Google 不提供任何形式的担保。
+
+10.2 对于 SDK 以及通过 SDK 下载或获取的任何内容的使用，您必须自行承担全部责任和风险；对于因这种使用行为而导致的对您的计算机系统或其他设备的损害或数据丢失，您必须承担全部责任。
+
+10.3 Google 进一步明确声明，Google 不提供任何形式的明示或隐含的担保和条件，包括但不限于对适销性、特定用途的适用性以及不侵犯他人权利的隐含担保和条件。
+
+
+<devsite-heading ds-is="heading" text="11. 责任限制" id="11.-责任限制_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">11. 责任限制<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+11.1 您明确了解并同意，Google 及其子公司和关联公司，以及其许可人，对于由您的上述使用行为而造成的任何直接的、间接的、偶发的、特殊的、衍生的或惩罚性的损失（包括任何数据的丢失），均不承担任何责任，无论是基于任何相关责任理论的论述，也无论 Google 或其代表是否已被告知或应该知道存在这种损失的可能性。
+
+
+<devsite-heading ds-is="heading" text="12. 赔偿" id="12.-赔偿_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">12. 赔偿<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+12.1 在法律允许的最大限度内，您同意对于因：(a) 您使用 SDK；(b) 您基于 SDK 开发的任何应用侵犯了他人的任何版权、商标、商业秘密、商业外观、专利或其他知识产权，或者诽谤他人、侵犯他人的公开权或隐私权；以及 (c) 您不遵守本许可协议的任何条款而导致的任何索赔、法律行动、法律诉讼或诉讼过程，以及所有损失、索赔要求、损害、费用和支出（包括合理的律师费用），向 Google、其关联公司，以及其各自的董事、主管人员、员工和代理人作出辩护和赔偿，使其免受损害。
+
+
+<devsite-heading ds-is="heading" text="13. 许可协议的变更" id="13.-许可协议的变更_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">13. 许可协议的变更<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+13.1 Google 在发布新版 SDK 时可能会对本许可协议进行一些变更。进行这类变更后，Google 将在发布 SDK 的网站上提供新版许可协议。
+
+
+<devsite-heading ds-is="heading" text="14. 一般法律条款" id="14.-一般法律条款_3" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">14. 一般法律条款<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+14.1 本许可协议构成您和 Google 之间的完整法律协议，且您对 SDK 的使用（不包括 Google 根据单独书面协议为您提供的任何服务）将受本协议的约束。同时，本协议将完全取代您和 Google 之前就 SDK 达成的任何协议。
+
+14.2 您同意，即使 Google 未行使或强制执行本许可协议中所述的（或 Google 根据任何适用法律所享有的）任何法定权利或补救措施，也不应视为 Google 正式自动放弃这些权利，Google 仍然可以行使这些权利或采取相应补救措施。
+
+14.3 如果对此类事项有司法决定权的任何法院判定本许可协议的任何规定无效，则我们会在不影响本许可协议其余部分的情况下，将该规定从本许可协议中移除。本许可协议的其余规定仍然具有效力和作用。
+
+14.4 您了解并同意，Google 的每一个子公司都应为本许可协议的第三方受益人，此类其他公司应有权直接执行本许可协议，并根据本许可协议的规定主张相关权益（或有利于他们的权利）。除此之外，其他个人或公司不应成为本许可协议的第三方受益人。
+
+14.5 出口限制。SDK 会受到美国出口法律和法规的限制。您必须遵守所有适用于 SDK 的国内以及国际出口法律和法规。这些法律包括对目的地、最终用户和最终用途的限制。
+
+14.6 未经另一方的事先书面许可，您或 Google 不得转让或转移本许可协议中授予的权利。未经另一方的事先书面许可，您或 Google 不得将本许可协议中规定的责任或义务委派给他人。
+
+14.7 本许可协议以及由本许可协议而产生的您与 Google 之间的关系应受到美国加利福尼亚州法律的约束，但不考虑该州的法律冲突条款。您和 Google 同意服从加利福尼亚州圣克拉拉县法院的专有司法辖权，以此来解决由本许可协议产生的任何法律事务。尽管如此，您同意 Google 仍然可以向任何司法辖区内的法院请求禁令救济（或同等类型的紧急法律救济）。
+
+
+<em>2016 年 12 月 9 日</em>
+    </div>
+    <div>
+      <input id="agree_ndk_linux64_download" class="agreebox" type="checkbox" name="agree" value="1">
+      <label id="agreeLabel" for="agree_ndk_linux64_download">我已阅读并同意上述条款及条件</label>
+      <p class="not-agreed">
+        <a class="button button-disabled"><span class="lang-float">下载 Android NDK
+                for Linux           </span></a></p>
+      <p class="agreed">
+        <a class="button button-blue
+             devsite-dialog-close gc-analytics-event" href="https://dl.google.com/android/repository/android-ndk-r18b-linux-x86_64.zip">下载 Android NDK
+           for
+            Linux
+                  </a></p>
+      <p><em>android-ndk-r18b-linux-x86_64.zip</em></p>
+
+    </div>
+  </div>
+</devsite-dialog>
+       
+
+<devsite-dialog ds-is="dialog" id="ndk_beta_win32_download" class="dac-download-dialog" aria-label="Android NDK 测试版">
+  <div class="devsite-dialog-contents">
+    <h3>Android NDK 测试版</h3>
+    <p>在下载之前，您必须同意下列条款和条件。</p>
+    <div class="dialog-content-stretch sdk-terms"><devsite-heading ds-is="heading" text="条款及条件" id="条款及条件_4" level="h2" link="" class="" back-to-top=""><h2 class="hide-from-toc" is-upgraded="">条款及条件<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+以下是 Android 软件开发套件许可协议
+
+<devsite-heading ds-is="heading" text="1. 简介" id="1.-简介_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">1. 简介<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+1.1 Google 会按照本许可协议的条款向您授予使用 Android 软件开发套件（在本许可协议中称为“SDK”，具体包括 Android 系统文件、打包的 API 和 Google API 插件）的许可。本许可协议是您和 Google 之间就您使用 SDK 而达成的具有法律约束力的合约。
+
+1.2 “Android”是指通过 Android 开放源代码项目（项目网址为：http://source.android.com/）提供的用于设备的 Android 软件堆栈（会不时更新）。
+
+1.3 “兼容实现”设备是指满足以下条件的任何 Android 设备：(i) 符合 Android 兼容性定义文档（位于 Android 兼容性网站 http://source.android.com/compatibility 上，会不时更新）的要求；(ii) 成功通过 Android 兼容性测试套件 (CTS) 测试。
+
+1.4 “Google”是指 Google LLC（一家注册于美国特拉华州的公司），其主要营业地点为 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States。
+
+
+<devsite-heading ds-is="heading" text="2. 接受本许可协议" id="2.-接受本许可协议_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">2. 接受本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+2.1 要使用 SDK，您必须先同意本许可协议。如果您不接受本许可协议，则无法使用 SDK。
+
+2.2 点击接受，即表示您同意本许可协议的条款。
+
+2.3 如果美国或其他国家/地区（包括您所居住的或您使用 SDK 时所在的国家/地区）的法律禁止您作为自然人获取 SDK，则您无法使用 SDK，也无法接受本许可协议。
+
+2.4 如果您代表您的雇主或其他实体同意接受本许可协议的约束，则表示您声明并担保，您拥有完整的法定权力，可使您的雇主或此类实体受本许可协议的约束。如果您未获得必要的授权，则不得代表雇主或其他实体接受本许可协议或使用 SDK。
+
+
+<devsite-heading ds-is="heading" text="3. Google 授予的 SDK 许可" id="3.-google-授予的-sdk-许可_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">3. Google 授予的 SDK 许可<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+3.1 根据本许可协议的条款，Google 会向您授予在全球范围内适用的、免版税、不可转让、非独家、不可分许可的有限许可，仅限您出于 Android 兼容实现的目的将 SDK 用于开发应用。
+
+3.2 您不能使用此 SDK 开发用于其他平台（包括 Android 的非兼容实现）的应用或开发其他 SDK。只要此 SDK 没有用于此目的，您可以随意开发用于其他平台（包括 Android 的非兼容实现）的应用。
+
+3.3 您同意 Google 或第三方拥有该 SDK 的所有法定权利、所有权和利益，包括该 SDK 中存在的所有知识产权。“知识产权”是指专利法、版权法、商业秘密法、商标法以及任何和所有其他所有权法案中现行规定的任何及所有权利。Google 保留未明确授予您的所有权利。
+
+3.4 您不得将 SDK 用于本许可协议未明确许可的任何目的。除非适用的第三方许可提出要求，否则您不得对 SDK 或其任何部分进行复制（备份目的除外）、修改、改编、分发、反编译、反向工程、反汇编或创建其衍生作品。
+
+3.5 使用、复制及分发已获开放源代码软件许可的 SDK 组件的行为仅受该开放源代码软件许可相关条款（而非本许可协议）的制约。
+
+3.6 您同意 Google 可在不事先通知您的情况下，变更所提供的 SDK 的形式和性质，且 SDK 的后续版本可能会与基于旧版 SDK 开发的应用不兼容。您同意，一般情况下，Google 可在不事先通知您的情况下自行决定（永久性或暂时）停止为您或用户提供 SDK（或 SDK 中的任何功能）。
+
+3.7 本许可协议中的任何内容均未授权您使用 Google 的任何商品名、商标、服务商标、徽标、域名或其他显著品牌特征。
+
+3.8 对于 SDK 中可能附带或包含的任何所有权声明（包括版权和商标通告），您同意不会移除、模糊处理或更改这些声明。
+
+<devsite-heading ds-is="heading" text="4. 您对 SDK 的使用" id="4.-您对-sdk-的使用_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">4. 您对 SDK 的使用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+4.1 Google 同意，本许可协议并不会让 Google 从您（或您的许可人）那里获得您使用 SDK 开发的任何软件应用中包含的或相关的任何权利、所有权或权益（包括这些应用中存在的所有知识产权）。
+
+4.2 您同意，只在 (a) 本许可协议和 (b) 相关司法辖区内的任何适用法律法规或公认的惯例或准则（包括任何与从美国或其他相关国家/地区进口或向其出口数据或软件相关的法律）允许的情况下使用 SDK 以及编写应用。
+
+4.3 您同意，如果您使用 SDK 针对一般公众用户开发应用，将会保护这些用户的隐私权和合法权利。如果用户向您提供用户名、密码或其他登录信息或个人信息，那么您不仅必须让用户知道此类信息将仅供您的应用使用，还必须向这些用户提供从法律意义上来说足够充分的隐私权声明和保护。如果您的应用存储了用户提供的个人信息或敏感信息，则必须对这类信息进行安全存储。如果用户为您的应用提供了 Google 帐号信息，那么您的应用只能在用户许可的情况下使用该信息访问用户的 Google 帐号，并且只能将其用于用户许可的限定用途。
+
+4.4 您同意不会在使用 SDK 时从事或参与任何干扰、中断、破坏或未经授权即访问任何第三方（包括但不限于 Google 或任何移动通信运营商）的服务器、网络或其他财产/服务的活动；这一规定亦适用于应用的开发或发布活动。
+
+4.5 您同意，对于您通过 Android 和/或 Android 版应用创建、传输或显示的任何数据、内容或资源，以及由此造成的任何后果（包括 Google 可能会蒙受的任何损失或损害），您要承担全部责任，且 Google 对您或任何第三方不承担任何责任。
+
+4.6 您同意，对于未按本许可协议、任何适用的第三方合同或服务条款或任何适用法律法规的规定履行义务的任何行为以及由此造成的后果（包括 Google 或任何第三方可能会蒙受的损失或损害），您承担全部责任，且 Google 对您或任何第三方均不承担任何责任。
+
+
+<devsite-heading ds-is="heading" text="5. 您的开发者凭据" id="5.-您的开发者凭据_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">5. 您的开发者凭据<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+5.1 您同意负责维护 Google 向您发放或您自行选择的任何开发者凭据的机密性，并且对使用您的开发者凭据开发的所有应用承担全部责任。
+
+
+<devsite-heading ds-is="heading" text="6. 隐私权和信息" id="6.-隐私权和信息_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">6. 隐私权和信息<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+6.1 为了不断地对 SDK 进行创新和改进，Google 可能会通过软件收集某些使用情况统计信息，包括但不限于唯一标识符、关联 IP 地址、软件版本号，以及关于 SDK 中正在使用的工具和/服务以及使用方式的信息。在收集任何此类信息之前，SDK 都会通知您并征求您的同意。未经您同意，Google 不会擅自收集此类信息。
+
+6.2 Google 会对收集的数据进行汇总分析，从而改进 SDK，并会依照 Google 隐私权政策保留这些数据。
+
+
+<devsite-heading ds-is="heading" text="7. 第三方应用" id="7.-第三方应用_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">7. 第三方应用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+7.1 如果您要使用 SDK 运行由第三方开发的应用，或者运行会访问由第三方提供的数据、内容或资源的应用，则您须同意 Google 对于此类应用、数据、内容或资源概不负责。您了解，对于您可通过此类第三方应用访问的所有数据、内容或资源，均由最初提供这些内容的人员承担全部责任；对于您因使用或访问任何此类第三方应用、数据、内容或资源而可能蒙受的任何损失或损坏，Google 概不负责。
+
+7.2 您应了解，通过此类第三方应用向您提供的数据、内容和资源可能会受到提供者（或代表他们的其他个人或公司）所拥有的知识产权的保护。除非相关所有者明确授予您相应权限，否则您不得修改、出租、租赁、借贷、出售、分发此类数据、内容或资源（无论是全部还是部分），或在其基础上创建衍生作品。
+
+7.3 您同意，您对此类第三方应用、数据、内容或资源的使用行为可能会受到您与相关第三方之间达成的独立条款的制约。在这种情况下，本许可协议不会影响您与此类第三方之间的法律关系。
+
+
+<devsite-heading ds-is="heading" text="8. 使用 Android API" id="8.-使用-android-api_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">8. 使用 Android API<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+8.1 Google 数据 API
+
+8.1.1 如果您使用任何 API 从 Google 检索数据，则您同意此类数据可能受到 Google 或数据提供方（或代表他们的其他个人或公司）所拥有的知识产权的保护。使用任何此类 API 时，您可能会受到附加服务条款的制约。除非相关服务条款明确允许，否则您不得修改、出租、租赁、借贷、出售、分发此类数据（无论是全部还是部分），或在其基础上创建衍生作品。
+
+8.1.2 如果您使用任何 API 从 Google 检索用户数据，则您同意仅在用户明确同意的情况下检索数据，且仅会将其用于用户许可的限定用途。
+
+
+<devsite-heading ds-is="heading" text="9. 终止本许可协议" id="9.-终止本许可协议_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">9. 终止本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+9.1 除非您或 Google 根据下述条款终止本许可协议，否则本协议将持续有效。
+
+9.2 如果您希望终止本许可协议，只需停止使用 SDK 和任何相关开发者凭据即可。
+
+9.3 如果出现以下任意情况，Google 可随时终止本许可协议：
+(A) 您违反了本许可协议的规定；或
+(B) 根据法律 Goolge 必须终止本协议；或
+(C) 与 Google 合作向您提供 SDK 的特定部分（例如 API）的合作伙伴终止了与 Google 的合作关系，或者不再向您提供 SDK 的特定部分；或
+(D) Google 决定不再向您所居住的国家/地区，或您使用相关服务时所在的国家/地区提供 SDK 或 SDK 的特定部分，或者 Google 单方面判定向您提供 SDK 或特定的 SDK 服务不再具有商业可行性。
+
+9.4 本许可协议终止时，您和 Google 曾共同从中受益、曾须遵守的所有法定权利、义务和责任（或在本许可协议有效期间产生的或明确规定将无限期延续的权利、义务和责任）将不会受到影响，并且第 14.7 节中的规定将继续无限期地适用于此类权利、义务和责任。
+
+
+<devsite-heading ds-is="heading" text="10. 免责声明" id="10.-免责声明_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">10. 免责声明<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+10.1 您明确了解并同意自行承担使用 SDK 的风险，并且 SDK 是在“现状”和“可提供”的基础上提供的，Google 不提供任何形式的担保。
+
+10.2 对于 SDK 以及通过 SDK 下载或获取的任何内容的使用，您必须自行承担全部责任和风险；对于因这种使用行为而导致的对您的计算机系统或其他设备的损害或数据丢失，您必须承担全部责任。
+
+10.3 Google 进一步明确声明，Google 不提供任何形式的明示或隐含的担保和条件，包括但不限于对适销性、特定用途的适用性以及不侵犯他人权利的隐含担保和条件。
+
+
+<devsite-heading ds-is="heading" text="11. 责任限制" id="11.-责任限制_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">11. 责任限制<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+11.1 您明确了解并同意，Google 及其子公司和关联公司，以及其许可人，对于由您的上述使用行为而造成的任何直接的、间接的、偶发的、特殊的、衍生的或惩罚性的损失（包括任何数据的丢失），均不承担任何责任，无论是基于任何相关责任理论的论述，也无论 Google 或其代表是否已被告知或应该知道存在这种损失的可能性。
+
+
+<devsite-heading ds-is="heading" text="12. 赔偿" id="12.-赔偿_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">12. 赔偿<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+12.1 在法律允许的最大限度内，您同意对于因：(a) 您使用 SDK；(b) 您基于 SDK 开发的任何应用侵犯了他人的任何版权、商标、商业秘密、商业外观、专利或其他知识产权，或者诽谤他人、侵犯他人的公开权或隐私权；以及 (c) 您不遵守本许可协议的任何条款而导致的任何索赔、法律行动、法律诉讼或诉讼过程，以及所有损失、索赔要求、损害、费用和支出（包括合理的律师费用），向 Google、其关联公司，以及其各自的董事、主管人员、员工和代理人作出辩护和赔偿，使其免受损害。
+
+
+<devsite-heading ds-is="heading" text="13. 许可协议的变更" id="13.-许可协议的变更_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">13. 许可协议的变更<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+13.1 Google 在发布新版 SDK 时可能会对本许可协议进行一些变更。进行这类变更后，Google 将在发布 SDK 的网站上提供新版许可协议。
+
+
+<devsite-heading ds-is="heading" text="14. 一般法律条款" id="14.-一般法律条款_4" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">14. 一般法律条款<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+14.1 本许可协议构成您和 Google 之间的完整法律协议，且您对 SDK 的使用（不包括 Google 根据单独书面协议为您提供的任何服务）将受本协议的约束。同时，本协议将完全取代您和 Google 之前就 SDK 达成的任何协议。
+
+14.2 您同意，即使 Google 未行使或强制执行本许可协议中所述的（或 Google 根据任何适用法律所享有的）任何法定权利或补救措施，也不应视为 Google 正式自动放弃这些权利，Google 仍然可以行使这些权利或采取相应补救措施。
+
+14.3 如果对此类事项有司法决定权的任何法院判定本许可协议的任何规定无效，则我们会在不影响本许可协议其余部分的情况下，将该规定从本许可协议中移除。本许可协议的其余规定仍然具有效力和作用。
+
+14.4 您了解并同意，Google 的每一个子公司都应为本许可协议的第三方受益人，此类其他公司应有权直接执行本许可协议，并根据本许可协议的规定主张相关权益（或有利于他们的权利）。除此之外，其他个人或公司不应成为本许可协议的第三方受益人。
+
+14.5 出口限制。SDK 会受到美国出口法律和法规的限制。您必须遵守所有适用于 SDK 的国内以及国际出口法律和法规。这些法律包括对目的地、最终用户和最终用途的限制。
+
+14.6 未经另一方的事先书面许可，您或 Google 不得转让或转移本许可协议中授予的权利。未经另一方的事先书面许可，您或 Google 不得将本许可协议中规定的责任或义务委派给他人。
+
+14.7 本许可协议以及由本许可协议而产生的您与 Google 之间的关系应受到美国加利福尼亚州法律的约束，但不考虑该州的法律冲突条款。您和 Google 同意服从加利福尼亚州圣克拉拉县法院的专有司法辖权，以此来解决由本许可协议产生的任何法律事务。尽管如此，您同意 Google 仍然可以向任何司法辖区内的法院请求禁令救济（或同等类型的紧急法律救济）。
+
+
+<em>2016 年 12 月 9 日</em>
+    </div>
+    <div>
+      <input id="agree_ndk_beta_win32_download" class="agreebox" type="checkbox" name="agree" value="1">
+      <label id="agreeLabel" for="agree_ndk_beta_win32_download">我已阅读并同意上述条款及条件</label>
+      <p class="not-agreed">
+        <a class="button button-disabled"><span class="lang-float">下载 Android NDK 测试版
+                for Windows（32 位）           </span></a></p>
+      <p class="agreed">
+        <a class="button button-blue
+             devsite-dialog-close gc-analytics-event" href="https://dl.google.com/android/repository/android-ndk-r19-beta2-windows-x86.zip">下载 Android NDK 测试版
+           for
+            Windows（32 位）
+                  </a></p>
+      <p><em>android-ndk-r19-beta2-windows-x86.zip</em></p>
+
+    </div>
+  </div>
+</devsite-dialog>
+     
+
+<devsite-dialog ds-is="dialog" id="ndk_beta_win64_download" class="dac-download-dialog" aria-label="Android NDK 测试版">
+  <div class="devsite-dialog-contents">
+    <h3>Android NDK 测试版</h3>
+    <p>在下载之前，您必须同意下列条款和条件。</p>
+    <div class="dialog-content-stretch sdk-terms"><devsite-heading ds-is="heading" text="条款及条件" id="条款及条件_5" level="h2" link="" class="" back-to-top=""><h2 class="hide-from-toc" is-upgraded="">条款及条件<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+以下是 Android 软件开发套件许可协议
+
+<devsite-heading ds-is="heading" text="1. 简介" id="1.-简介_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">1. 简介<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+1.1 Google 会按照本许可协议的条款向您授予使用 Android 软件开发套件（在本许可协议中称为“SDK”，具体包括 Android 系统文件、打包的 API 和 Google API 插件）的许可。本许可协议是您和 Google 之间就您使用 SDK 而达成的具有法律约束力的合约。
+
+1.2 “Android”是指通过 Android 开放源代码项目（项目网址为：http://source.android.com/）提供的用于设备的 Android 软件堆栈（会不时更新）。
+
+1.3 “兼容实现”设备是指满足以下条件的任何 Android 设备：(i) 符合 Android 兼容性定义文档（位于 Android 兼容性网站 http://source.android.com/compatibility 上，会不时更新）的要求；(ii) 成功通过 Android 兼容性测试套件 (CTS) 测试。
+
+1.4 “Google”是指 Google LLC（一家注册于美国特拉华州的公司），其主要营业地点为 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States。
+
+
+<devsite-heading ds-is="heading" text="2. 接受本许可协议" id="2.-接受本许可协议_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">2. 接受本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+2.1 要使用 SDK，您必须先同意本许可协议。如果您不接受本许可协议，则无法使用 SDK。
+
+2.2 点击接受，即表示您同意本许可协议的条款。
+
+2.3 如果美国或其他国家/地区（包括您所居住的或您使用 SDK 时所在的国家/地区）的法律禁止您作为自然人获取 SDK，则您无法使用 SDK，也无法接受本许可协议。
+
+2.4 如果您代表您的雇主或其他实体同意接受本许可协议的约束，则表示您声明并担保，您拥有完整的法定权力，可使您的雇主或此类实体受本许可协议的约束。如果您未获得必要的授权，则不得代表雇主或其他实体接受本许可协议或使用 SDK。
+
+
+<devsite-heading ds-is="heading" text="3. Google 授予的 SDK 许可" id="3.-google-授予的-sdk-许可_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">3. Google 授予的 SDK 许可<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+3.1 根据本许可协议的条款，Google 会向您授予在全球范围内适用的、免版税、不可转让、非独家、不可分许可的有限许可，仅限您出于 Android 兼容实现的目的将 SDK 用于开发应用。
+
+3.2 您不能使用此 SDK 开发用于其他平台（包括 Android 的非兼容实现）的应用或开发其他 SDK。只要此 SDK 没有用于此目的，您可以随意开发用于其他平台（包括 Android 的非兼容实现）的应用。
+
+3.3 您同意 Google 或第三方拥有该 SDK 的所有法定权利、所有权和利益，包括该 SDK 中存在的所有知识产权。“知识产权”是指专利法、版权法、商业秘密法、商标法以及任何和所有其他所有权法案中现行规定的任何及所有权利。Google 保留未明确授予您的所有权利。
+
+3.4 您不得将 SDK 用于本许可协议未明确许可的任何目的。除非适用的第三方许可提出要求，否则您不得对 SDK 或其任何部分进行复制（备份目的除外）、修改、改编、分发、反编译、反向工程、反汇编或创建其衍生作品。
+
+3.5 使用、复制及分发已获开放源代码软件许可的 SDK 组件的行为仅受该开放源代码软件许可相关条款（而非本许可协议）的制约。
+
+3.6 您同意 Google 可在不事先通知您的情况下，变更所提供的 SDK 的形式和性质，且 SDK 的后续版本可能会与基于旧版 SDK 开发的应用不兼容。您同意，一般情况下，Google 可在不事先通知您的情况下自行决定（永久性或暂时）停止为您或用户提供 SDK（或 SDK 中的任何功能）。
+
+3.7 本许可协议中的任何内容均未授权您使用 Google 的任何商品名、商标、服务商标、徽标、域名或其他显著品牌特征。
+
+3.8 对于 SDK 中可能附带或包含的任何所有权声明（包括版权和商标通告），您同意不会移除、模糊处理或更改这些声明。
+
+<devsite-heading ds-is="heading" text="4. 您对 SDK 的使用" id="4.-您对-sdk-的使用_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">4. 您对 SDK 的使用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+4.1 Google 同意，本许可协议并不会让 Google 从您（或您的许可人）那里获得您使用 SDK 开发的任何软件应用中包含的或相关的任何权利、所有权或权益（包括这些应用中存在的所有知识产权）。
+
+4.2 您同意，只在 (a) 本许可协议和 (b) 相关司法辖区内的任何适用法律法规或公认的惯例或准则（包括任何与从美国或其他相关国家/地区进口或向其出口数据或软件相关的法律）允许的情况下使用 SDK 以及编写应用。
+
+4.3 您同意，如果您使用 SDK 针对一般公众用户开发应用，将会保护这些用户的隐私权和合法权利。如果用户向您提供用户名、密码或其他登录信息或个人信息，那么您不仅必须让用户知道此类信息将仅供您的应用使用，还必须向这些用户提供从法律意义上来说足够充分的隐私权声明和保护。如果您的应用存储了用户提供的个人信息或敏感信息，则必须对这类信息进行安全存储。如果用户为您的应用提供了 Google 帐号信息，那么您的应用只能在用户许可的情况下使用该信息访问用户的 Google 帐号，并且只能将其用于用户许可的限定用途。
+
+4.4 您同意不会在使用 SDK 时从事或参与任何干扰、中断、破坏或未经授权即访问任何第三方（包括但不限于 Google 或任何移动通信运营商）的服务器、网络或其他财产/服务的活动；这一规定亦适用于应用的开发或发布活动。
+
+4.5 您同意，对于您通过 Android 和/或 Android 版应用创建、传输或显示的任何数据、内容或资源，以及由此造成的任何后果（包括 Google 可能会蒙受的任何损失或损害），您要承担全部责任，且 Google 对您或任何第三方不承担任何责任。
+
+4.6 您同意，对于未按本许可协议、任何适用的第三方合同或服务条款或任何适用法律法规的规定履行义务的任何行为以及由此造成的后果（包括 Google 或任何第三方可能会蒙受的损失或损害），您承担全部责任，且 Google 对您或任何第三方均不承担任何责任。
+
+
+<devsite-heading ds-is="heading" text="5. 您的开发者凭据" id="5.-您的开发者凭据_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">5. 您的开发者凭据<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+5.1 您同意负责维护 Google 向您发放或您自行选择的任何开发者凭据的机密性，并且对使用您的开发者凭据开发的所有应用承担全部责任。
+
+
+<devsite-heading ds-is="heading" text="6. 隐私权和信息" id="6.-隐私权和信息_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">6. 隐私权和信息<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+6.1 为了不断地对 SDK 进行创新和改进，Google 可能会通过软件收集某些使用情况统计信息，包括但不限于唯一标识符、关联 IP 地址、软件版本号，以及关于 SDK 中正在使用的工具和/服务以及使用方式的信息。在收集任何此类信息之前，SDK 都会通知您并征求您的同意。未经您同意，Google 不会擅自收集此类信息。
+
+6.2 Google 会对收集的数据进行汇总分析，从而改进 SDK，并会依照 Google 隐私权政策保留这些数据。
+
+
+<devsite-heading ds-is="heading" text="7. 第三方应用" id="7.-第三方应用_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">7. 第三方应用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+7.1 如果您要使用 SDK 运行由第三方开发的应用，或者运行会访问由第三方提供的数据、内容或资源的应用，则您须同意 Google 对于此类应用、数据、内容或资源概不负责。您了解，对于您可通过此类第三方应用访问的所有数据、内容或资源，均由最初提供这些内容的人员承担全部责任；对于您因使用或访问任何此类第三方应用、数据、内容或资源而可能蒙受的任何损失或损坏，Google 概不负责。
+
+7.2 您应了解，通过此类第三方应用向您提供的数据、内容和资源可能会受到提供者（或代表他们的其他个人或公司）所拥有的知识产权的保护。除非相关所有者明确授予您相应权限，否则您不得修改、出租、租赁、借贷、出售、分发此类数据、内容或资源（无论是全部还是部分），或在其基础上创建衍生作品。
+
+7.3 您同意，您对此类第三方应用、数据、内容或资源的使用行为可能会受到您与相关第三方之间达成的独立条款的制约。在这种情况下，本许可协议不会影响您与此类第三方之间的法律关系。
+
+
+<devsite-heading ds-is="heading" text="8. 使用 Android API" id="8.-使用-android-api_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">8. 使用 Android API<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+8.1 Google 数据 API
+
+8.1.1 如果您使用任何 API 从 Google 检索数据，则您同意此类数据可能受到 Google 或数据提供方（或代表他们的其他个人或公司）所拥有的知识产权的保护。使用任何此类 API 时，您可能会受到附加服务条款的制约。除非相关服务条款明确允许，否则您不得修改、出租、租赁、借贷、出售、分发此类数据（无论是全部还是部分），或在其基础上创建衍生作品。
+
+8.1.2 如果您使用任何 API 从 Google 检索用户数据，则您同意仅在用户明确同意的情况下检索数据，且仅会将其用于用户许可的限定用途。
+
+
+<devsite-heading ds-is="heading" text="9. 终止本许可协议" id="9.-终止本许可协议_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">9. 终止本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+9.1 除非您或 Google 根据下述条款终止本许可协议，否则本协议将持续有效。
+
+9.2 如果您希望终止本许可协议，只需停止使用 SDK 和任何相关开发者凭据即可。
+
+9.3 如果出现以下任意情况，Google 可随时终止本许可协议：
+(A) 您违反了本许可协议的规定；或
+(B) 根据法律 Goolge 必须终止本协议；或
+(C) 与 Google 合作向您提供 SDK 的特定部分（例如 API）的合作伙伴终止了与 Google 的合作关系，或者不再向您提供 SDK 的特定部分；或
+(D) Google 决定不再向您所居住的国家/地区，或您使用相关服务时所在的国家/地区提供 SDK 或 SDK 的特定部分，或者 Google 单方面判定向您提供 SDK 或特定的 SDK 服务不再具有商业可行性。
+
+9.4 本许可协议终止时，您和 Google 曾共同从中受益、曾须遵守的所有法定权利、义务和责任（或在本许可协议有效期间产生的或明确规定将无限期延续的权利、义务和责任）将不会受到影响，并且第 14.7 节中的规定将继续无限期地适用于此类权利、义务和责任。
+
+
+<devsite-heading ds-is="heading" text="10. 免责声明" id="10.-免责声明_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">10. 免责声明<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+10.1 您明确了解并同意自行承担使用 SDK 的风险，并且 SDK 是在“现状”和“可提供”的基础上提供的，Google 不提供任何形式的担保。
+
+10.2 对于 SDK 以及通过 SDK 下载或获取的任何内容的使用，您必须自行承担全部责任和风险；对于因这种使用行为而导致的对您的计算机系统或其他设备的损害或数据丢失，您必须承担全部责任。
+
+10.3 Google 进一步明确声明，Google 不提供任何形式的明示或隐含的担保和条件，包括但不限于对适销性、特定用途的适用性以及不侵犯他人权利的隐含担保和条件。
+
+
+<devsite-heading ds-is="heading" text="11. 责任限制" id="11.-责任限制_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">11. 责任限制<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+11.1 您明确了解并同意，Google 及其子公司和关联公司，以及其许可人，对于由您的上述使用行为而造成的任何直接的、间接的、偶发的、特殊的、衍生的或惩罚性的损失（包括任何数据的丢失），均不承担任何责任，无论是基于任何相关责任理论的论述，也无论 Google 或其代表是否已被告知或应该知道存在这种损失的可能性。
+
+
+<devsite-heading ds-is="heading" text="12. 赔偿" id="12.-赔偿_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">12. 赔偿<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+12.1 在法律允许的最大限度内，您同意对于因：(a) 您使用 SDK；(b) 您基于 SDK 开发的任何应用侵犯了他人的任何版权、商标、商业秘密、商业外观、专利或其他知识产权，或者诽谤他人、侵犯他人的公开权或隐私权；以及 (c) 您不遵守本许可协议的任何条款而导致的任何索赔、法律行动、法律诉讼或诉讼过程，以及所有损失、索赔要求、损害、费用和支出（包括合理的律师费用），向 Google、其关联公司，以及其各自的董事、主管人员、员工和代理人作出辩护和赔偿，使其免受损害。
+
+
+<devsite-heading ds-is="heading" text="13. 许可协议的变更" id="13.-许可协议的变更_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">13. 许可协议的变更<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+13.1 Google 在发布新版 SDK 时可能会对本许可协议进行一些变更。进行这类变更后，Google 将在发布 SDK 的网站上提供新版许可协议。
+
+
+<devsite-heading ds-is="heading" text="14. 一般法律条款" id="14.-一般法律条款_5" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">14. 一般法律条款<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+14.1 本许可协议构成您和 Google 之间的完整法律协议，且您对 SDK 的使用（不包括 Google 根据单独书面协议为您提供的任何服务）将受本协议的约束。同时，本协议将完全取代您和 Google 之前就 SDK 达成的任何协议。
+
+14.2 您同意，即使 Google 未行使或强制执行本许可协议中所述的（或 Google 根据任何适用法律所享有的）任何法定权利或补救措施，也不应视为 Google 正式自动放弃这些权利，Google 仍然可以行使这些权利或采取相应补救措施。
+
+14.3 如果对此类事项有司法决定权的任何法院判定本许可协议的任何规定无效，则我们会在不影响本许可协议其余部分的情况下，将该规定从本许可协议中移除。本许可协议的其余规定仍然具有效力和作用。
+
+14.4 您了解并同意，Google 的每一个子公司都应为本许可协议的第三方受益人，此类其他公司应有权直接执行本许可协议，并根据本许可协议的规定主张相关权益（或有利于他们的权利）。除此之外，其他个人或公司不应成为本许可协议的第三方受益人。
+
+14.5 出口限制。SDK 会受到美国出口法律和法规的限制。您必须遵守所有适用于 SDK 的国内以及国际出口法律和法规。这些法律包括对目的地、最终用户和最终用途的限制。
+
+14.6 未经另一方的事先书面许可，您或 Google 不得转让或转移本许可协议中授予的权利。未经另一方的事先书面许可，您或 Google 不得将本许可协议中规定的责任或义务委派给他人。
+
+14.7 本许可协议以及由本许可协议而产生的您与 Google 之间的关系应受到美国加利福尼亚州法律的约束，但不考虑该州的法律冲突条款。您和 Google 同意服从加利福尼亚州圣克拉拉县法院的专有司法辖权，以此来解决由本许可协议产生的任何法律事务。尽管如此，您同意 Google 仍然可以向任何司法辖区内的法院请求禁令救济（或同等类型的紧急法律救济）。
+
+
+<em>2016 年 12 月 9 日</em>
+    </div>
+    <div>
+      <input id="agree_ndk_beta_win64_download" class="agreebox" type="checkbox" name="agree" value="1">
+      <label id="agreeLabel" for="agree_ndk_beta_win64_download">我已阅读并同意上述条款及条件</label>
+      <p class="not-agreed">
+        <a class="button button-disabled"><span class="lang-float">下载 Android NDK 测试版
+                for Windows（64 位）           </span></a></p>
+      <p class="agreed">
+        <a class="button button-blue
+             devsite-dialog-close gc-analytics-event" href="https://dl.google.com/android/repository/android-ndk-r19-beta2-windows-x86_64.zip">下载 Android NDK 测试版
+           for
+            Windows（64 位）
+                  </a></p>
+      <p><em>android-ndk-r19-beta2-windows-x86_64.zip</em></p>
+
+    </div>
+  </div>
+</devsite-dialog>
+     
+
+<devsite-dialog ds-is="dialog" id="ndk_beta_mac64_download" class="dac-download-dialog" aria-label="Android NDK 测试版">
+  <div class="devsite-dialog-contents">
+    <h3>Android NDK 测试版</h3>
+    <p>在下载之前，您必须同意下列条款和条件。</p>
+    <div class="dialog-content-stretch sdk-terms"><devsite-heading ds-is="heading" text="条款及条件" id="条款及条件_6" level="h2" link="" class="" back-to-top=""><h2 class="hide-from-toc" is-upgraded="">条款及条件<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+以下是 Android 软件开发套件许可协议
+
+<devsite-heading ds-is="heading" text="1. 简介" id="1.-简介_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">1. 简介<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+1.1 Google 会按照本许可协议的条款向您授予使用 Android 软件开发套件（在本许可协议中称为“SDK”，具体包括 Android 系统文件、打包的 API 和 Google API 插件）的许可。本许可协议是您和 Google 之间就您使用 SDK 而达成的具有法律约束力的合约。
+
+1.2 “Android”是指通过 Android 开放源代码项目（项目网址为：http://source.android.com/）提供的用于设备的 Android 软件堆栈（会不时更新）。
+
+1.3 “兼容实现”设备是指满足以下条件的任何 Android 设备：(i) 符合 Android 兼容性定义文档（位于 Android 兼容性网站 http://source.android.com/compatibility 上，会不时更新）的要求；(ii) 成功通过 Android 兼容性测试套件 (CTS) 测试。
+
+1.4 “Google”是指 Google LLC（一家注册于美国特拉华州的公司），其主要营业地点为 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States。
+
+
+<devsite-heading ds-is="heading" text="2. 接受本许可协议" id="2.-接受本许可协议_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">2. 接受本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+2.1 要使用 SDK，您必须先同意本许可协议。如果您不接受本许可协议，则无法使用 SDK。
+
+2.2 点击接受，即表示您同意本许可协议的条款。
+
+2.3 如果美国或其他国家/地区（包括您所居住的或您使用 SDK 时所在的国家/地区）的法律禁止您作为自然人获取 SDK，则您无法使用 SDK，也无法接受本许可协议。
+
+2.4 如果您代表您的雇主或其他实体同意接受本许可协议的约束，则表示您声明并担保，您拥有完整的法定权力，可使您的雇主或此类实体受本许可协议的约束。如果您未获得必要的授权，则不得代表雇主或其他实体接受本许可协议或使用 SDK。
+
+
+<devsite-heading ds-is="heading" text="3. Google 授予的 SDK 许可" id="3.-google-授予的-sdk-许可_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">3. Google 授予的 SDK 许可<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+3.1 根据本许可协议的条款，Google 会向您授予在全球范围内适用的、免版税、不可转让、非独家、不可分许可的有限许可，仅限您出于 Android 兼容实现的目的将 SDK 用于开发应用。
+
+3.2 您不能使用此 SDK 开发用于其他平台（包括 Android 的非兼容实现）的应用或开发其他 SDK。只要此 SDK 没有用于此目的，您可以随意开发用于其他平台（包括 Android 的非兼容实现）的应用。
+
+3.3 您同意 Google 或第三方拥有该 SDK 的所有法定权利、所有权和利益，包括该 SDK 中存在的所有知识产权。“知识产权”是指专利法、版权法、商业秘密法、商标法以及任何和所有其他所有权法案中现行规定的任何及所有权利。Google 保留未明确授予您的所有权利。
+
+3.4 您不得将 SDK 用于本许可协议未明确许可的任何目的。除非适用的第三方许可提出要求，否则您不得对 SDK 或其任何部分进行复制（备份目的除外）、修改、改编、分发、反编译、反向工程、反汇编或创建其衍生作品。
+
+3.5 使用、复制及分发已获开放源代码软件许可的 SDK 组件的行为仅受该开放源代码软件许可相关条款（而非本许可协议）的制约。
+
+3.6 您同意 Google 可在不事先通知您的情况下，变更所提供的 SDK 的形式和性质，且 SDK 的后续版本可能会与基于旧版 SDK 开发的应用不兼容。您同意，一般情况下，Google 可在不事先通知您的情况下自行决定（永久性或暂时）停止为您或用户提供 SDK（或 SDK 中的任何功能）。
+
+3.7 本许可协议中的任何内容均未授权您使用 Google 的任何商品名、商标、服务商标、徽标、域名或其他显著品牌特征。
+
+3.8 对于 SDK 中可能附带或包含的任何所有权声明（包括版权和商标通告），您同意不会移除、模糊处理或更改这些声明。
+
+<devsite-heading ds-is="heading" text="4. 您对 SDK 的使用" id="4.-您对-sdk-的使用_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">4. 您对 SDK 的使用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+4.1 Google 同意，本许可协议并不会让 Google 从您（或您的许可人）那里获得您使用 SDK 开发的任何软件应用中包含的或相关的任何权利、所有权或权益（包括这些应用中存在的所有知识产权）。
+
+4.2 您同意，只在 (a) 本许可协议和 (b) 相关司法辖区内的任何适用法律法规或公认的惯例或准则（包括任何与从美国或其他相关国家/地区进口或向其出口数据或软件相关的法律）允许的情况下使用 SDK 以及编写应用。
+
+4.3 您同意，如果您使用 SDK 针对一般公众用户开发应用，将会保护这些用户的隐私权和合法权利。如果用户向您提供用户名、密码或其他登录信息或个人信息，那么您不仅必须让用户知道此类信息将仅供您的应用使用，还必须向这些用户提供从法律意义上来说足够充分的隐私权声明和保护。如果您的应用存储了用户提供的个人信息或敏感信息，则必须对这类信息进行安全存储。如果用户为您的应用提供了 Google 帐号信息，那么您的应用只能在用户许可的情况下使用该信息访问用户的 Google 帐号，并且只能将其用于用户许可的限定用途。
+
+4.4 您同意不会在使用 SDK 时从事或参与任何干扰、中断、破坏或未经授权即访问任何第三方（包括但不限于 Google 或任何移动通信运营商）的服务器、网络或其他财产/服务的活动；这一规定亦适用于应用的开发或发布活动。
+
+4.5 您同意，对于您通过 Android 和/或 Android 版应用创建、传输或显示的任何数据、内容或资源，以及由此造成的任何后果（包括 Google 可能会蒙受的任何损失或损害），您要承担全部责任，且 Google 对您或任何第三方不承担任何责任。
+
+4.6 您同意，对于未按本许可协议、任何适用的第三方合同或服务条款或任何适用法律法规的规定履行义务的任何行为以及由此造成的后果（包括 Google 或任何第三方可能会蒙受的损失或损害），您承担全部责任，且 Google 对您或任何第三方均不承担任何责任。
+
+
+<devsite-heading ds-is="heading" text="5. 您的开发者凭据" id="5.-您的开发者凭据_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">5. 您的开发者凭据<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+5.1 您同意负责维护 Google 向您发放或您自行选择的任何开发者凭据的机密性，并且对使用您的开发者凭据开发的所有应用承担全部责任。
+
+
+<devsite-heading ds-is="heading" text="6. 隐私权和信息" id="6.-隐私权和信息_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">6. 隐私权和信息<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+6.1 为了不断地对 SDK 进行创新和改进，Google 可能会通过软件收集某些使用情况统计信息，包括但不限于唯一标识符、关联 IP 地址、软件版本号，以及关于 SDK 中正在使用的工具和/服务以及使用方式的信息。在收集任何此类信息之前，SDK 都会通知您并征求您的同意。未经您同意，Google 不会擅自收集此类信息。
+
+6.2 Google 会对收集的数据进行汇总分析，从而改进 SDK，并会依照 Google 隐私权政策保留这些数据。
+
+
+<devsite-heading ds-is="heading" text="7. 第三方应用" id="7.-第三方应用_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">7. 第三方应用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+7.1 如果您要使用 SDK 运行由第三方开发的应用，或者运行会访问由第三方提供的数据、内容或资源的应用，则您须同意 Google 对于此类应用、数据、内容或资源概不负责。您了解，对于您可通过此类第三方应用访问的所有数据、内容或资源，均由最初提供这些内容的人员承担全部责任；对于您因使用或访问任何此类第三方应用、数据、内容或资源而可能蒙受的任何损失或损坏，Google 概不负责。
+
+7.2 您应了解，通过此类第三方应用向您提供的数据、内容和资源可能会受到提供者（或代表他们的其他个人或公司）所拥有的知识产权的保护。除非相关所有者明确授予您相应权限，否则您不得修改、出租、租赁、借贷、出售、分发此类数据、内容或资源（无论是全部还是部分），或在其基础上创建衍生作品。
+
+7.3 您同意，您对此类第三方应用、数据、内容或资源的使用行为可能会受到您与相关第三方之间达成的独立条款的制约。在这种情况下，本许可协议不会影响您与此类第三方之间的法律关系。
+
+
+<devsite-heading ds-is="heading" text="8. 使用 Android API" id="8.-使用-android-api_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">8. 使用 Android API<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+8.1 Google 数据 API
+
+8.1.1 如果您使用任何 API 从 Google 检索数据，则您同意此类数据可能受到 Google 或数据提供方（或代表他们的其他个人或公司）所拥有的知识产权的保护。使用任何此类 API 时，您可能会受到附加服务条款的制约。除非相关服务条款明确允许，否则您不得修改、出租、租赁、借贷、出售、分发此类数据（无论是全部还是部分），或在其基础上创建衍生作品。
+
+8.1.2 如果您使用任何 API 从 Google 检索用户数据，则您同意仅在用户明确同意的情况下检索数据，且仅会将其用于用户许可的限定用途。
+
+
+<devsite-heading ds-is="heading" text="9. 终止本许可协议" id="9.-终止本许可协议_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">9. 终止本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+9.1 除非您或 Google 根据下述条款终止本许可协议，否则本协议将持续有效。
+
+9.2 如果您希望终止本许可协议，只需停止使用 SDK 和任何相关开发者凭据即可。
+
+9.3 如果出现以下任意情况，Google 可随时终止本许可协议：
+(A) 您违反了本许可协议的规定；或
+(B) 根据法律 Goolge 必须终止本协议；或
+(C) 与 Google 合作向您提供 SDK 的特定部分（例如 API）的合作伙伴终止了与 Google 的合作关系，或者不再向您提供 SDK 的特定部分；或
+(D) Google 决定不再向您所居住的国家/地区，或您使用相关服务时所在的国家/地区提供 SDK 或 SDK 的特定部分，或者 Google 单方面判定向您提供 SDK 或特定的 SDK 服务不再具有商业可行性。
+
+9.4 本许可协议终止时，您和 Google 曾共同从中受益、曾须遵守的所有法定权利、义务和责任（或在本许可协议有效期间产生的或明确规定将无限期延续的权利、义务和责任）将不会受到影响，并且第 14.7 节中的规定将继续无限期地适用于此类权利、义务和责任。
+
+
+<devsite-heading ds-is="heading" text="10. 免责声明" id="10.-免责声明_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">10. 免责声明<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+10.1 您明确了解并同意自行承担使用 SDK 的风险，并且 SDK 是在“现状”和“可提供”的基础上提供的，Google 不提供任何形式的担保。
+
+10.2 对于 SDK 以及通过 SDK 下载或获取的任何内容的使用，您必须自行承担全部责任和风险；对于因这种使用行为而导致的对您的计算机系统或其他设备的损害或数据丢失，您必须承担全部责任。
+
+10.3 Google 进一步明确声明，Google 不提供任何形式的明示或隐含的担保和条件，包括但不限于对适销性、特定用途的适用性以及不侵犯他人权利的隐含担保和条件。
+
+
+<devsite-heading ds-is="heading" text="11. 责任限制" id="11.-责任限制_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">11. 责任限制<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+11.1 您明确了解并同意，Google 及其子公司和关联公司，以及其许可人，对于由您的上述使用行为而造成的任何直接的、间接的、偶发的、特殊的、衍生的或惩罚性的损失（包括任何数据的丢失），均不承担任何责任，无论是基于任何相关责任理论的论述，也无论 Google 或其代表是否已被告知或应该知道存在这种损失的可能性。
+
+
+<devsite-heading ds-is="heading" text="12. 赔偿" id="12.-赔偿_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">12. 赔偿<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+12.1 在法律允许的最大限度内，您同意对于因：(a) 您使用 SDK；(b) 您基于 SDK 开发的任何应用侵犯了他人的任何版权、商标、商业秘密、商业外观、专利或其他知识产权，或者诽谤他人、侵犯他人的公开权或隐私权；以及 (c) 您不遵守本许可协议的任何条款而导致的任何索赔、法律行动、法律诉讼或诉讼过程，以及所有损失、索赔要求、损害、费用和支出（包括合理的律师费用），向 Google、其关联公司，以及其各自的董事、主管人员、员工和代理人作出辩护和赔偿，使其免受损害。
+
+
+<devsite-heading ds-is="heading" text="13. 许可协议的变更" id="13.-许可协议的变更_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">13. 许可协议的变更<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+13.1 Google 在发布新版 SDK 时可能会对本许可协议进行一些变更。进行这类变更后，Google 将在发布 SDK 的网站上提供新版许可协议。
+
+
+<devsite-heading ds-is="heading" text="14. 一般法律条款" id="14.-一般法律条款_6" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">14. 一般法律条款<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+14.1 本许可协议构成您和 Google 之间的完整法律协议，且您对 SDK 的使用（不包括 Google 根据单独书面协议为您提供的任何服务）将受本协议的约束。同时，本协议将完全取代您和 Google 之前就 SDK 达成的任何协议。
+
+14.2 您同意，即使 Google 未行使或强制执行本许可协议中所述的（或 Google 根据任何适用法律所享有的）任何法定权利或补救措施，也不应视为 Google 正式自动放弃这些权利，Google 仍然可以行使这些权利或采取相应补救措施。
+
+14.3 如果对此类事项有司法决定权的任何法院判定本许可协议的任何规定无效，则我们会在不影响本许可协议其余部分的情况下，将该规定从本许可协议中移除。本许可协议的其余规定仍然具有效力和作用。
+
+14.4 您了解并同意，Google 的每一个子公司都应为本许可协议的第三方受益人，此类其他公司应有权直接执行本许可协议，并根据本许可协议的规定主张相关权益（或有利于他们的权利）。除此之外，其他个人或公司不应成为本许可协议的第三方受益人。
+
+14.5 出口限制。SDK 会受到美国出口法律和法规的限制。您必须遵守所有适用于 SDK 的国内以及国际出口法律和法规。这些法律包括对目的地、最终用户和最终用途的限制。
+
+14.6 未经另一方的事先书面许可，您或 Google 不得转让或转移本许可协议中授予的权利。未经另一方的事先书面许可，您或 Google 不得将本许可协议中规定的责任或义务委派给他人。
+
+14.7 本许可协议以及由本许可协议而产生的您与 Google 之间的关系应受到美国加利福尼亚州法律的约束，但不考虑该州的法律冲突条款。您和 Google 同意服从加利福尼亚州圣克拉拉县法院的专有司法辖权，以此来解决由本许可协议产生的任何法律事务。尽管如此，您同意 Google 仍然可以向任何司法辖区内的法院请求禁令救济（或同等类型的紧急法律救济）。
+
+
+<em>2016 年 12 月 9 日</em>
+    </div>
+    <div>
+      <input id="agree_ndk_beta_mac64_download" class="agreebox" type="checkbox" name="agree" value="1">
+      <label id="agreeLabel" for="agree_ndk_beta_mac64_download">我已阅读并同意上述条款及条件</label>
+      <p class="not-agreed">
+        <a class="button button-disabled"><span class="lang-float">下载 Android NDK 测试版
+                for Mac           </span></a></p>
+      <p class="agreed">
+        <a class="button button-blue
+             devsite-dialog-close gc-analytics-event" href="https://dl.google.com/android/repository/android-ndk-r19-beta2-darwin-x86_64.zip">下载 Android NDK 测试版
+           for
+            Mac
+                  </a></p>
+      <p><em>android-ndk-r19-beta2-darwin-x86_64.zip</em></p>
+
+    </div>
+  </div>
+</devsite-dialog>
+    
+
+<devsite-dialog ds-is="dialog" id="ndk_beta_linux64_download" class="dac-download-dialog" aria-label="Android NDK 测试版">
+  <div class="devsite-dialog-contents">
+    <h3>Android NDK 测试版</h3>
+    <p>在下载之前，您必须同意下列条款和条件。</p>
+    <div class="dialog-content-stretch sdk-terms"><devsite-heading ds-is="heading" text="条款及条件" id="条款及条件_7" level="h2" link="" class="" back-to-top=""><h2 class="hide-from-toc" is-upgraded="">条款及条件<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+以下是 Android 软件开发套件许可协议
+
+<devsite-heading ds-is="heading" text="1. 简介" id="1.-简介_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">1. 简介<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+1.1 Google 会按照本许可协议的条款向您授予使用 Android 软件开发套件（在本许可协议中称为“SDK”，具体包括 Android 系统文件、打包的 API 和 Google API 插件）的许可。本许可协议是您和 Google 之间就您使用 SDK 而达成的具有法律约束力的合约。
+
+1.2 “Android”是指通过 Android 开放源代码项目（项目网址为：http://source.android.com/）提供的用于设备的 Android 软件堆栈（会不时更新）。
+
+1.3 “兼容实现”设备是指满足以下条件的任何 Android 设备：(i) 符合 Android 兼容性定义文档（位于 Android 兼容性网站 http://source.android.com/compatibility 上，会不时更新）的要求；(ii) 成功通过 Android 兼容性测试套件 (CTS) 测试。
+
+1.4 “Google”是指 Google LLC（一家注册于美国特拉华州的公司），其主要营业地点为 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States。
+
+
+<devsite-heading ds-is="heading" text="2. 接受本许可协议" id="2.-接受本许可协议_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">2. 接受本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+2.1 要使用 SDK，您必须先同意本许可协议。如果您不接受本许可协议，则无法使用 SDK。
+
+2.2 点击接受，即表示您同意本许可协议的条款。
+
+2.3 如果美国或其他国家/地区（包括您所居住的或您使用 SDK 时所在的国家/地区）的法律禁止您作为自然人获取 SDK，则您无法使用 SDK，也无法接受本许可协议。
+
+2.4 如果您代表您的雇主或其他实体同意接受本许可协议的约束，则表示您声明并担保，您拥有完整的法定权力，可使您的雇主或此类实体受本许可协议的约束。如果您未获得必要的授权，则不得代表雇主或其他实体接受本许可协议或使用 SDK。
+
+
+<devsite-heading ds-is="heading" text="3. Google 授予的 SDK 许可" id="3.-google-授予的-sdk-许可_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">3. Google 授予的 SDK 许可<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+3.1 根据本许可协议的条款，Google 会向您授予在全球范围内适用的、免版税、不可转让、非独家、不可分许可的有限许可，仅限您出于 Android 兼容实现的目的将 SDK 用于开发应用。
+
+3.2 您不能使用此 SDK 开发用于其他平台（包括 Android 的非兼容实现）的应用或开发其他 SDK。只要此 SDK 没有用于此目的，您可以随意开发用于其他平台（包括 Android 的非兼容实现）的应用。
+
+3.3 您同意 Google 或第三方拥有该 SDK 的所有法定权利、所有权和利益，包括该 SDK 中存在的所有知识产权。“知识产权”是指专利法、版权法、商业秘密法、商标法以及任何和所有其他所有权法案中现行规定的任何及所有权利。Google 保留未明确授予您的所有权利。
+
+3.4 您不得将 SDK 用于本许可协议未明确许可的任何目的。除非适用的第三方许可提出要求，否则您不得对 SDK 或其任何部分进行复制（备份目的除外）、修改、改编、分发、反编译、反向工程、反汇编或创建其衍生作品。
+
+3.5 使用、复制及分发已获开放源代码软件许可的 SDK 组件的行为仅受该开放源代码软件许可相关条款（而非本许可协议）的制约。
+
+3.6 您同意 Google 可在不事先通知您的情况下，变更所提供的 SDK 的形式和性质，且 SDK 的后续版本可能会与基于旧版 SDK 开发的应用不兼容。您同意，一般情况下，Google 可在不事先通知您的情况下自行决定（永久性或暂时）停止为您或用户提供 SDK（或 SDK 中的任何功能）。
+
+3.7 本许可协议中的任何内容均未授权您使用 Google 的任何商品名、商标、服务商标、徽标、域名或其他显著品牌特征。
+
+3.8 对于 SDK 中可能附带或包含的任何所有权声明（包括版权和商标通告），您同意不会移除、模糊处理或更改这些声明。
+
+<devsite-heading ds-is="heading" text="4. 您对 SDK 的使用" id="4.-您对-sdk-的使用_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">4. 您对 SDK 的使用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+4.1 Google 同意，本许可协议并不会让 Google 从您（或您的许可人）那里获得您使用 SDK 开发的任何软件应用中包含的或相关的任何权利、所有权或权益（包括这些应用中存在的所有知识产权）。
+
+4.2 您同意，只在 (a) 本许可协议和 (b) 相关司法辖区内的任何适用法律法规或公认的惯例或准则（包括任何与从美国或其他相关国家/地区进口或向其出口数据或软件相关的法律）允许的情况下使用 SDK 以及编写应用。
+
+4.3 您同意，如果您使用 SDK 针对一般公众用户开发应用，将会保护这些用户的隐私权和合法权利。如果用户向您提供用户名、密码或其他登录信息或个人信息，那么您不仅必须让用户知道此类信息将仅供您的应用使用，还必须向这些用户提供从法律意义上来说足够充分的隐私权声明和保护。如果您的应用存储了用户提供的个人信息或敏感信息，则必须对这类信息进行安全存储。如果用户为您的应用提供了 Google 帐号信息，那么您的应用只能在用户许可的情况下使用该信息访问用户的 Google 帐号，并且只能将其用于用户许可的限定用途。
+
+4.4 您同意不会在使用 SDK 时从事或参与任何干扰、中断、破坏或未经授权即访问任何第三方（包括但不限于 Google 或任何移动通信运营商）的服务器、网络或其他财产/服务的活动；这一规定亦适用于应用的开发或发布活动。
+
+4.5 您同意，对于您通过 Android 和/或 Android 版应用创建、传输或显示的任何数据、内容或资源，以及由此造成的任何后果（包括 Google 可能会蒙受的任何损失或损害），您要承担全部责任，且 Google 对您或任何第三方不承担任何责任。
+
+4.6 您同意，对于未按本许可协议、任何适用的第三方合同或服务条款或任何适用法律法规的规定履行义务的任何行为以及由此造成的后果（包括 Google 或任何第三方可能会蒙受的损失或损害），您承担全部责任，且 Google 对您或任何第三方均不承担任何责任。
+
+
+<devsite-heading ds-is="heading" text="5. 您的开发者凭据" id="5.-您的开发者凭据_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">5. 您的开发者凭据<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+5.1 您同意负责维护 Google 向您发放或您自行选择的任何开发者凭据的机密性，并且对使用您的开发者凭据开发的所有应用承担全部责任。
+
+
+<devsite-heading ds-is="heading" text="6. 隐私权和信息" id="6.-隐私权和信息_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">6. 隐私权和信息<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+6.1 为了不断地对 SDK 进行创新和改进，Google 可能会通过软件收集某些使用情况统计信息，包括但不限于唯一标识符、关联 IP 地址、软件版本号，以及关于 SDK 中正在使用的工具和/服务以及使用方式的信息。在收集任何此类信息之前，SDK 都会通知您并征求您的同意。未经您同意，Google 不会擅自收集此类信息。
+
+6.2 Google 会对收集的数据进行汇总分析，从而改进 SDK，并会依照 Google 隐私权政策保留这些数据。
+
+
+<devsite-heading ds-is="heading" text="7. 第三方应用" id="7.-第三方应用_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">7. 第三方应用<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+7.1 如果您要使用 SDK 运行由第三方开发的应用，或者运行会访问由第三方提供的数据、内容或资源的应用，则您须同意 Google 对于此类应用、数据、内容或资源概不负责。您了解，对于您可通过此类第三方应用访问的所有数据、内容或资源，均由最初提供这些内容的人员承担全部责任；对于您因使用或访问任何此类第三方应用、数据、内容或资源而可能蒙受的任何损失或损坏，Google 概不负责。
+
+7.2 您应了解，通过此类第三方应用向您提供的数据、内容和资源可能会受到提供者（或代表他们的其他个人或公司）所拥有的知识产权的保护。除非相关所有者明确授予您相应权限，否则您不得修改、出租、租赁、借贷、出售、分发此类数据、内容或资源（无论是全部还是部分），或在其基础上创建衍生作品。
+
+7.3 您同意，您对此类第三方应用、数据、内容或资源的使用行为可能会受到您与相关第三方之间达成的独立条款的制约。在这种情况下，本许可协议不会影响您与此类第三方之间的法律关系。
+
+
+<devsite-heading ds-is="heading" text="8. 使用 Android API" id="8.-使用-android-api_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">8. 使用 Android API<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+8.1 Google 数据 API
+
+8.1.1 如果您使用任何 API 从 Google 检索数据，则您同意此类数据可能受到 Google 或数据提供方（或代表他们的其他个人或公司）所拥有的知识产权的保护。使用任何此类 API 时，您可能会受到附加服务条款的制约。除非相关服务条款明确允许，否则您不得修改、出租、租赁、借贷、出售、分发此类数据（无论是全部还是部分），或在其基础上创建衍生作品。
+
+8.1.2 如果您使用任何 API 从 Google 检索用户数据，则您同意仅在用户明确同意的情况下检索数据，且仅会将其用于用户许可的限定用途。
+
+
+<devsite-heading ds-is="heading" text="9. 终止本许可协议" id="9.-终止本许可协议_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">9. 终止本许可协议<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+9.1 除非您或 Google 根据下述条款终止本许可协议，否则本协议将持续有效。
+
+9.2 如果您希望终止本许可协议，只需停止使用 SDK 和任何相关开发者凭据即可。
+
+9.3 如果出现以下任意情况，Google 可随时终止本许可协议：
+(A) 您违反了本许可协议的规定；或
+(B) 根据法律 Goolge 必须终止本协议；或
+(C) 与 Google 合作向您提供 SDK 的特定部分（例如 API）的合作伙伴终止了与 Google 的合作关系，或者不再向您提供 SDK 的特定部分；或
+(D) Google 决定不再向您所居住的国家/地区，或您使用相关服务时所在的国家/地区提供 SDK 或 SDK 的特定部分，或者 Google 单方面判定向您提供 SDK 或特定的 SDK 服务不再具有商业可行性。
+
+9.4 本许可协议终止时，您和 Google 曾共同从中受益、曾须遵守的所有法定权利、义务和责任（或在本许可协议有效期间产生的或明确规定将无限期延续的权利、义务和责任）将不会受到影响，并且第 14.7 节中的规定将继续无限期地适用于此类权利、义务和责任。
+
+
+<devsite-heading ds-is="heading" text="10. 免责声明" id="10.-免责声明_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">10. 免责声明<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+10.1 您明确了解并同意自行承担使用 SDK 的风险，并且 SDK 是在“现状”和“可提供”的基础上提供的，Google 不提供任何形式的担保。
+
+10.2 对于 SDK 以及通过 SDK 下载或获取的任何内容的使用，您必须自行承担全部责任和风险；对于因这种使用行为而导致的对您的计算机系统或其他设备的损害或数据丢失，您必须承担全部责任。
+
+10.3 Google 进一步明确声明，Google 不提供任何形式的明示或隐含的担保和条件，包括但不限于对适销性、特定用途的适用性以及不侵犯他人权利的隐含担保和条件。
+
+
+<devsite-heading ds-is="heading" text="11. 责任限制" id="11.-责任限制_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">11. 责任限制<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+11.1 您明确了解并同意，Google 及其子公司和关联公司，以及其许可人，对于由您的上述使用行为而造成的任何直接的、间接的、偶发的、特殊的、衍生的或惩罚性的损失（包括任何数据的丢失），均不承担任何责任，无论是基于任何相关责任理论的论述，也无论 Google 或其代表是否已被告知或应该知道存在这种损失的可能性。
+
+
+<devsite-heading ds-is="heading" text="12. 赔偿" id="12.-赔偿_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">12. 赔偿<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+12.1 在法律允许的最大限度内，您同意对于因：(a) 您使用 SDK；(b) 您基于 SDK 开发的任何应用侵犯了他人的任何版权、商标、商业秘密、商业外观、专利或其他知识产权，或者诽谤他人、侵犯他人的公开权或隐私权；以及 (c) 您不遵守本许可协议的任何条款而导致的任何索赔、法律行动、法律诉讼或诉讼过程，以及所有损失、索赔要求、损害、费用和支出（包括合理的律师费用），向 Google、其关联公司，以及其各自的董事、主管人员、员工和代理人作出辩护和赔偿，使其免受损害。
+
+
+<devsite-heading ds-is="heading" text="13. 许可协议的变更" id="13.-许可协议的变更_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">13. 许可协议的变更<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+13.1 Google 在发布新版 SDK 时可能会对本许可协议进行一些变更。进行这类变更后，Google 将在发布 SDK 的网站上提供新版许可协议。
+
+
+<devsite-heading ds-is="heading" text="14. 一般法律条款" id="14.-一般法律条款_7" level="h3" link="" class=""><h3 class="hide-from-toc" is-upgraded="">14. 一般法律条款<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button></h3></devsite-heading>
+14.1 本许可协议构成您和 Google 之间的完整法律协议，且您对 SDK 的使用（不包括 Google 根据单独书面协议为您提供的任何服务）将受本协议的约束。同时，本协议将完全取代您和 Google 之前就 SDK 达成的任何协议。
+
+14.2 您同意，即使 Google 未行使或强制执行本许可协议中所述的（或 Google 根据任何适用法律所享有的）任何法定权利或补救措施，也不应视为 Google 正式自动放弃这些权利，Google 仍然可以行使这些权利或采取相应补救措施。
+
+14.3 如果对此类事项有司法决定权的任何法院判定本许可协议的任何规定无效，则我们会在不影响本许可协议其余部分的情况下，将该规定从本许可协议中移除。本许可协议的其余规定仍然具有效力和作用。
+
+14.4 您了解并同意，Google 的每一个子公司都应为本许可协议的第三方受益人，此类其他公司应有权直接执行本许可协议，并根据本许可协议的规定主张相关权益（或有利于他们的权利）。除此之外，其他个人或公司不应成为本许可协议的第三方受益人。
+
+14.5 出口限制。SDK 会受到美国出口法律和法规的限制。您必须遵守所有适用于 SDK 的国内以及国际出口法律和法规。这些法律包括对目的地、最终用户和最终用途的限制。
+
+14.6 未经另一方的事先书面许可，您或 Google 不得转让或转移本许可协议中授予的权利。未经另一方的事先书面许可，您或 Google 不得将本许可协议中规定的责任或义务委派给他人。
+
+14.7 本许可协议以及由本许可协议而产生的您与 Google 之间的关系应受到美国加利福尼亚州法律的约束，但不考虑该州的法律冲突条款。您和 Google 同意服从加利福尼亚州圣克拉拉县法院的专有司法辖权，以此来解决由本许可协议产生的任何法律事务。尽管如此，您同意 Google 仍然可以向任何司法辖区内的法院请求禁令救济（或同等类型的紧急法律救济）。
+
+
+<em>2016 年 12 月 9 日</em>
+    </div>
+    <div>
+      <input id="agree_ndk_beta_linux64_download" class="agreebox" type="checkbox" name="agree" value="1">
+      <label id="agreeLabel" for="agree_ndk_beta_linux64_download">我已阅读并同意上述条款及条件</label>
+      <p class="not-agreed">
+        <a class="button button-disabled"><span class="lang-float">下载 Android NDK 测试版
+                for Linux           </span></a></p>
+      <p class="agreed">
+        <a class="button button-blue
+             devsite-dialog-close gc-analytics-event" href="https://dl.google.com/android/repository/android-ndk-r19-beta2-linux-x86_64.zip">下载 Android NDK 测试版
+           for
+            Linux
+                  </a></p>
+      <p><em>android-ndk-r19-beta2-linux-x86_64.zip</em></p>
+
+    </div>
+  </div>
+</devsite-dialog>
+
+          </div>
+
+    
+                   <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+         <div><div class="devsite-rating-caption">Was this page helpful?</div><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" role="button" data-title="文档根本没法用" aria-label="Site content star ratings, rating 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" role="button" data-title="文档水平很差" aria-label="Site content star ratings, rating 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" role="button" data-title="文档水平一般" aria-label="Site content star ratings, rating 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" role="button" data-title="文档不错" aria-label="Site content star ratings, rating 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" role="button" data-title="文档写得很好" aria-label="Site content star ratings, rating 5 out of 5"></div></div><div class="devsite-rating-internal"><span class="devsite-rating-stats"></span></div></div></devsite-page-rating>
+                   
+          </article>
+</article>
+
+<devsite-content-footer ds-is="content-footer" class="nocontent">
+  <p>Content and code samples on this page are subject to the licenses described in the <a href="https://developer.android.google.cn/license">Content License</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+</devsite-content-footer>
+
+
+                      </devsite-content>
+        </div>
+        <devsite-footer-promos ds-is="footer-promos" class="devsite-footer">
+                      <nav>
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="https://developers.google.cn/china/#follow-google-developers-on-wechat" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-modal-toggle="wechat" data-label="Footer WeChat Promo">
+                        <img class="devsite-footer-promo-icon" src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/logo-wechat.png" alt="微信">
+                微信
+      </a>
+      <div class="devsite-footer-promo-description">在微信上关注“Google Developers”</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://twitter.com/AndroidDev" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Twitter Promo">
+                        <img class="devsite-footer-promo-icon" src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/logo-twitter.svg" alt="Twitter">
+                Twitter
+      </a>
+      <div class="devsite-footer-promo-description">在 Twitter 上关注 @AndroidDev</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://www.youtube.com/user/androiddevelopers" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer YouTube Promo" data-title="This link may not be accessible in your region.">
+                        <img class="devsite-footer-promo-icon" src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/youtube_48dp.png" alt="YouTube">
+                YouTube
+      </a>
+      <div class="devsite-footer-promo-description">在 YouTube 上访问“Android Developers”频道</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes ds-is="footer-linkboxes" class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+  <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">关于 Android</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://www.android.com/" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)" data-title="This link may not be accessible in your region.">
+            Android
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://www.android.com/enterprise/" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)" data-title="This link may not be accessible in your region.">
+            Enterprise
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://www.android.com/security-center/" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)" data-title="This link may not be accessible in your region.">
+            安全
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://source.android.com/" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)" data-title="This link may not be accessible in your region.">
+            源代码
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">支持</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://issuetracker.google.com/issues/new?component=190923&amp;template=841312" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)" data-title="This link may not be accessible in your region.">
+            报告平台错误
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://issuetracker.google.com/issues/new?component=192697" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)" data-title="This link may not be accessible in your region.">
+            报告文档错误
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://support.google.com/googleplay/android-developer" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)" data-title="This link may not be accessible in your region.">
+            Google Play support
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf27XIxoFmNpTjTYdk-m1uKWGqEnd7_4C_E1AD5fdCfyTBWNA/viewform?usp=pp_url&amp;entry.1909689089&amp;entry.208743710&amp;entry.408796755&amp;entry.1341430893&amp;entry.594931249&amp;entry.1640656812&amp;entry.1759804042&amp;entry.1441312344=developer.android.com" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)" data-title="This link may not be accessible in your region.">
+            参与用户调查
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">文档</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.google.cn/guide" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+            开发者指南
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.google.cn/design" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+            设计指南
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.google.cn/reference" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+            API 参考
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.google.cn/samples" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+            示例
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.google.cn/studio/intro" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+            Android Studio
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+</nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility ds-is="footer-utility" class="devsite-footer">
+                      <div class="devsite-footer-utility">
+    <nav class="devsite-nav devsite-footer-sites">
+    <a href="https://developers.google.cn/" class="devsite-footer-sites-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo" src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/lockup-color.png" alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="https://developer.android.google.cn/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android Link">
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developer.chrome.com/home" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Link" data-title="This link may not be accessible in your region.">
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://firebase.google.cn/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Link">
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://cloud.google.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Link" data-title="This link may not be accessible in your region.">
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developers.google.cn/products/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer All products Link">
+          所有产品
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-nav">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link
+                  gc-analytics-event" href="https://policies.google.cn/privacy" data-category="Site-Wide Custom Events" data-label="Footer Privacy link">
+          隐私权政策
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link
+                  gc-analytics-event" href="https://developer.android.google.cn/license" data-category="Site-Wide Custom Events" data-label="Footer License link">
+          许可
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link
+                  gc-analytics-event" href="https://developer.android.google.cn/distribute/marketing-tools/brand-guidelines" data-category="Site-Wide Custom Events" data-label="Footer Brand guidelines link">
+          品牌指南
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">通过电子邮件接收资讯和提示</span>
+                        <a class="devsite-footer-utility-link
+                  gc-analytics-event" href="https://developer.android.google.cn/newsletter/#subscribe" data-category="Site-Wide Custom Events" data-label="Footer Subscribe link">
+          订阅
+        </a>
+              </li>
+          </ul>
+    
+        <form class="devsite-footer-utility-language">
+      <select class="devsite-footer-utility-language-select" name="language" track-name="click" track-type="languageSelector">
+                  <option value="id" track-metadata-original-language="zh_cn" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector">
+            Bahasa Indonesia
+          </option>
+                  <option value="de" track-metadata-original-language="zh_cn" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector">
+            Deutsch
+          </option>
+                  <option value="en" track-metadata-original-language="zh_cn" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector">
+            English
+          </option>
+                  <option value="es" track-metadata-original-language="zh_cn" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector">
+            Español
+          </option>
+                  <option value="es_419" track-metadata-original-language="zh_cn" track-metadata-selected-language="es_419" track-name="changed" track-type="languageSelector">
+            Español (América Latina)
+          </option>
+                  <option value="pt_br" track-metadata-original-language="zh_cn" track-metadata-selected-language="pt_br" track-name="changed" track-type="languageSelector">
+            Português Brasileiro
+          </option>
+                  <option value="vi" track-metadata-original-language="zh_cn" track-metadata-selected-language="vi" track-name="changed" track-type="languageSelector">
+            Tiếng Việt
+          </option>
+                  <option value="tr" track-metadata-original-language="zh_cn" track-metadata-selected-language="tr" track-name="changed" track-type="languageSelector">
+            Türkçe
+          </option>
+                  <option value="fr" track-metadata-original-language="zh_cn" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector">
+            français
+          </option>
+                  <option value="ru" track-metadata-original-language="zh_cn" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector">
+            Русский
+          </option>
+                  <option value="th" track-metadata-original-language="zh_cn" track-metadata-selected-language="th" track-name="changed" track-type="languageSelector">
+            ภาษาไทย
+          </option>
+                  <option value="ja" track-metadata-original-language="zh_cn" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector">
+            日本語
+          </option>
+                  <option value="zh_cn" track-metadata-original-language="zh_cn" track-metadata-selected-language="zh_cn" track-name="changed" track-type="languageSelector" selected="selected">
+            简体中文
+          </option>
+                  <option value="zh_tw" track-metadata-original-language="zh_cn" track-metadata-selected-language="zh_tw" track-name="changed" track-type="languageSelector">
+            繁體中文
+          </option>
+                  <option value="ko" track-metadata-original-language="zh_cn" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector">
+            한국어
+          </option>
+              </select>
+    </form>
+      </nav>
+</div>
+                  </devsite-footer-utility>
+      </div></div>
+    <devsite-sitemask ds-is="site-mask"></devsite-sitemask>
+    <devsite-snackbar ds-is="snackbar" type="notification-survey" notification-survey-link-txt="Take survey" notification-survey-link="https://developer.android.com/survey" notification-survey-message="Please help us improve the Android Developer
+                                               experience by taking a survey." notification-survey-store-key="" data-cookie-policy="//policies.google.cn/technologies/cookies">
+</devsite-snackbar>
+    <devsite-tooltip ds-is="tooltip" blocked-link=""></devsite-tooltip>
+    <devsite-analytics ds-is="analytics">
+              <script async="" src="NDK%20%E4%B8%8B%E8%BD%BD%20%C2%A0%20%C2%A0%20Android%20NDK%20%C2%A0%20%C2%A0%20Android%20Developers_files/app_loader.js"></script><script type="application/json" analytics="">[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "zh_cn", "dimension4": "Android NDK", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out"}, "gaid": "UA-5831155-3"}]</script>
+<script type="application/json" gtm="">["GTM-KMSWPCJ"]</script>
+          </devsite-analytics>
+    <script>
+    (function(d,e,v,E,l,o,p,r,s,_,__){d['GoogleDevelopersObject']=[!0,l,o,p,r,s];
+    _=e.createElement(v);_.async=1;_.src=E;__=e.getElementsByTagName(v)[0];
+    __.parentNode.insertBefore(_,__);})(window, document, 'script',
+      'https://www.gstatic.com/devrel-devsite/ve249b9e9a6e2ccdbff66d2f657d9660fbe9b7669fa5a5656065b0195431343e0/android/js/app_loader.js',
+      'zh_cn',
+      'https://www.gstatic.com/devrel-devsite/ve249b9e9a6e2ccdbff66d2f657d9660fbe9b7669fa5a5656065b0195431343e0/android/js/devsite_app.js',
+      'https://www.gstatic.com/devrel-devsite/ve249b9e9a6e2ccdbff66d2f657d9660fbe9b7669fa5a5656065b0195431343e0/android',
+      !0,
+      ['/_pwa/android/manifest.json',
+       '/_static/images/video-placeholder.svg',
+       'https://www.gstatic.com/devrel-devsite/ve249b9e9a6e2ccdbff66d2f657d9660fbe9b7669fa5a5656065b0195431343e0/android/images/favicon.png','https://www.gstatic.com/devrel-devsite/ve249b9e9a6e2ccdbff66d2f657d9660fbe9b7669fa5a5656065b0195431343e0/android/images/lockup.svg','https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons'],
+       'https://android-dot-google-developers.gonglchuangl.net')
+   </script>  
+</body></html>

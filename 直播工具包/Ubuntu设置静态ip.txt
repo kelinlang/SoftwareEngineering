@@ -1,0 +1,10 @@
+修改
+sudo gedit /etc/network/interfaces
+
+auto eth0
+iface eth0 inet static
+address 192.168.3.209
+netmask 255.255.255.0
+gateway 192.168.3.1
+broadcast 192.168.3.255
+dns-nameservers 192.168.1.13 192.168.1.14

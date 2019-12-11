@@ -1,0 +1,1 @@
+document.writeln("<script charset=\"UTF-8\" src=\'https://gg.dsxdn.com/2cto/2cto_pc.js\' type=\'text/javascript\'><\/script>");

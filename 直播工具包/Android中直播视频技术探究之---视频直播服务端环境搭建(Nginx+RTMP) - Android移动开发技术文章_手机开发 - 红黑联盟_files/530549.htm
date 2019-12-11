@@ -1,0 +1,134 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=GBK"><style>
+p{margin: 0px;}
+.comment_wrap .headline {font-size: 22px;color: #333;height: 50px;line-height: 50px;border-bottom: 1px solid #e8e8e8;}
+.comment_form {border: 2px solid #c5d7f5;height: 154px;margin-top: -1px;}
+.comment_form .textarea {height: 109px;width: 100%;padding: 0 1%;border: 0;font-size: 14px;line-height: 36px;}
+.comment_form p {height: 44px;line-height: 44px;background: #f0f6ff;font-size: 14px;border-top: 1px solid #c5d7f5;}
+.comment_form p label {margin-left: 12px;}
+.comment_form .textinput {border: 1px solid #c5d7f5;height: 28px;line-height: 28px;background: #fff;width: 97px;color: #666;font-size: 14px;text-indent: 8px;}
+.comment_form .btn {float: right;width: 114px;height: 47px;border: 0;background: #ff6666;color: #fff;font-size: 18px;margin: -1px -2px 0 0;cursor: pointer;}
+.comment_list {margin: 10px 0 30px 0;}
+.comment_list .cheadline {border-bottom: 2px solid #f2f2f3;height: 40px;line-height: 40px;font-size: 20px;color: #666;}
+.comment_list .cheadline span {display: inline-block;vertical-align: bottom;border-bottom: 2px solid #ff6666;line-height: 40px;height: 40px;width: 80px;}
+.comment_list .reply {text-align: left;padding: 10px 0 18px 0;color: #000;zoom: 1;z-index: 1;}
+.comment_list .inner {padding: 0 2px 0 2px;zoom: 1;}
+.comment_list .author {position: relative;z-index: 3;}
+.author a {color: #333;font-size: 16px;line-height: 32px;}
+.comment_list .postTime {color: #999;float: right;display: block;white-space: nowrap;zoom: 1;font-size: 14px;}
+.comment_list .body {font-size: 14px;padding: 12px 0;clear: both;zoom: 1;white-space: normal;word-break: break-all;}
+.comment_list .content {line-height: 24px;color: #666;clear: both;font-size: 14px;word-wrap: break-word;}
+.morecomment{text-align:center;line-height: 30px;border: 1px solid #ccc;cursor: pointer;}
+.reply_con{float: right;color: #a0a0a0;cursor: pointer;}
+.body .comment_form{width:60%;height:95px;float:right;margin-top:20px;display:none;}
+.body .comment_form .btn{width: 70px;height: 35px;font-size: 14px;margin: 0px;}
+.body .comment_form p{height: 35px;line-height: 35px;}
+.body .comment_form .textarea {height: 59px;}
+.reply{margin-bottom:100px;}
+</style>
+</head><body><div class="comment_wrap">
+	<div class="headline">我有话说：</div>
+	<div class="comment_form">
+		<form action="#">
+			<textarea placeholder="我来说两句..." class="textarea" id="textarea"></textarea>
+			<p>
+			 
+				<label>花名：</label><input type="text" class="textinput" id="textinput" placeholder="联盟网友">
+				<input type="button" class="btn" onclick="meSubmit();" value="提  交">
+			</p>
+		</form>
+	</div>
+	
+	<div class="comment_list">
+		<div class="cheadline"><span>网友评论</span></div>
+		<div class="comments_list">
+									 	
+		</div> 
+			 
+	</div><!-- comment_list end -->
+</div>
+
+<script type="text/javascript" src="jquery_003.js"></script>
+<script>
+	
+	$(".reply_con").click(function(){
+		if($(this).parent().next().css("display")=="none"){
+			$(".body .comment_form").hide();
+			$(this).parent().next().show();
+			
+		}else{
+			$(this).parent().next().hide();
+			
+		}
+	})
+	function meSubmit(){
+		var textarea = $("#textarea");
+		var textinput = $("#textinput");
+		var arr = new Array();
+		arr["content"] 	= textarea.val();
+		arr["name"] 	= textinput.val(); 
+		if(!textarea.val()){
+			alert("请填写内容");
+			textarea.focus();
+			return false;
+		}
+		if(!textinput.val()){
+			arr["name"]="联盟网友";
+		}
+		
+		$.ajax({
+			type:"post",
+			url:"",
+			data:"comment=comment&content="+arr["content"]+"&name="+arr["name"],
+			dataType:"json",
+			success:function(data){
+			
+				if(data){
+					alert("添加成功，审核通过后可见！");
+					
+				}else{
+					alert("添加失败，请重试！");
+					return false;
+				}
+				textarea.val(null);
+				textinput.val(null);
+			}
+		});
+	}
+	$(".reply_btn").click(function(){
+		var textinput=$(this).siblings(".textinput");
+		var textarea=$(this).parent().siblings(".textarea");
+		var arr = new Array();
+		arr["content"] 	= textarea.val();
+		arr["name"] 	= textinput.val(); 
+		arr["pid"] 	= $(this).attr("i");
+		if(!textarea.val()){
+			alert("请填写内容");
+			textarea.focus();
+			return false;
+		}
+		if(!textinput.val()){
+			arr["name"]="联盟网友";
+		}
+		$.ajax({
+			type:"post",
+			url:"",
+			data:"comment=comment&content="+arr["content"]+"&name="+arr["name"]+"&pid="+arr["pid"],
+			dataType:"json",
+			success:function(data){
+			
+				if(data){
+					alert("添加成功，审核通过后可见！");
+					
+				}else{
+					alert("添加失败，请重试！");
+					return false;
+				}
+				textarea.val(null);
+				textinput.val(null);
+				$(".body .comment_form").hide();
+			}
+		});
+	})
+	
+</script></body></html>

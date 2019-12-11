@@ -1,0 +1,48 @@
+1.源码下载，放同一路径
+https://github.com/AlexWoo/nginx-toolkit-module.git
+https://github.com/nats-io/nginx-nats.git
+https://github.com/AlexWoo/nginx-client-module.git
+https://github.com/AlexWoo/nginx-multiport-module.git
+https://github.com/im-pingo/nginx-rtmp-module.git
+
+tar -zxvf xxxx.tar.gz
+
+2.执行下面命令配置
+./configure --prefix=/home/kelinlang/workspace/install/nginx_rtmp/nginx-1.9.9 --with-pcre=/home/kelinlang/workspace/server/nginx/pcre-8.34 --with-openssl=/home/kelinlang/workspace/server/nginx/openssl-1.0.2d --add-module=/home/kelinlang/workspace/server/nginx/nginx-rtmp-module
+./configure --prefix=/home/kelinlang/workspace/install/nginx_rtmp/nginx-1.9.9 --with-pcre=/home/kelinlang/workspace/server/nginx/pcre-8.34 --with-openssl=/home/kelinlang/workspace/server/nginx/openssl-1.0.2d --add-module=/home/kelinlang/workspace/server/nginx/nginx-rtmp-module --with-cc-opt="-Wno-error"
+./configure --prefix=/home/kelinlang/workspace/install/nginx_rtmp/nginx-1.9.9 --with-pcre=/home/kelinlang/workspace/server/nginx/pcre-8.34 --with-openssl=/home/kelinlang/workspace/server/nginx/openssl-1.0.2d --add-module=/home/kelinlang/workspace/server/nginx/nginx-rtmp-module --without-http_gzip_module
+./configure --prefix=/home/kelinlang/workspace/install/nginx_rtmp/nginx-1.9.9 --with-pcre=/home/kelinlang/workspace/server/nginx/pcre-8.34 --with-openssl=/home/kelinlang/workspace/server/nginx/openssl-1.0.2d --add-module=/home/kelinlang/workspace/server/nginx/nginx-rtmp-module --add-module=/home/kelinlang/workspace/server/nginx/nginx-rtmp-module/hls
+
+1.17.6版本配置
+./configure --prefix=/home/kelinlang/workspace/install/nginx_rtmp/nginx-1.17.6 --add-module=../nginx-client-module       --add-module=../nginx-multiport-module                 --add-module=../nginx-toolkit-module                   --add-module=../nginx-rtmp-module --with-cc-opt="-Wno-error"
+
+
+3. 执行make -j8&& make install
+错误解决：/home/vagrant/nginx-1.11.2/objs/Makefile 修改如下
+./configure --with-cc-opt="-Wno-error"
+CFLAGS =  -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Werror -g  -I/home/kelinlang/workspace/server/nginx/nginx-rtmp-module  
+
+4.rtmp://192.168.3.157:1395/mylive/rtmpstream
+5.启动   
+6.查进程  ps -ef | grep nginx
+
+复制状态html：cp /home/kelinlang/workspace/server/nginx/nginx-rtmp-module/stat.xsl html/
+网页查看状态：http://192.168.2.162:8080/rtmp_stat
+
+7.推流
+ffmpeg -re -i E:\YunvaProject\视频文件\VID_20190104_111210.mp4 -f flv rtmp://192.168.3.157:1395/mylive/rtmpstream
+./ffmpeg -re -i ./E1.mp4 -f flv rtmp://192.168.2.162:1935/live/test
+./ffmpeg -re -i ./E1h265.mp4 -f flv rtmp://192.168.2.162:1935/live/test
+./ffmpeg -re -i ./E1.mp4 -f flv rtmp://192.168.0.18:1935/live/test
+./ffmpeg -re -i ./E1h265.mp4 -f flv rtmp://192.168.0.18:1935/live/test
+
+端口查看命令：netstat -ntpl
+
+
+重封装
+./ffmpeg -re -i ./E1.mp4 -i ./Record-null.ts -map 0:0 -map 0:1 -map 1:0 -map 1:1 -c copy -program title=CCTV1:program_num=1:st=0:st=1 -program title=CCTV2:program_num=2:st=2:st=3 -f mpegts "udp://192.168.2.34:1234?pkt_size=1316"
+
+
+
+FFmpeg编译
+./configure --enable-shared --enable-static  --enable-ffplay --prefix=/home/kelinlang/workspace/install/ffmpeg

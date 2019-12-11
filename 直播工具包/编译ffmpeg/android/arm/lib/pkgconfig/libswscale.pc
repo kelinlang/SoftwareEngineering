@@ -1,0 +1,14 @@
+prefix=/home/kelinlang/Workspace/ffmpeg-3.4.5/android/arm
+exec_prefix=${prefix}
+libdir=/home/kelinlang/Workspace/ffmpeg-3.4.5/android/arm/lib
+includedir=/home/kelinlang/Workspace/ffmpeg-3.4.5/android/arm/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 4.8.100
+Requires: libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://www.jianshu.com/p/7ffaec7b3be6 -->
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+
+  <!-- Start of Baidu Transcode -->
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="mobile-agent" content="format=html5;url=https://www.jianshu.com/p/7ffaec7b3be6">
+  <!-- End of Baidu Transcode -->
+
+    <meta name="description" content="简介 FLV（Flash Video）是现在非常流行的流媒体格式，由于其视频文件体积轻巧、封装播放简单等特点，使其很适合在网络上进行应用，目前主流的视频网站无一例外地使用了FLV格式。另外由于当前浏览器与Flash Player紧密的结合，使得网页播放FLV视频轻而易举，也是FLV流行的原因之一。 FLV是流媒体封装格式，我们可以将其数据看为二进制字节流。总体上看，FLV包括文件头（File...">
+
+  <meta name="360-site-verification" content="604a14b53c6b871206001285921e81d8">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb">
+  <meta property="qc:admins" content="104102651453316562112116375">
+  <meta property="qc:admins" content="11635613706305617">
+  <meta property="qc:admins" content="1163561616621163056375">
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4">
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI">
+  <meta http-equiv="mobile-agent" content="format=html5; url=https://www.jianshu.com/p/7ffaec7b3be6">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-title" content="简书">
+
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/20733087">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="flv格式详解+实例剖析" property="twitter:title">
+  <meta content="简介 FLV（Flash Video）是现在非常流行的流媒体格式，由于其视频文件体积轻巧、封装播放简单等特点，使其很适合在网络上进行应用，目前主流的视频网站无一例外地使用了F..." property="twitter:description">
+  <meta content="https://www.jianshu.com/p/7ffaec7b3be6" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="flv格式详解+实例剖析">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.jianshu.com/p/7ffaec7b3be6">
+  <meta property="og:description" content="简介 FLV（Flash Video）是现在非常流行的流媒体格式，由于其视频文件体积轻巧、封装播放简单等特点，使其很适合在网络上进行应用，目前主流的视频网站无一例外地使用了FLV格式。另外由于当...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/20733087">
+  <meta property="al:ios:app_store_id" content="888237539">
+  <meta property="al:ios:app_name" content="简书">
+
+  <meta property="al:android:url" content="jianshu://notes/20733087">
+  <meta property="al:android:package" content="com.jianshu.haruki">
+  <meta property="al:android:app_name" content="简书">
+  <!-- End -->
+
+
+    <title>flv格式详解+实例剖析 - 简书</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="i36wcl/h3fwufGAedOvJA5MDjAW663bS9+H5gYu1Iry/+b6aolQQT+zVRpEk0TAW5hgi2ob2Y1e2WPolU2b4/g==">
+
+  <link rel="stylesheet" media="all" href="./flv格式详解+实例剖析 - 简书_files/web-274d6a76417c1f7a7da5.css">
+  
+  <link rel="stylesheet" media="all" href="./flv格式详解+实例剖析 - 简书_files/entry-aa75deb505b1b600256a.css">
+
+  <link href="https://cdn2.jianshu.io/assets/favicons/favicon-e743bfb1821442341c3ab15bdbe804f7ad97676bd07a770ccc9483473aa76f06.ico" rel="shortcut icon" type="image/x-icon">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/57-a6f1f1ee62ace44f6dc2f6a08575abd3c3b163288881c78dd8d75247682a4b27.png" sizes="57x57">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/72-fb9834bcfce738fd7b9c5e31363e79443e09a81a8e931170b58bc815387c1562.png" sizes="72x72">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/76-49d88e539ff2489475d603994988d871219141ecaa0b1a7a9a1914f4fe3182d6.png" sizes="76x76">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/114-24252fe693524ed3a9d0905e49bff3cbd0228f25a320aa09053c2ebb4955de97.png" sizes="114x114">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/120-1bb7371f5e87f93ce780a5f1a05ff1b176828ee0d1d130e768575918a2e05834.png" sizes="120x120">
+      <link rel="apple-touch-icon-precomposed" href="https://cdn2.jianshu.io/assets/apple-touch-icons/152-bf209460fc1c17bfd3e2b84c8e758bc11ca3e570fd411c3bbd84149b97453b99.png" sizes="152x152">
+
+  <!-- Start of 访问统计 -->
+    <script src="./flv格式详解+实例剖析 - 简书_files/push.js.下载"></script><script src="./flv格式详解+实例剖析 - 简书_files/hm.js.下载"></script><script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?0c0e9d9b1e7d617b3e6842e85b9fb068";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <!-- End of 访问统计 -->
+<style type="text/css">@charset "UTF-8";.image-package .image-container{position:relative;z-index:2;background-color:#eee;-webkit-transition:background-color .1s linear;-o-transition:background-color .1s linear;transition:background-color .1s linear;margin:0 auto}body.reader-night-mode .image-package .image-container{background-color:#545454}.image-package .image-container-fill{z-index:1}.image-package .image-container .image-view{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden}.image-package .image-container .image-view-error:after{content:"图片获取失败，请点击重试";position:absolute;top:50%;left:50%;width:100%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);color:#888;font-size:14px}.image-package .image-container .image-view img.image-loading{opacity:.3}.image-package .image-container .image-view img{-webkit-transition:all .15s linear;-o-transition:all .15s linear;transition:all .15s linear;z-index:2;opacity:1}</style><style type="text/css">fieldset[disabled] .multiselect {
+  pointer-events: none;
+}
+
+.multiselect__spinner {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 48px;
+  height: 35px;
+  background: #fff;
+  display: block;
+}
+
+.multiselect__spinner:after,
+.multiselect__spinner:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border-color: #41b883 transparent transparent;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 0 0 1px transparent;
+}
+
+.multiselect__spinner:before {
+  animation: a 2.4s cubic-bezier(.41,.26,.2,.62);
+  animation-iteration-count: infinite;
+}
+
+.multiselect__spinner:after {
+  animation: a 2.4s cubic-bezier(.51,.09,.21,.8);
+  animation-iteration-count: infinite;
+}
+
+.multiselect__loading-enter-active,
+.multiselect__loading-leave-active {
+  transition: opacity .4s ease-in-out;
+  opacity: 1;
+}
+
+.multiselect__loading-enter,
+.multiselect__loading-leave-active {
+  opacity: 0;
+}
+
+.multiselect,
+.multiselect__input,
+.multiselect__single {
+  font-family: inherit;
+  font-size: 14px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.multiselect {
+  box-sizing: content-box;
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+  text-align: left;
+  color: #35495e;
+}
+
+.multiselect * {
+  box-sizing: border-box;
+}
+
+.multiselect:focus {
+  outline: none;
+}
+
+.multiselect--disabled {
+  opacity: .6;
+}
+
+.multiselect--active {
+  z-index: 1;
+}
+
+.multiselect--active:not(.multiselect--above) .multiselect__current,
+.multiselect--active:not(.multiselect--above) .multiselect__input,
+.multiselect--active:not(.multiselect--above) .multiselect__tags {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.multiselect--active .multiselect__select {
+  transform: rotate(180deg);
+}
+
+.multiselect--above.multiselect--active .multiselect__current,
+.multiselect--above.multiselect--active .multiselect__input,
+.multiselect--above.multiselect--active .multiselect__tags {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.multiselect__input,
+.multiselect__single {
+  position: relative;
+  display: inline-block;
+  min-height: 20px;
+  line-height: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 0 0 5px;
+  width: 100%;
+  transition: border .1s ease;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  vertical-align: top;
+}
+
+.multiselect__tag~.multiselect__input,
+.multiselect__tag~.multiselect__single {
+  width: auto;
+}
+
+.multiselect__input:hover,
+.multiselect__single:hover {
+  border-color: #cfcfcf;
+}
+
+.multiselect__input:focus,
+.multiselect__single:focus {
+  border-color: #a8a8a8;
+  outline: none;
+}
+
+.multiselect__single {
+  padding-left: 6px;
+  margin-bottom: 8px;
+}
+
+.multiselect__tags-wrap {
+  display: inline;
+}
+
+.multiselect__tags {
+  min-height: 40px;
+  display: block;
+  padding: 8px 40px 0 8px;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+.multiselect__tag {
+  position: relative;
+  display: inline-block;
+  padding: 4px 26px 4px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #fff;
+  line-height: 1;
+  background: #41b883;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+
+.multiselect__tag-icon {
+  cursor: pointer;
+  margin-left: 7px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-weight: 700;
+  font-style: normal;
+  width: 22px;
+  text-align: center;
+  line-height: 22px;
+  transition: all .2s ease;
+  border-radius: 5px;
+}
+
+.multiselect__tag-icon:after {
+  content: "\D7";
+  color: #266d4d;
+  font-size: 14px;
+}
+
+.multiselect__tag-icon:focus,
+.multiselect__tag-icon:hover {
+  background: #369a6e;
+}
+
+.multiselect__tag-icon:focus:after,
+.multiselect__tag-icon:hover:after {
+  color: #fff;
+}
+
+.multiselect__current {
+  min-height: 40px;
+  overflow: hidden;
+  padding: 8px 12px 0;
+  padding-right: 30px;
+  white-space: nowrap;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+.multiselect__current,
+.multiselect__select {
+  line-height: 16px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.multiselect__select {
+  position: absolute;
+  width: 40px;
+  height: 38px;
+  right: 1px;
+  top: 1px;
+  padding: 4px 8px;
+  text-align: center;
+  transition: transform .2s ease;
+}
+
+.multiselect__select:before {
+  position: relative;
+  right: 0;
+  top: 65%;
+  color: #999;
+  margin-top: 4px;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  border-color: #999 transparent transparent;
+  content: "";
+}
+
+.multiselect__placeholder {
+  color: #adadad;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-top: 2px;
+}
+
+.multiselect--active .multiselect__placeholder {
+  display: none;
+}
+
+.multiselect__content-wrapper {
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 100%;
+  max-height: 240px;
+  overflow: auto;
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+.multiselect__content {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  vertical-align: top;
+}
+
+.multiselect--above .multiselect__content-wrapper {
+  bottom: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: none;
+  border-top: 1px solid #e8e8e8;
+}
+
+.multiselect__content::webkit-scrollbar {
+  display: none;
+}
+
+.multiselect__element {
+  display: block;
+}
+
+.multiselect__option {
+  display: block;
+  padding: 12px;
+  min-height: 40px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.multiselect__option:after {
+  top: 0;
+  right: 0;
+  position: absolute;
+  line-height: 40px;
+  padding-right: 12px;
+  padding-left: 20px;
+}
+
+.multiselect__option--highlight {
+  background: #41b883;
+  outline: none;
+  color: #fff;
+}
+
+.multiselect__option--highlight:after {
+  content: attr(data-select);
+  background: #41b883;
+  color: #fff;
+}
+
+.multiselect__option--selected {
+  background: #f3f3f3;
+  color: #35495e;
+  font-weight: 700;
+}
+
+.multiselect__option--selected:after {
+  content: attr(data-selected);
+  color: silver;
+}
+
+.multiselect__option--selected.multiselect__option--highlight {
+  background: #ff6a6a;
+  color: #fff;
+}
+
+.multiselect__option--selected.multiselect__option--highlight:after {
+  background: #ff6a6a;
+  content: attr(data-deselect);
+  color: #fff;
+}
+
+.multiselect--disabled {
+  background: #ededed;
+  pointer-events: none;
+}
+
+.multiselect--disabled .multiselect__current,
+.multiselect--disabled .multiselect__select,
+.multiselect__option--disabled {
+  background: #ededed;
+  color: #a6a6a6;
+}
+
+.multiselect__option--disabled {
+  cursor: text;
+  pointer-events: none;
+}
+
+.multiselect__option--disabled.multiselect__option--highlight {
+  background: #dedede!important;
+}
+
+.multiselect-enter-active,
+.multiselect-leave-active {
+  transition: all .15s ease;
+}
+
+.multiselect-enter,
+.multiselect-leave-active {
+  opacity: 0;
+}
+
+.multiselect__strong {
+  margin-bottom: 8px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+[dir=rtl] .multiselect {
+  text-align: right;
+}
+
+[dir=rtl] .multiselect__select {
+  right: auto;
+  left: 1px;
+}
+
+[dir=rtl] .multiselect__tags {
+  padding: 8px 8px 0 40px;
+}
+
+[dir=rtl] .multiselect__content {
+  text-align: right;
+}
+
+[dir=rtl] .multiselect__option:after {
+  right: auto;
+  left: 0;
+}
+
+[dir=rtl] .multiselect__clear {
+  right: auto;
+  left: 12px;
+}
+
+[dir=rtl] .multiselect__spinner {
+  right: auto;
+  left: 1px;
+}
+
+@keyframes a {
+  0% {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(2turn);
+  }
+}</style><style type="text/css">
+#free-reward-panel .reward-users-modal main {
+  padding: 0;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.reward-note-modal .v-modal {
+  width: 620px;
+  text-align: center;
+}
+.reward-note-modal .v-modal form {
+    margin: 0 auto 25px auto;
+    padding: 0 40px;
+}
+.reward-note-modal .v-modal .reward-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.reward-note-modal .v-modal .reward-intro .avatar {
+      cursor: default !important;
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      display: inline-block;
+}
+.reward-note-modal .v-modal .reward-intro .intro {
+      margin-right: 5px;
+      font-weight: bold;
+      vertical-align: middle;
+}
+.reward-note-modal .v-modal .reward-intro i {
+      color: #EA6F5A;
+      vertical-align: middle;
+}
+.reward-note-modal .v-modal .main-inputs {
+    margin: 25px 0;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group {
+      margin: 0 -5px;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group input {
+        display: none;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group input:checked + .option {
+        color: #EA6F5A;
+        border-color: #EA6F5A;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .custom-amount:checked + .option .custom-text {
+        opacity: 0;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .custom-amount:checked + .option .custom-amount-input {
+        opacity: 1;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option {
+        position: relative;
+        margin: 0 5px 15px;
+        width: 156px;
+        height: 56px;
+        line-height: 54px;
+        border: 1px solid #E6E6E6;
+        border-radius: 4px;
+        font-weight: normal;
+        color: #999999;
+        cursor: pointer;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option i {
+          font-size: 16px;
+          vertical-align: middle;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .amount {
+          font-size: 28px;
+          vertical-align: middle;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .piece {
+          font-size: 13px;
+          vertical-align: sub;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input {
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          width: 100%;
+          opacity: 0;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input i {
+            position: absolute;
+            top: 0;
+            left: 10px;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input .piece {
+            position: absolute;
+            top: 4px;
+            right: 10px;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input input {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+            height: 54px;
+            line-height: 54px;
+            border: none;
+            font-size: 28px;
+            text-align: center;
+            background: transparent;
+            -moz-appearance: textfield;
+}
+.reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input input::-webkit-outer-spin-button, .reward-note-modal .v-modal .main-inputs .amount-group .option .custom-amount-input input::-webkit-inner-spin-button {
+              -webkit-appearance: none !important;
+}
+.reward-note-modal .v-modal .main-inputs .message {
+      padding: 15px 20px;
+      margin-bottom: 0;
+      font-size: 14px;
+      border: 1px solid #E6E6E6;
+      color: #333333;
+      border-radius: 4px;
+      background-color: rgba(180, 180, 180, 0.1);
+}
+.reward-note-modal .v-modal .main-inputs .message textarea {
+        width: 100%;
+        height: 44px;
+        padding: 0;
+        margin: 0;
+        resize: none;
+        background: none !important;
+        border: none !important;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+}
+.reward-note-modal .v-modal .main-inputs .message textarea:focus {
+          outline: none;
+}
+.reward-note-modal .v-modal .reward-info .amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #EA6F5A;
+}
+.reward-note-modal .v-modal .reward-info .pay-method {
+    font-size: 14px;
+}
+.reward-note-modal .v-modal .reward-info .pay-method a {
+      color: #3194D0;
+}
+.reward-note-modal .v-modal .choose-pay {
+    margin: 0 -5px;
+}
+.reward-note-modal .v-modal .choose-pay input {
+      display: none;
+}
+.reward-note-modal .v-modal .choose-pay input:checked + .option {
+      color: #EA6F5A;
+      border-color: #EA6F5A;
+}
+.reward-note-modal .v-modal .choose-pay .option {
+      margin: 20px 5px 10px;
+      width: 156px;
+      height: 56px;
+      line-height: 54px;
+      text-align: center;
+      border: 1px solid #E6E6E6;
+      border-radius: 4px;
+      cursor: pointer;
+}
+.reward-note-modal .v-modal .choose-pay .option img {
+        height: 30px;
+}
+.reward-note-modal .v-modal .choose-pay .option img.day.alipay, .reward-note-modal .v-modal .choose-pay .option img.night.alipay {
+        min-width: 85px;
+}
+.reward-note-modal .v-modal .choose-pay .option img.day.wechat, .reward-note-modal .v-modal .choose-pay .option img.night.wechat {
+        min-width: 112px;
+}
+.reward-note-modal .v-modal .choose-pay .option img.night {
+        display: none;
+}
+body.reader-night-mode .reward-note-modal .v-modal .choose-pay .option img.night {
+        display: inline-block;
+}
+body.reader-night-mode .reward-note-modal .v-modal .choose-pay .option img.day {
+        display: none;
+}
+.reward-note-modal .v-modal .choose-pay .tooltip {
+      width: 230px;
+}
+.reward-note-modal .v-modal .modal-footer {
+    padding: 0 15px 20px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+.reward-note-modal .v-modal .modal-footer .btn {
+      padding: 8px 45px;
+      font-size: 24px;
+}
+.reward-note-modal .v-modal .btn-pay {
+    padding: 8px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #F5A623;
+}
+.weixin-pay, .success-pay {
+  text-align: center;
+}
+.weixin-pay .v-modal, .success-pay .v-modal {
+    width: 350px;
+}
+.weixin-pay .ic-successed, .success-pay .ic-successed {
+    font-size: 60px;
+    color: #3db922;
+}
+.weixin-pay h2, .weixin-pay h3, .success-pay h2, .success-pay h3 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+.weixin-pay h2, .success-pay h2 {
+    margin: 0 0 40px 0;
+    font-size: 24px;
+}
+.weixin-pay .bind-text, .success-pay .bind-text {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #999999;
+}
+.weixin-pay .bind-text:before, .weixin-pay .bind-text:after, .success-pay .bind-text:before, .success-pay .bind-text:after {
+      content: "";
+      border-top: 1px solid #999;
+      display: block;
+      position: absolute;
+      width: 40px;
+      top: 8px;
+}
+.weixin-pay .bind-text:before, .success-pay .bind-text:before {
+      left: 30px;
+}
+.weixin-pay .bind-text:after, .success-pay .bind-text:after {
+      right: 30px;
+}
+.weixin-pay .share-bind, .success-pay .share-bind {
+    display: block;
+    margin-bottom: 30px;
+}
+.weixin-pay .share-bind i, .success-pay .share-bind i {
+      margin-right: 4px;
+      font-size: 22px;
+      vertical-align: middle;
+}
+.weixin-pay .share-bind.wechat i, .success-pay .share-bind.wechat i {
+      color: #00BB29;
+}
+.weixin-pay .share-bind.weibo i, .success-pay .share-bind.weibo i {
+      color: #E05244;
+}
+.weixin-pay .wx-qr-code, .success-pay .wx-qr-code {
+    display: inline-block;
+}
+.weixin-pay .wx-qr-code img, .success-pay .wx-qr-code img {
+      margin: 0 auto;
+      padding: 10px;
+      width: 200px;
+      background-color: #ffffff;
+}
+.weixin-pay .pay-amount, .success-pay .pay-amount {
+    margin: 20px 0;
+    color: #787878;
+}
+.weixin-pay .pay-amount span, .success-pay .pay-amount span {
+      color: #F5A623;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.v-modal-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: transparent;
+}
+.v-modal-wrap.modal-leave-active {
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.v-modal-wrap.modal-enter-active .v-modal-mask, .v-modal-wrap.modal-leave-active .v-modal-mask {
+    opacity: 0;
+}
+.v-modal-wrap.modal-enter-active .v-modal, .v-modal-wrap.modal-leave-active .v-modal {
+    -webkit-transform: translate(-50%, -70%);
+        -ms-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+    opacity: 0;
+}
+.v-modal-wrap .v-modal-mask {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+.v-modal-wrap .v-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    -o-transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    opacity: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+}
+.v-modal-wrap .v-modal > header:before, .v-modal-wrap .v-modal > header:after, .v-modal-wrap .v-modal > main:before, .v-modal-wrap .v-modal > main:after, .v-modal-wrap .v-modal > footer:before, .v-modal-wrap .v-modal > footer:after {
+      content: '';
+      clear: both;
+      display: table;
+}
+.v-modal-wrap .v-modal > header {
+      padding: 20px;
+      border-bottom: 1px solid #F0F0F0;
+}
+.v-modal-wrap .v-modal > header h4 {
+        margin: 0;
+        color: #333;
+        text-align: left;
+}
+.v-modal-wrap .v-modal .close {
+      position: absolute;
+      right: 16px;
+      top: 20px;
+      font-size: 26px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.8);
+}
+.v-modal-wrap .v-modal .close:hover {
+        color: #000000;
+}
+.v-modal-wrap .v-modal > main {
+      padding: 20px 20px 20px 20px;
+      font-size: 15px;
+      color: #333;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      overflow-x: hidden;
+      overflow-y: auto;
+}
+.v-modal-wrap .v-modal > footer {
+      padding: 20px;
+      background-color: #fff;
+}
+.v-modal-wrap .v-modal > footer button {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: 0;
+        float: right;
+}
+.v-modal-wrap .v-modal > footer button:focus {
+          outline: 0;
+}
+.v-modal-wrap .v-modal > footer .submit {
+        padding: 4px 12px;
+        border: 1px solid;
+        border-radius: 20px;
+}
+.v-modal-wrap .v-modal > footer .cancel {
+        margin-top: 5px;
+}
+.v-modal-wrap .v-modal > footer .cancel:hover {
+          color: #333333;
+}
+.reader-night-mode .v-modal-wrap .v-modal-mask {
+  background-color: rgba(63, 63, 63, 0.7);
+}
+.reader-night-mode .v-modal-wrap .v-modal {
+  background-color: #3f3f3f;
+}
+.reader-night-mode .v-modal-wrap .v-modal header {
+    border-color: #2F2F2F;
+}
+.reader-night-mode .v-modal-wrap .v-modal header h4 {
+      color: #C8C8C8;
+}
+.reader-night-mode .v-modal-wrap .v-modal .close {
+    color: #C8C8C8;
+}
+.reader-night-mode .v-modal-wrap .v-modal .close:hover {
+      color: #ffffff;
+}
+.reader-night-mode .v-modal-wrap .v-modal main {
+    color: #C8C8C8;
+}
+.reader-night-mode .v-modal-wrap .v-modal footer {
+    background-color: #3f3f3f;
+}
+.reader-night-mode .v-modal-wrap .v-modal footer .cancel:hover {
+      color: #C8C8C8;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.youdao-fixed-ad {
+  display: block;
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+.youdao-fixed-ad .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.youdao-fixed-ad .ad-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    font-size: 12px;
+    padding: 2px 5px 0 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+}
+</style><style type="text/css">
+.yuxi-fixed-ad {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+.yuxi-fixed-ad .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(//cdn2.jianshu.io/assets/web/yuxi-ads-d73b364baf42dfeca32d518c819a0136.jpg);
+}
+.yuxi-fixed-ad .ad-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    font-size: 12px;
+    padding: 2px 5px 0 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.like[data-v-6ddd02c6] {
+  display: inline-block;
+}
+.like .like-group[data-v-6ddd02c6] {
+    position: relative;
+    padding: 13px 0 15px 0;
+    font-size: 0;
+    border: 1px solid #EA6F5A;
+    border-radius: 40px;
+}
+.like .like-group[data-v-6ddd02c6]:hover {
+      background-color: rgba(236, 97, 73, 0.05);
+}
+.like .like-group .btn-like[data-v-6ddd02c6] {
+      display: inline-block;
+      font-size: 19px;
+}
+.like .like-group .btn-like[data-v-6ddd02c6]:before {
+        content: '';
+        position: absolute;
+        left: 12px;
+        top: 2px;
+        width: 50px;
+        height: 50px;
+        background-image: url(//cdn2.jianshu.io/assets/web/like_animation_steps-62a00a7b52377d3069927cdb8e61fd34.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 1000px 50px;
+}
+.like .like-group .btn-like a[data-v-6ddd02c6] {
+        position: relative;
+        padding: 18px 30px 18px 55px;
+        color: #EA6F5A;
+}
+.like .like-group .modal-wrap[data-v-6ddd02c6] {
+      font-size: 18px;
+      border-left: 1px solid rgba(236, 97, 73, 0.4);
+      display: inline-block;
+      margin-left: -15px;
+}
+.like .like-group .modal-wrap a[data-v-6ddd02c6] {
+        color: #EA6F5A;
+        padding: 18px 26px 18px 18px;
+}
+.like .like-group.like-animation[data-v-6ddd02c6], .like .like-group.active[data-v-6ddd02c6] {
+      background-color: #EA6F5A;
+}
+.like .like-group.like-animation .btn-like a[data-v-6ddd02c6], .like .like-group.active .btn-like a[data-v-6ddd02c6] {
+        color: white;
+}
+.like .like-group.like-animation .modal-wrap[data-v-6ddd02c6], .like .like-group.active .modal-wrap[data-v-6ddd02c6] {
+        border-left: 1px solid white;
+}
+.like .like-group.like-animation .modal-wrap a[data-v-6ddd02c6], .like .like-group.active .modal-wrap a[data-v-6ddd02c6] {
+          color: white;
+}
+.like .like-group.like-animation .btn-like[data-v-6ddd02c6]:before {
+      -webkit-animation: likeBlast-data-v-6ddd02c6 0.6s 1 steps(19);
+              animation: likeBlast-data-v-6ddd02c6 0.6s 1 steps(19);
+      background-position: right;
+}
+@-webkit-keyframes likeBlast {
+0% {
+    background-position: left;
+}
+100% {
+    background-position: right;
+}
+}
+@keyframes likeBlast-data-v-6ddd02c6 {
+0% {
+    background-position: left;
+}
+100% {
+    background-position: right;
+}
+}
+.like .like-group.active .btn-like[data-v-6ddd02c6]:before {
+      background-position: right;
+}
+</style><style type="text/css">
+@charset "UTF-8";
+/*
+ * 变量
+*/
+.main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 30px 0;
+  width: 620px;
+}
+.main .title {
+    padding-left: 8px;
+    border-left: 3px solid #EA6F5A;
+    line-height: 1;
+    font-size: 15px;
+}
+.main .collection-settings {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 13px;
+    color: #A0A0A0;
+}
+.main .collection-settings span {
+      padding-left: 4px;
+}
+.main .include-collection {
+    width: 100%;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.main .include-collection .item {
+      display: inline-block;
+      margin: 0 12px 12px 0;
+      min-height: 32px;
+      background-color: white;
+      border: 1px solid #DCDCDC;
+      border-radius: 4px;
+      vertical-align: top;
+      overflow: hidden;
+}
+.main .include-collection .item img {
+        width: 32px;
+        height: 32px;
+}
+.main .include-collection .item .name {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 14px;
+}
+.main .include-collection .add-collection-wrap {
+      margin: 0 12px 12px 0;
+}
+.main .include-collection .add-collection {
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid #DCDCDC;
+      border-radius: 4px;
+}
+.main .include-collection .add-collection i {
+        margin-right: 4px;
+        color: #969696;
+}
+.main .recommend-note a {
+    position: relative;
+    margin: 20px 2px 0 0;
+    width: 200px;
+    height: 160px;
+    display: inline-block;
+}
+.main .recommend-note a:after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 160px;
+      border-radius: 0 0 4px 4px;
+      -webkit-box-shadow: inset 0px -80px 50px -22px rgba(0, 0, 0, 0.6);
+              box-shadow: inset 0px -80px 50px -22px rgba(0, 0, 0, 0.6);
+      top: 0;
+      left: 0;
+      z-index: 1;
+}
+.main .recommend-note .name {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    right: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 2;
+}
+.main .recommend-note .author {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+}
+.main .recommend-note .avatar {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.main .recommend-note .avatar img {
+      border-radius: 50%;
+}
+.main .recommend-note .author-name {
+    font-size: 12px;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: -1px;
+}
+.main .show-more {
+    margin: 0 12px 12px 0;
+    font-size: 14px;
+    color: #A0A0A0;
+}
+</style></head>
+
+  <!-- 只给10%的用户添加代码 -->
+  <!-- ###第四范式-智能推荐：代码直接复制 无需修改参数### -->
+  <!-- ###功能：上报内容并反馈用户行为### -->
+  <!--
+  -->
+  <body lang="zh-CN" class="reader-black-font">
+    <!-- 全局顶部导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="width-limit">
+    <!-- 左上方 Logo -->
+    <a class="logo" href="https://www.jianshu.com/"><img src="./flv格式详解+实例剖析 - 简书_files/nav-logo-4c7bbafe27adc892f3046e6978459bac.png" alt="Nav logo"></a>
+
+    <!-- 右上角 -->
+      <!-- 未登录显示登录/注册/写文章 -->
+      <a class="btn write-btn" target="_blank" href="https://www.jianshu.com/writer#/">
+        <i class="iconfont ic-write"></i>写文章
+</a>      <a class="btn sign-up" id="sign_up" href="https://www.jianshu.com/sign_up">注册</a>
+      <a class="btn log-in" id="sign_in" href="https://www.jianshu.com/sign_in">登录</a>
+
+    <!-- 如果用户登录，显示下拉菜单 -->
+
+    <div class="style-mode"><a class="style-mode-btn"><i class="iconfont ic-navigation-mode"></i></a> <div class="popover-modal" style="left: 0px; display: none;"><div class="meta"><i class="iconfont ic-navigation-night"></i><span>夜间模式</span></div> <div class="switch day-night-group"><a class="switch-btn">开</a> <a class="switch-btn active">关</a></div> <hr> <div class="switch font-family-group"><a class="switch-btn font-song">宋体</a> <a class="switch-btn font-hei active">黑体</a></div> <div class="switch"><a class="switch-btn active">简</a> <a class="switch-btn">繁</a></div></div></div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+            <li class="tab ">
+              <a href="https://www.jianshu.com/">
+                <span class="menu-text">首页</span><i class="iconfont ic-navigation-discover menu-icon"></i>
+</a>            </li>
+            <li class="tab ">
+              <a id="web-nav-app-download-btn" class="app-download-btn" href="https://www.jianshu.com/apps?utm_medium=desktop&amp;utm_source=navbar-apps"><span class="menu-text">下载App</span><i class="iconfont ic-navigation-download menu-icon"></i></a>
+            </li>
+          <li class="search">
+            <form target="_blank" action="https://www.jianshu.com/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+              <input type="text" name="q" id="q" value="" autocomplete="off" placeholder="搜索" class="search-input">
+              <a class="search-btn" href="javascript:void(null)"><i class="iconfont ic-search"></i></a>
+</form>          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+<div class="note">
+  <div id="note-fixed-ad-container">
+    <div id="fixed-ad-container">
+      <div style="display: block;"><a target="_blank" href="https://www.jianshu.com/apps/redirect?utm_source=side-banner-click" id="web-note-ad-fixed"><span class="close">×</span></a></div>
+      <a href="https://dsp-click.youdao.com/clk/request.s?slot=30edd91dd8637d9f645baa8448ba90b3&amp;k=ABh9tY866L4%2FqxpRpqpwHdbZmsyE0Ox6p5H91nHvByvXxo%2BoRxcJpjjAgKuViCqvIxCHqA9N%2F2c%2F9Be%2FcwcSrzbwdknNhcwK7lL6MhmNtZmdPFPz13kR563AwtFxLMPF6Nvf7uLmc%2BVzoKlMx5s4vd3SonyNcFH0NaqMu1ni%2B2Zv0yDKGUJ9hEviGVibSX2HEA7md3Hq7BOhGrSke341nqVN6BVwkooxryLvadi1XpsUmDcRLOYhYCSzGsT%2BHryqt%2B0MDz5bXHoJFk0KiyBQH8Bc8hTRkDkpUdNHMN2yVKT%2BEc%2Bd1jbbq9hGJq0XLIGZMHMNk0HBE7d6E4vICqnJAl16Cg%2BsHjwne1fg0d0rY8HhDpY6VQQhNofsrjeEHMu6tZbEhrSmY02qnqfyMMHGt5edVlit6bgUOrp4%2BJzMh320ckvkITsO1u5zUtRET2JoCUIY1nS%2BU%2BiXpN%2B1mBywm%2BJCvUUbD7ARLgrbV6V7v0Ap3DXt0HuGReB8cXG4v14BvDLGB0rlms2t2kmjw3g3g3tQW%2FRVuaYRauWej6r2RkfFPQxgvCMp4t8sYQNqIYTulHeLh8EvjyGfx4XUskTBf1ay5hcbLEfEKquZobt7V2LNm%2FIDwn2m12GhV7dI%2Bp7vM5x63sKEu1XU3FWGKGmdU6smRVPSLrSb87TByvtP%2Fd6kD2ygWqbgSaJPwxtbL8HE8JVq7tm%2FurVNKNHvd5%2FVJcds%2Brtahgql0Lsnu9ZGAnvYkjxObXSo8GmnL338IrVqgrIlRaY83vVMY0fJHlHePD7qqirSuHidFgrL3tMgEZAR4XtMr99UUcUiX9QTbKBTXERQWYWVYiJAwJCv2pWyOzXEg8tS%2BPNcT1zVci2UHNdVZkNfnyYcEjQKmXbqgv%2FpN4HAMybLhxBRT8K3LhoVAW9bd3QgBHPRay%2B0%2FZslxdrbf4xxtc%2B3QeF5vbHO4CcL4TuKQGUl%2BMgfsATfHgxvSUYag697OvSxRG3gj7pnjBUX5ZpO5fl6cbhJqDlKT4ufX2rxDp9XQ7XGWBKYiCX6WBSZXu8uKzLcoqFh1IMpWTLo2cMBq%2FJqClROt6h2s0iA4Ae4BAsiUQ4Z8IDVOyNWtCYdwQDKLDhU7F6R6Lk%2FZvUJFicI%2FCamGEdL1yk4xXrMIQjBXZzC7wmOzS6QBQso0ZwbE1MzWIghVDIaVOUU5vOS6d0BFk7FLg1Uts0cPmfXg3VIlvdkTEM2yFBz3%2FTKNNfGj6hHFwmmOMCAq5WIKq%2FXxo%2BoRxcJpjjAgKuViCqv06pXqbfWPD70rMr6fx2Ym7L%2BgchVEWB5AdS1TNreugA%3D&amp;youdao_bid=37a133a6-4f20-4e98-be1f-eff76840aebf&amp;iid=%7B%22-8798034803740896749%22%3A4%7D&amp;sid=17024" target="_blank" class="youdao-fixed-ad"><div class="img" style="background-image: url(&quot;https://oimageb6.ydstatic.com/image?id=-8798034803740896749&amp;product=adpublish&amp;w=360&amp;h=360&amp;sc=0&amp;rm=2&amp;gsb=0&amp;gsbd=60&quot;);"></div> <span class="ad-badge">广告</span></a>
+      <a href="http://e.cn.miaozhen.com/r/k=2110413&amp;p=7L9Gn&amp;dx=__IPDX__&amp;rt=2&amp;ns=__IP__&amp;ni=__IESID__&amp;v=__LOC__&amp;xa=__ADPLATFORM__&amp;tr=__REQUESTID__&amp;mo=__OS__&amp;m0=__OPENUDID__&amp;m0a=__DUID__&amp;m1=__ANDROIDID1__&amp;m1a=__ANDROIDID__&amp;m2=__IMEI__&amp;m4=__AAID__&amp;m5=__IDFA__&amp;m6=__MAC1__&amp;m6a=__MAC__&amp;vo=3f2e070eb&amp;vr=2&amp;o=https%3A%2F%2Fwww.jianshu.com%2Fp%2Fee05f7eff678" target="_blank" class="yuxi-fixed-ad" style="display: none;"><div class="img"></div> <span class="ad-badge">广告</span></a>
+      <div id="_so_pdsBy_0"></div>
+    </div>
+  </div>
+  <div class="post">
+    <div class="article">
+        <h1 class="title">flv格式详解+实例剖析</h1>
+
+        <!-- 作者区域 -->
+        <div class="author">
+          <a class="avatar" href="https://www.jianshu.com/u/1502591a1753">
+            <img src="./flv格式详解+实例剖析 - 简书_files/92e3ca73-1383-42cb-b075-138f046773c9.jpg" alt="96">
+</a>          <div class="info">
+            <span class="name"><a href="https://www.jianshu.com/u/1502591a1753">八度空间X</a></span>
+            <!-- 关注用户按钮 -->
+            <a class="btn btn-success follow"><i class="iconfont ic-follow"></i><span>关注</span></a>
+            <!-- 文章数据信息 -->
+            <div class="meta">
+              <!-- 简书钻 -->
+                <span class="jsd-meta">
+                  <i class="iconfont ic-paid1"></i> 0.4
+                </span>
+              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
+                <span class="publish-time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="最后编辑于 2017.12.08 15:56">2017.12.07 16:43*</span>
+              <span class="wordage">字数 1968</span>
+            <span class="views-count">阅读 2556</span><span class="comments-count">评论 5</span><span class="likes-count">喜欢 7</span></div>
+          </div>
+          <!-- 如果是当前作者，加入编辑按钮 -->
+        </div>
+
+
+        <!-- 文章内容 -->
+        <div data-note-content="" class="show-content">
+          <div class="show-content-free">
+            <h2>简介</h2>
+<p>FLV（Flash Video）是现在非常流行的流媒体格式，由于其视频文件体积轻巧、封装播放简单等特点，使其很适合在网络上进行应用，目前主流的视频网站无一例外地使用了FLV格式。另外由于当前浏览器与Flash Player紧密的结合，使得网页播放FLV视频轻而易举，也是FLV流行的原因之一。</p>
+<p>FLV是流媒体封装格式，我们可以将其数据看为二进制字节流。总体上看，FLV包括文件头（File Header）和文件体（File Body）两部分，其中文件体由一系列的Tag及Tag Size对组成。</p>
+<br>
+<div class="image-package">
+<div class="image-container" style="max-width: 600px; max-height: 414px; background-color: transparent;">
+<div class="image-container-fill" style="padding-bottom: 69.0%;"></div>
+<div class="image-view" data-width="600" data-height="414"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-520e9b3f32512aa4.jpg" data-original-width="600" data-original-height="414" data-original-format="image/jpeg" data-original-filesize="31207" class="" style="cursor: zoom-in;" src="./flv格式详解+实例剖析 - 简书_files/2111324-520e9b3f32512aa4.jpg"></div>
+</div>
+<div class="image-caption">flv.jpg</div>
+</div>
+<h2>FLV格式解析</h2>
+<p>先来一张图，这是《东风破》——周杰伦（<a href="https://link.jianshu.com/?t=http://ovjkwgfx6.bkt.clouddn.com/dongfengpo.flv" target="_blank" rel="nofollow">下载</a>）的一个MV视频。我使用的是Binary Viewer的二进制查看工具。<br>
+</p><div class="image-package">
+<div class="image-container" style="max-width: 700px; max-height: 254px; background-color: transparent;">
+<div class="image-container-fill" style="padding-bottom: 21.029999999999998%;"></div>
+<div class="image-view" data-width="1208" data-height="254"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-0f7238b17864341b.png" data-original-width="1208" data-original-height="254" data-original-format="image/png" data-original-filesize="28449" class="" style="cursor: zoom-in;" src="./flv格式详解+实例剖析 - 简书_files/2111324-0f7238b17864341b.png"></div>
+</div>
+<div class="image-caption">1.png</div>
+</div><p></p>
+<h3>header</h3>
+<p>头部分由一下几部分组成<br>
+Signature(3 Byte)+Version(1 Byte)+Flags(1 Bypte)+DataOffset(4 Byte)</p>
+<ul>
+<li>signature 占3个字节<br>
+固定FLV三个字符作为标示。一般发现前三个字符为FLV时就认为他是flv文件。</li>
+<li>Version 占1个字节<br>
+标示FLV的版本号。这里我们看到是1</li>
+<li>Flags 占1个字节<br>
+内容标示。第0位和第2位,分别表示 video 与 audio 存在的情况.(1表示存在,0表示不存在)。截图看到是<code>0x05</code>，也就是<code>00000101</code>，代表既有视频，也有音频。</li>
+<li>DataOffset 4个字节<br>
+表示FLV的header长度。这里可以看到固定是9</li>
+</ul>
+<h3>body</h3>
+<p>FLV的body部分是由一系列的back-pointers + tag构成</p>
+<ul>
+<li>back-pointers 固定4个字节，表示前一个tag的size。</li>
+<li>tag 分三种类型，video、audio、scripts。</li>
+</ul>
+<h4>tag组成</h4>
+<p><code>tag type</code>+<code>tag data size</code>+<code>Timestamp</code>+<code>TimestampExtended</code>+<code>stream id</code>+ <code>tag data</code></p>
+<ul>
+<li>type 1个字节。8为Audio,9为Video,18为scripts</li>
+<li>tag data size 3个字节。表示tag data的长度。从streamd id 后算起。</li>
+<li>Timestreamp 3个字节。时间戳</li>
+<li>TimestampExtended 1个字节。时间戳扩展字段</li>
+<li>stream id 3个字节。总是0</li>
+<li>tag data 数据部分</li>
+</ul>
+<p>我们根据实例来分析：<br>
+看到第一个TAG<br>
+type=<code>0x12</code>=18。这里应该是一个scripts。<br>
+size=<code>0x000125</code>=293。长度为293。<br>
+timestreamp=<code>0x000000</code>。这里是scripts，所以为0<br>
+TimestampExtended =<code>0x00</code>。<br>
+stream id =<code>0x000000</code><br>
+我们看一下TAG的data部分：<br>
+</p><div class="image-package">
+<div class="image-container" style="max-width: 700px; max-height: 558px; background-color: transparent;">
+<div class="image-container-fill" style="padding-bottom: 65.42%;"></div>
+<div class="image-view" data-width="853" data-height="558"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-bfc5319817e9d389.png" data-original-width="853" data-original-height="558" data-original-format="image/png" data-original-filesize="49866" class="" style="cursor: zoom-in;" src="./flv格式详解+实例剖析 - 简书_files/2111324-bfc5319817e9d389.png"></div>
+</div>
+<div class="image-caption">3.png</div>
+</div><p></p>
+<h4>tag的划分</h4>
+<p>图中红色部分是我标出的两个back-pointers，都是4个字节。而中间就是第一个TAG。那是怎么计算的呢？我们就以这个做个示例。</p>
+<ul>
+<li>首先第一个back-pointers是<code>0x00000000</code>，那是因为后面是第一个TAG。所以他为0。</li>
+<li>然后根据我们我们前面格式获取到size是<code>0x000125</code>。也就是说从stream id后面再加上293个字节就到了第一个TAG的末尾，我们数一下一下。stream id以前总共有24个字节。那么到第一个TAG结束，总共有293+24=137=<code>0x13D</code>。</li>
+<li>接下来我们找到<code>0x13D</code>的地址，从工具上很容易找到，正好就是红色下划线的前面。红色部分是<code>0x00000130</code>=304，这代表的是上一个TAG的大小。</li>
+<li>最后我们计算一下，上一个TAG数据部分是293个字节，前面type、stream id等字段占了11个字节。正好是匹配的。</li>
+</ul>
+<p>上面我们已经知道了怎么取划分每个TAG。接下来我们就看TAG的具体内容</p>
+<h4>tag的内容</h4>
+<p>前面已经提到tag分3种。我们一个个看</p>
+<h5>script</h5>
+<p>脚本Tag一般只有一个，是flv的第一个Tag，用于存放flv的信息，比如duration、audiodatarate、creator、width等。<br>
+首先介绍下脚本的数据类型。所有数据都是以数据类型+（数据长度）+数据的格式出现的，数据类型占1byte，数据长度看数据类型是否存在，后面才是数据。<br>
+一般来说，该Tag Data结构包含两个AMF包。AMF（Action Message Format）是Adobe设计的一种通用数据封装格式，在Adobe的很多产品中应用，简单来说，AMF将不同类型的数据用统一的格式来描述。第一个AMF包封装字符串类型数据，用来装入一个“onMetaData”标志，这个标志与Adobe的一些API调用有，在此不细述。第二个AMF包封装一个数组类型，这个数组中包含了音视频信息项的名称和值。具体说明如下，大家可以参照图片上的数据进行理解。</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Number type</td>
+<td>8 Bypte Double</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Boolean type</td>
+<td>1 Bypte bool</td>
+</tr>
+<tr>
+<td>2</td>
+<td>String type</td>
+<td>后面2个字节为长度</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Object type</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>MovieClip type</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Null type</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Undefined type</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Reference type</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>ECMA array type</td>
+<td>数组,类似Map</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Strict array type</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Date type</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Long string type</td>
+<td>后面4个字节为长度</td>
+</tr>
+</tbody>
+</table>
+<div class="image-package">
+<div class="image-container" style="max-width: 700px; max-height: 192px;">
+<div class="image-container-fill" style="padding-bottom: 15.709999999999999%;"></div>
+<div class="image-view" data-width="1222" data-height="192"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-62dc2554ef155833.png" data-original-width="1222" data-original-height="192" data-original-format="image/png" data-original-filesize="22316" class="image-loading" style="cursor: zoom-in;"></div>
+</div>
+<div class="image-caption">4.png</div>
+</div><br>
+<p>上图为第一个AMF包</p>
+
+<ul>
+<li>type=<code>0x02</code>对应String</li>
+<li>size=<code>0A</code>=10</li>
+<li>
+<p>value=onMetaData 正好是10个字节。</p>
+<br>
+<div class="image-package">
+<div class="image-container" style="max-width: 700px; max-height: 348px;">
+<div class="image-container-fill" style="padding-bottom: 28.74%;"></div>
+<div class="image-view" data-width="1211" data-height="348"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-e4db97c919d6c886.png" data-original-width="1211" data-original-height="348" data-original-format="image/png" data-original-filesize="41111" class="image-loading" style="cursor: zoom-in;"></div>
+</div>
+<div class="image-caption">5.png</div>
+</div>
+<br>
+<p>上图为第二个AMF</p>
+</li>
+<li>type=<code>0x08</code> 对应ECMA array type。</li>
+</ul>
+<blockquote>
+<p>表示数组，类似Map。后面4个字节为数组的个数。然后是键值对，第一个为键，2个字节为长度。后面跟具体的内容。接着3个字节表示值的类型，然后根据类型判断长度。<br>
+上图我们可以判断，总共有13个键值对。<br>
+第一个长度为8个字节是duration。值类型是<code>0x004073</code>，第一个字节是00，所以是double，8个字节。<br>
+第二个长度5个字节是width。值也是double类型，8个字节。<br>
+依次解析下去...</p>
+</blockquote>
+<p>到处，我们已经知道了如何解析FLV中Tag为script的数据。</p>
+<h5>video</h5>
+<p></p><div class="image-package">
+<div class="image-container" style="max-width: 700px; max-height: 291px;">
+<div class="image-container-fill" style="padding-bottom: 38.440000000000005%;"></div>
+<div class="image-view" data-width="757" data-height="291"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-a75e5295c4096f01.png" data-original-width="757" data-original-height="291" data-original-format="image/png" data-original-filesize="23012" class="image-loading" style="cursor: zoom-in;"></div>
+</div>
+<div class="image-caption">6.png</div>
+</div><br>
+type=<code>0x09</code>=9。这里应该是一个video。<br>
+size=<code>0x000030</code>=48。长度为48。<br>
+timestreamp=<code>0x000000</code>。<br>
+TimestampExtended =<code>0x00</code>。<br>
+stream id =<code>0x000000</code><br>
+我们看到数据部分：<br>
+视频信息+数据<p></p>
+<h6>视频信息，1个字节。</h6>
+<p>前4位为帧类型Frame Type</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>keyframe (for AVC, a seekable frame)   关键帧</td>
+</tr>
+<tr>
+<td>2</td>
+<td>inter frame (for AVC, a non-seekable frame)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>disposable inter frame (H.263 only)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>generated keyframe (reserved for server use only)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>video info/command frame</td>
+</tr>
+</tbody>
+</table>
+<p>后4位为编码ID    (CodecID)</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>JPEG (currently unused)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sorenson H.263</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Screen video</td>
+</tr>
+<tr>
+<td>4</td>
+<td>On2 VP6</td>
+</tr>
+<tr>
+<td>5</td>
+<td>On2 VP6 with alpha channel</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Screen video version 2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>AVC</td>
+</tr>
+</tbody>
+</table>
+<h6>特殊情况</h6>
+<p>视频的格式(<strong>CodecID</strong>)是AVC（H.264）的话，VideoTagHeader会多出4个字节的信息，AVCPacketType 和CompositionTime。</p>
+<ul>
+<li>AVCPacketType 占1个字节</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>AVCDecoderConfigurationRecord(AVC sequence header)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>AVC NALU</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AVC end of sequence (lower level NALU sequence ender is not required or supported)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AVCDecoderConfigurationRecord</strong>.包含着是H.264解码相关比较重要的<strong>sps</strong>和<strong>pps</strong>信息，再给AVC解码器送数据流之前一定要把sps和pps信息送出，否则的话解码器不能正常解码。而且在解码器stop之后再次start之前，如seek、快进快退状态切换等，都需要重新送一遍sps和pps的信息.AVCDecoderConfigurationRecord在FLV文件中一般情况也是<strong>出现1次</strong>，也就是<strong>第一个video tag</strong>.</p>
+<ul>
+<li>CompositionTime 占3个字节</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AVCPacketType ==1</td>
+<td>Composition time offset</td>
+</tr>
+<tr>
+<td>AVCPacketType !=1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>我们看第一个video tag，也就是前面那张图。我们看到AVCPacketType =0。而后面三个字节也是0。说明这个tag记录的是AVCDecoderConfigurationRecord。包含sps和pps数据。<br>
+再看到第二个video tag</p>
+<p></p><div class="image-package">
+<div class="image-container" style="max-width: 700px; max-height: 361px;">
+<div class="image-container-fill" style="padding-bottom: 45.29%;"></div>
+<div class="image-view" data-width="797" data-height="361"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-81454e31e2208b83.png" data-original-width="797" data-original-height="361" data-original-format="image/png" data-original-filesize="33595" class="image-loading" style="cursor: zoom-in;"></div>
+</div>
+<div class="image-caption">8.png</div>
+</div><br>
+我们看到 AVCPacketType =1，而后面三个字节为<code>000043</code>。这是一个视频帧数据。<p></p>
+<p>解析到的数据完全符合上面的理论。</p>
+<h6>sps pps</h6>
+<p>前面我们提到第一个video 一般存放的是sps和pps。这里我们具体解析下sps和pps内容。先看下存储的格式（<strong>图6</strong>）：<br>
+<code>0x01</code>+<code>sps[1]</code>+<code>sps[2]</code>+<code>sps[3]</code>+<code>0xFF</code>+<code>0xE1</code>+<code>sps size</code>+<code>sps</code>+<code>01</code>+<code>pps size</code>+<code>pps</code><br>
+我们看到图7 。<br>
+sps[1]=<code>0x64</code><br>
+sps[2]=<code>00</code><br>
+sps[3]=<code>0D</code><br>
+sps size=<code>0x001B</code>=27<br>
+跳过27个字节后，是<code>0x01</code><br>
+pps size=<code>0x0005</code>=118<br>
+跳过5个字节，就到了back-pointers。</p>
+<h6>视频帧数据</h6>
+<p>解析出sps和pps tag后，后面的video tag就是真正的视频数据内容了<br>
+</p><div class="image-package">
+<div class="image-container" style="max-width: 700px; max-height: 203px;">
+<div class="image-container-fill" style="padding-bottom: 28.63%;"></div>
+<div class="image-view" data-width="709" data-height="203"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-2a5a21a2d867698d.png" data-original-width="709" data-original-height="203" data-original-format="image/png" data-original-filesize="18027" class="image-loading" style="cursor: zoom-in;"></div>
+</div>
+<div class="image-caption">9.png</div>
+</div><br>
+这是第二个video tag其实和图8一样，只是我圈出来关键信息。先看下格式<br>
+frametype=<code>0x17</code>=<code>00010111</code><br>
+AVCPacketType =1<br>
+Composition Time=<code>0x000043</code><br>
+后面就是NALU DATA<p></p>
+<h5>Audio</h5>
+<p>与视频格式类似<br>
+前4位为音频格式</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Linear PCM, platform endian</td>
+</tr>
+<tr>
+<td>1</td>
+<td>ADPCM</td>
+</tr>
+<tr>
+<td>2</td>
+<td>MP3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Linear PCM, little endian</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Nellymoser 16-kHz mono</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Nellymoser 8-kHz mono</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Nellymoser</td>
+</tr>
+<tr>
+<td>7</td>
+<td>G.711 A-law logarithmic PCM</td>
+</tr>
+<tr>
+<td>8</td>
+<td>G.711 mu-law logarithmic PCM</td>
+</tr>
+<tr>
+<td>9</td>
+<td>reserved</td>
+</tr>
+<tr>
+<td>10</td>
+<td>AAC</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Speex</td>
+</tr>
+<tr>
+<td>14</td>
+<td>MP3 8-Khz</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Device-specific sound</td>
+</tr>
+</tbody>
+</table>
+<p>接着2位为采样率</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>5.5-kHz</td>
+</tr>
+<tr>
+<td>1</td>
+<td>11-kHz</td>
+</tr>
+<tr>
+<td>2</td>
+<td>22-kHz</td>
+</tr>
+<tr>
+<td>3</td>
+<td>44-kHz</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>对于AAC总是3</p>
+</blockquote>
+<p>接着1位为采样的长度</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>snd8Bit</td>
+</tr>
+<tr>
+<td>1</td>
+<td>snd16Bit</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>压缩过的音频都是16bit</p>
+</blockquote>
+<p>接着1位为音频类型</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>sndMono</td>
+</tr>
+<tr>
+<td>1</td>
+<td>sndStereo</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>对于AAC总是1</p>
+</blockquote>
+<p>我们看到第三个TAG</p>
+<div class="image-package">
+<div class="image-container" style="max-width: 674px; max-height: 158px;">
+<div class="image-container-fill" style="padding-bottom: 23.44%;"></div>
+<div class="image-view" data-width="674" data-height="158"><img data-original-src="//upload-images.jianshu.io/upload_images/2111324-eceef7ad27b503ba.png" data-original-width="674" data-original-height="158" data-original-format="image/png" data-original-filesize="13006" class="image-loading" style="cursor: zoom-in;"></div>
+</div>
+<div class="image-caption">7.png</div>
+</div><br>
+<p>这个留给大家自己来解析吧。</p>
+
+
+          </div>
+        </div>
+    </div>
+
+    <!-- 如果是付费文章，未购买，则显示购买按钮 -->
+
+    <!-- 连载目录项 -->
+
+    <!-- 如果是付费文章 -->
+      <!-- 如果是付费连载，已购买，且作者允许赞赏，则显示付费信息和赞赏 -->
+        <div id="free-reward-panel" class="support-author"><p>小礼物走一走，来简书关注我</p> <div class="btn btn-pay">赞赏支持</div> <div class="supporter"><ul class="support-list"></ul> <!----></div> <!----> <!----></div>
+
+      <div class="show-foot">
+        <a class="notebook" href="https://www.jianshu.com/nb/17697147">
+          <i class="iconfont ic-search-notebook"></i>
+          <span>流媒体</span>
+</a>        <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
+          © 著作权归作者所有
+        </div>
+        <div class="modal-wrap" data-report-note="">
+          <a id="report-modal">举报文章</a>
+        </div>
+      </div>
+
+      <!-- 文章底部作者信息 -->
+        <div class="follow-detail">
+          <div class="info">
+            <a class="avatar" href="https://www.jianshu.com/u/1502591a1753">
+              <img src="./flv格式详解+实例剖析 - 简书_files/92e3ca73-1383-42cb-b075-138f046773c9.jpg" alt="96">
+</a>            <a class="btn btn-success follow"><i class="iconfont ic-follow"></i><span>关注</span></a>
+            <a class="title" href="https://www.jianshu.com/u/1502591a1753">八度空间X</a>
+              <i class="iconfont ic-man"></i>
+          <p>写了 87001 字，被 195 人关注，获得了 161 个喜欢</p></div>
+            <div class="signature">我不停地奔跑 只为追回那个曾经被寄予厚望的自己</div>
+        </div>
+
+    <div class="meta-bottom">
+      <div data-v-6ddd02c6="" class="like"><div data-v-6ddd02c6="" class="btn like-group"><div data-v-6ddd02c6="" class="btn-like"><a data-v-6ddd02c6="">喜欢</a></div> <div data-v-6ddd02c6="" class="modal-wrap"><a data-v-6ddd02c6="">7</a></div></div> <!----></div>
+      <div class="share-group">
+        <a class="share-circle" data-action="weixin-share" data-toggle="tooltip" data-original-title="分享到微信">
+          <i class="iconfont ic-wechat"></i>
+        </a>
+        <a class="share-circle" data-action="weibo-share" data-toggle="tooltip" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;&#39;, &#39;推荐 @杀手eric530 的文章《flv格式详解+实例剖析》（ 分享自 @简书 ）&#39;,&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-original-title="分享到微博">
+          <i class="iconfont ic-weibo"></i>
+        </a>
+        <a class="share-circle" data-toggle="tooltip" id="longshare" target="_blank" data-original-title="" title="">
+            <div class="qrcode" id="qrcode">
+             <img src="./flv格式详解+实例剖析 - 简书_files/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png" alt="Download index side qrcode">
+             <p>下载app生成长微博图片</p>
+             </div>
+          <i class="iconfont ic-picture"></i>
+        </a>
+        <a class="share-circle more-share" tabindex="0" data-toggle="popover" data-placement="top" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content="
+          &lt;ul class=&quot;share-list&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 八度空间X 的文章《flv格式详解+实例剖析》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-zone&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到QQ空间&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 八度空间X 的文章《flv格式详解+实例剖析》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-twitter&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-facebook&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-google&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;flv格式详解+实例剖析&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-douban&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到豆瓣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        " data-original-title="" title="">更多分享</a>
+      </div>
+    </div>
+
+      <a id="web-note-ad-1" target="_blank" href="https://www.jianshu.com/apps/redirect?utm_source=note-bottom-click"><img src="./flv格式详解+实例剖析 - 简书_files/web-note-ad-1-c2e1746859dbf03abe49248893c9bea4.png" alt="Web note ad 1"></a>
+
+    <!--
+    <div id="note-comment-above-ad-container">
+      <span id="youdao-comment-ad" class="ad-badge">广告</span>
+    </div>
+    -->
+    <div id="vue_comment"></div>
+  </div>
+
+  <div class="side-tool"><ul><li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="回到顶部" style=""><a class="function-button"><i class="iconfont ic-backtop"></i></a></li> <!----> <!----> <!----> <!----> <li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="分享文章" id="share"><a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content="&lt;ul class=&#39;share-list&#39; style=&quot;width:220px&quot;&gt;
+                  &lt;li&gt;&lt;a class=&quot;weixin-share&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-weixin&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到微信&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;&#39;, &#39;推荐 @杀手eric530 的文章《flv格式详解+实例剖析》（ 分享自 @简书 ）&#39;,&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-weibo&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到微博&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 八度空间X 的文章《flv格式详解+实例剖析》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-zone&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到QQ空间&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 八度空间X 的文章《flv格式详解+实例剖析》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-twitter&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-facebook&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-google&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;https://www.jianshu.com/p/7ffaec7b3be6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;flv格式详解+实例剖析&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-douban&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到豆瓣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;" data-original-title="" title="" class="function-button"><i class="iconfont ic-share"></i></a> <!----></li> <!----></ul></div>
+</div>
+<div class="note-bottom">
+  <div><div class="main"><div class="title">被以下专题收入，发现更多相似内容</div> <!----> <div class="include-collection"><!----> <a href="https://www.jianshu.com/c/eb74fda8549b?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./flv格式详解+实例剖析 - 简书_files/android.graphics.Bitmap_43c76748.jpeg"><div class="name">视频直播</div></a><a href="https://www.jianshu.com/c/3429ad0aa14a?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./flv格式详解+实例剖析 - 简书_files/1459995274.jpg"><div class="name">音视频技术</div></a><a href="https://www.jianshu.com/c/23f57e8fe07c?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./flv格式详解+实例剖析 - 简书_files/1460859371.jpg"><div class="name">视频开发</div></a><a href="https://www.jianshu.com/c/404039678493?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./flv格式详解+实例剖析 - 简书_files/无标题.png"><div class="name">音视频开发经验之路</div></a><a href="https://www.jianshu.com/c/d9d11499de5c?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./flv格式详解+实例剖析 - 简书_files/crop1521753972091.jpg"><div class="name">乱七八糟风暴</div></a><a href="https://www.jianshu.com/c/7f9a7c66a368?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./flv格式详解+实例剖析 - 简书_files/android.graphics.Bitmap_1f49f365.jpeg"><div class="name">直播</div></a><a href="https://www.jianshu.com/c/92a1d0b32c55?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./flv格式详解+实例剖析 - 简书_files/2305340_230226002_2.jpg"><div class="name">ijkplay...</div></a> <a class="show-more">
+        展开更多
+        <i class="iconfont ic-show"></i></a></div></div> <!----> <!----></div>
+  <div data-vcomp="recommended-notes" data-note-id="20733087"></div>
+  <!-- 相关文章 -->
+    <!-- 未登录用户 -->
+    <div class="seo-recommended-notes">
+
+          <div class="note have-img">
+            <a class="cover" target="_blank" href="https://www.jianshu.com/p/46fd0faecac1?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <img src="./flv格式详解+实例剖析 - 简书_files/7328262-54f7992145380c10.png" alt="240">
+</a>            <a class="title" target="_blank" href="https://www.jianshu.com/p/46fd0faecac1?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">Spring Cloud</a>
+            <p class="description">Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线）。分布式系统的协调导致了样板模式, 使用Spring Cloud开发人员可以快速地支持实现这些模式的服务和应用程序。他们将在任何分布式...</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/d90908cb0d85?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/2-9636b13945b9ccf345bc98d0d81074eb.jpg" alt="48">
+              </div>
+              <span class="name">卡卡罗2017</span>
+</a>          </div>
+
+          <div class="note ">
+                        <a class="title" target="_blank" href="https://www.jianshu.com/p/12b41f105836?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">boost asio 实现http-flv rtsp hls流媒体服务器</a>
+            <p class="description">gihub：https://github.com/wangdxh/Desert-Eagle/只实现了视频的处理。rtsp只支持rtp over rtsp 简单说下使用asio的原因，一开始使用go实现了http-flv流媒体服务器的功能，总共大约300行的代码，生产率非常高...</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/0a1e8820d7c3?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/0bbc6917-287c-4aec-bcfd-ac2b6108ef9a.png" alt="48">
+              </div>
+              <span class="name">little_wang</span>
+</a>          </div>
+
+          <div class="note have-img">
+            <a class="cover" target="_blank" href="https://www.jianshu.com/p/db964ca48697?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <img src="./flv格式详解+实例剖析 - 简书_files/2963877-a05df42d58116b1a" alt="240">
+</a>            <a class="title" target="_blank" href="https://www.jianshu.com/p/db964ca48697?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">✈️从0到1打造直播 App(iOS /Android直播流程介绍整理 &lt;mark&gt;)</a>
+            <p class="description">转发自 2016-10-27李智文腾讯Bugly 概要 分享内容： 互联网内容载体变迁历程，文字——图片/声音——视频——VR/AR——…….。从直播1.0秀场时代（YY），2.0游戏直播（斗鱼、虎牙、熊猫）到如今全民直播3.0泛生活娱乐时代（映客、花椒），国外直播app（...</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/32686a8066fc?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/f4ec02e1-11bd-458f-9617-b01df4a884e9.png" alt="48">
+              </div>
+              <span class="name">健身吧_猿世界</span>
+</a>          </div>
+
+          <div class="note ">
+                        <a class="title" target="_blank" href="https://www.jianshu.com/p/851354faadd6?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">RTMP规范中文翻译</a>
+            <p class="description">实时消息协议---流的分块 版权声明： 版权（c）2009 Adobe系统有限公司。全权所有。 摘要： 本备忘录描述实时消息协议块流。块流是一种应用层协议，主要用于通过一种合适的传输层协议（例如TCP）复用、打包多媒体数据流（音频，视频和交互数据）。 目录： •	简介 •	...</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/8a5289dc3904?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/648b27397bc6" alt="48">
+              </div>
+              <span class="name">一个人zy</span>
+</a>          </div>
+
+          <div class="note ">
+                        <a class="title" target="_blank" href="https://www.jianshu.com/p/4d11a6a1bb8b?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">今天不美丽</a>
+            <p class="description">夸了9000 本来还打算这个月可以收入上万，可是却没有。不开心。 变成下个月的目标了。</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/86b868391bba?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/ebec6999-aa59-4951-9c61-a34ae64639cf" alt="48">
+              </div>
+              <span class="name">空格_08d4</span>
+</a>          </div>
+
+          <div class="note ">
+                        <a class="title" target="_blank" href="https://www.jianshu.com/p/92ebdbec5fc7?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">2017.5.7</a>
+            <p class="description">    俗话说：金窝银窝不如自己的狗窝，结束行程，躺在自家床上就是更舒服。    这是熊孩子的第一次 长途旅行，总的来说，表现还不错。世界那么大，我们以后还要一起去更多的地方。    这一次的旅行主要是给爸爸过生日。这几年因为种种原因，中断了与父母的旅行。这一次的黄山和千岛...</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/edcad0b0e340?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/3e54b22e1b17" alt="48">
+              </div>
+              <span class="name">范范_嘟嘟</span>
+</a>          </div>
+
+          <div class="note ">
+                        <a class="title" target="_blank" href="https://www.jianshu.com/p/4d310b325931?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">不要放弃</a>
+            <p class="description">坚持</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/b72066b2e219?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/5941dcbf-55db-406a-86d5-e69b4772b086.jpg" alt="48">
+              </div>
+              <span class="name">行动力你好</span>
+</a>          </div>
+
+          <div class="note ">
+                        <a class="title" target="_blank" href="https://www.jianshu.com/p/3182ad6a04bc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">AMD、CMD模块化开发、Sea.js、Require.js</a>
+            <p class="description">前端开发中最常用是使用匿名函数闭包形式组织代码将对象、属性封装到一个特别的对象中避免暴露的对象、属性太多引起冲突，这种方式一般没有什么问题。一种新的方式是在以往的基础上规范模块化开发。Node的出现，这种规范又分为浏览器端与服务端。 浏览器端规范AMD(Asynchromo...</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/f2326bf4e67a?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/6f9019c8f794.jpg" alt="48">
+              </div>
+              <span class="name">ThingLin</span>
+</a>          </div>
+
+          <div class="note have-img">
+            <a class="cover" target="_blank" href="https://www.jianshu.com/p/2e4d630b6902?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <img src="./flv格式详解+实例剖析 - 简书_files/3061486-9175399fb792aaba.jpg" alt="240">
+</a>            <a class="title" target="_blank" href="https://www.jianshu.com/p/2e4d630b6902?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation">这个世界并不炎凉</a>
+            <p class="description">翻开一张雪白的纸 打开记忆的闸门 握起手中的笔 来叙写点点滴滴 。用这些话表达我这十年来的生活常态再好不过了 ，信息爆炸的时代 我们努力甄别涮选自己想要的信息和追求 只是网络技术太过发达 你本想了解社会焦点 国家政策 铺面而来的明星家庭琐事马上就会浮现在你的眼前 有时也会情...</p>
+            <a class="author" target="_blank" href="https://www.jianshu.com/u/d86fe6357e72?utm_campaign=maleskine&amp;utm_content=user&amp;utm_medium=seo_notes&amp;utm_source=recommendation">
+              <div class="avatar">
+                <img src="./flv格式详解+实例剖析 - 简书_files/8899fae0c0f8.jpg" alt="48">
+              </div>
+              <span class="name">你好story</span>
+</a>          </div>
+    </div>
+</div>
+
+    <script type="application/json" data-name="page-data">{"user_signed_in":false,"locale":"zh-CN","os":"windows","read_mode":"day","read_font":"font2","note_show":{"is_author":false,"is_following_author":false,"is_liked_note":false,"follow_state":0,"uuid":"5853fbd3-f177-464e-87e2-2f2edca3d6ac"},"note":{"id":20733087,"slug":"7ffaec7b3be6","user_id":2111324,"notebook_id":17697147,"commentable":true,"likes_count":7,"views_count":2556,"public_wordage":1968,"comments_count":5,"featured_comments_count":0,"total_rewards_count":0,"is_author":false,"paid_type":"free","paid":false,"paid_content_accessible":false,"author":{"nickname":"八度空间X","total_wordage":87001,"followers_count":195,"total_likes_count":161}}}</script>
+    
+    <script src="./flv格式详解+实例剖析 - 简书_files/babel-polyfill-6cd2d6b53fe3184b71cc.js.下载" crossorigin="anonymous"></script>
+    <script src="./flv格式详解+实例剖析 - 简书_files/web-base-4ef5e21ad7ff50eb143f.js.下载" crossorigin="anonymous"></script>
+<script src="./flv格式详解+实例剖析 - 简书_files/web-fa4d4122550e96641ff3.js.下载" crossorigin="anonymous"></script>
+    
+    <script src="./flv格式详解+实例剖析 - 简书_files/entry-82e44627b2e2d73431d6.js.下载" crossorigin="anonymous"></script>
+    <script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+  
+
+<!----><!----></body></html>
